@@ -9,6 +9,24 @@ header{
   z-index: 10;
 }
 
+header:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: -30px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: $color_black;
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  -o-transition: transform .25s;
+  transition: transform .25s; 
+  transition: transform .25s, -webkit-transform .25s;
+}
+
+
 .header-center{
   align-items: center;
   -webkit-box-align: center;
@@ -64,7 +82,7 @@ header{
   content: "";
   display: inline-block;
   width: 30px;
-  background: #fff;
+  background: $color_black;
   -webkit-transition: -webkit-transform .25s;
   transition: -webkit-transform .25s;
   -o-transition: transform .25s;

@@ -1,11 +1,38 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link :to="{ name: 'Home' }">Home</router-link> |
-      <router-link :to="{ name: 'About' }">About</router-link>
+  <!-- Header -->
+  <header>
+    <div class="container-fluid">
+      <nav class="row header-center">
+        <div class="col-10">
+          <div class="d-inline header-item-logo">
+            <!-- <logo class="header-logo"></logo> -->
+            Polina Gusarova
+          </div>
+
+          <div class="d-inline header-item header-item-grey">
+            <!-- <img src="@/assets/icon/chart.svg" /> -->
+            About
+          </div>
+
+          <div class="d-inline header-item header-item-grey">
+            Work
+          </div>
+
+          <div class="d-inline header-item header-item-grey">
+            Contact
+          </div>
+        </div>
+        <div class="col text-right">
+          <button class="header-burger"></button>
+        </div>
+      </nav>
     </div>
-    <router-view />
-  </div>
+  </header>
+  <!-- End header -->
+
+  <!-- Router view -->
+  <router-view />
+  <!-- End router view -->
 </template>
 
 <script>

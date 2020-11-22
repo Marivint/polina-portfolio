@@ -1,0 +1,20 @@
+/* Project
+============================================= */
+.project {
+  .project-img {
+    text-align: center;
+    img {
+      height: 500px;
+      width: 400px;
+      border-radius: 10px;
+    }
+  }
+  .project-text {
+    .project-page {
+      padding-bottom: 3rem;
+    }
+    .project-cta {
+      padding-top: 5rem;
+    }
+  }
+}

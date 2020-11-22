@@ -1,14 +1,18 @@
 /* Import
 ============================================= */
-import { createRouter, createWebHistory } from "vue-router";
+// eslint-disable-next-line prettier/prettier
+import {
+  createRouter,
+  createWebHistory
+} from "vue-router";
 import vHome from "@/views/home.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
 
-/* Routes
+/* Routes 
 ============================================= */
-const routes = [
-  {
+// eslint-disable-next-line prettier/prettier
+const routes = [{
     path: "/",
     name: "Home",
     _component: vHome,
@@ -26,6 +30,7 @@ const routes = [
   },
   {
     path: "/:catchAll(.*)",
+    name: "404",
     component: vNotFound
   }
 ];
@@ -37,4 +42,5 @@ const router = createRouter({
   routes
 });
 
+// eslint-disable-next-line prettier/prettier
 export default router;
