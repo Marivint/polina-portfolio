@@ -1,0 +1,35 @@
+/* Typography 
+============================================= */
+$font_family_sans_serif : 'Poppins', sans-serif;
+$font_size_base: 1rem;
+$line_height_base: 1.6;
+
+/* Breakpoint 
+============================================= */
+$breakpoint_extra_large: 1200px;
+$breakpoint_large: 992px;
+$breakpoint_medium: 768px;
+
+/* Path 
+============================================= */
+$image_path : "../../img";
+
+/* Colors 
+============================================= */
+$color_black: #282C37;
+$color_grey: #9F9FA9;
+$color_blue: #2b90d9;
+$color_red:#FF6F91;
+
+// To generate
+$list_color: (
+	black: $color_black,
+	grey: $color_grey,
+	blue: $color_blue,
+	red: $color_red
+);
+
+$primary_text_color: $color_black;
+
+// $color_cursor_little : $color_blue;
+// $color_cursor_big : $color_blue;

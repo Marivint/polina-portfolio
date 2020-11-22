@@ -1,0 +1,128 @@
+/* Colors
+============================================= */
+@mixin generateColors{
+  @each $name, $hex in $list_color {
+
+    .color-#{$name} {
+      color: $hex;
+    }
+
+    .text-#{$name} {
+      color: $hex;
+    }
+
+    .custom-icon-#{$name} {
+      path { stroke: $hex }
+    }
+
+    .header-item-#{$name} {
+      color: $hex;
+    }
+
+    .subtitle-#{$name} {
+      color: $hex;
+      &::before{
+        background: $hex;
+      }
+    }
+    
+    .cursor-little-#{$name} {
+      background: $hex;
+    }
+
+    .cursor-big-#{$name} {
+      background: $hex;
+    }
+  }
+}
+
+/* Breakpoint
+============================================= */
+@mixin mediaLarge {
+  @media only screen and (max-width: #{$breakpoint_extra_large}) {
+    @content;
+  }
+}
+
+@mixin mediaMedium {
+  @media only screen and (max-width: #{$breakpoint_large}) {
+    @content;
+  }
+}
+
+@mixin mediaSmall {
+  @media only screen and (max-width: #{$breakpoint_medium}) {
+    @content;
+  }
+}
+
+
+/* Transition
+============================================= */
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/* Keyframes & animations
+============================================= */
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+/* Cross browser opacity
+============================================= */
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+/* Rem I8 support
+*  Rem is similar to the em value, but instead of being relative to the parent element it’srelative to the font-size set in the <html>.
+*  It has all the benefits of em but you don’t get issues with e.g (compounding) since rem is only relative to the html element. 
+*  The bad part is there’s no support for rem units in IE8 and below. 
+*  But with this mixin we can create a fallback to pixels when rem isn’t supported.
+*  Usage : @include font-size(14px)
+============================================= */
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin fontSizeRem($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
+/* Background image
+============================================= */
+@mixin backgroundImage($name){
+  background-image: url(#{$image_path}/#{$name});
+}
