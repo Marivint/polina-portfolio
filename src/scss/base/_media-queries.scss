@@ -1,0 +1,110 @@
+/* 
+
+@media Bootstrap
+<576px  Extra small
+≥576px  Small
+≥768px  Medium
+≥992px  Large
+≥1200px Extra large
+
+@media Custom
+See variables.scss breakpoint
+
+============================================= */
+
+
+/* Media large
+============================================= */
+@include mediaLarge {
+  .header-logo {
+    width: 30px;
+  }
+
+  .header-item {
+    font-size: 0.9em;
+  }
+
+  .header-item-icon {
+    width: 20px;
+    height: 20px;
+    margin-right:10px;
+  }
+
+  .header-burger {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header-burger:before, .header-burger:after {
+    width: 25px;
+  }
+
+  .header-burger:before {
+    height: 1px;
+    margin-bottom: 3px;
+  }
+
+  .header-burger:after {
+    height: 2px;
+    margin-top: 3px;
+  }
+
+  .main-bg {
+    img{ 
+        max-width: 900px;
+    }
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .subtitle {
+    font-size: 0.9em;
+  }
+}
+
+/* Media medium
+============================================= */
+@include mediaMedium {
+  body{
+    overflow-x: hidden;
+  }
+
+  .header-item-logo{
+    margin-right: 80px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .main-bg {
+    right: -35px;
+    img{ 
+        // max-width: 800px;
+    }
+  }
+}
+
+/* Media small
+============================================= */
+@include mediaSmall {
+  .header-item {
+    display: none !important;
+  }
+  .main-bg {
+    display: none !important;
+  }
+  .header-burger {
+    &:after, &:before{
+      background: $color_black;
+    }
+  }
+}
+
+  @media only screen and (max-width: 882px) {
+    .main-bg {
+      right: -148px;
+    }
+  }
