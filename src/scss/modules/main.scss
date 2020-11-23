@@ -1,151 +1,181 @@
 /* Html 
 ============================================= */
-html,body{
+html,
+body {
   font-family: $font-family-sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: $font-size-base;
 }
- 
+
 /* Body 
 ============================================= */
-body{
+body {
   min-width: 375px;
   line-height: 1.77778;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $primary-text-color;
   background-color: transparent;
-  cursor: none;
+  // cursor: none;
 }
-
 
 /* Main Page 
 ============================================= */
-main{
-    margin-top: 170px;
+main {
+  margin-top: 130px;
 }
 
-.main-bg{
-  position: absolute;
-  top: 0; 
-  right: 0;
-  z-index: 0;
-  overflow: hidden;
-  img{
-    width: 100%;
-    max-width: 1200px;
-  }
-}
+// .main-bg{
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   z-index: 0;
+//   overflow: hidden;
+//   img{
+//     width: 100%;
+//     max-width: 1200px;
+//   }
+// }
 
 /* Section
 ============================================= */
-#main-header{
-  padding-top: 100px;
-  padding-right: 0px;
-  padding-bottom: 400px;
-  padding-left: 0px;
-}
-
-#my-work{
-  #my-work-search{
-    .icon-prepend {
-      position: absolute;
-      z-index: 2;
-      display: block;
-      width: 100%;
-      text-align: right;
-      pointer-events: none;
-      padding-right: 45px;
-    }
-    input{
-      padding-left: 20px;
-      border-radius: 15px;
-    }
-    .custom-icon{
-      height: 20px;
-      width: 20px;
-    }
+#about {
+  position: relative;
+  text-align: center;
+  height: 500px;
+  #about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
+
+#skills {
+  position: relative;
+  // To validate ?
+  // display: flex;
+  // text-align: center;
+  // align-items: center;
+  text-align: center;
+  background-color: $color_black;
+  color: $color_white;
+  height: 300px;
+  .container-fluid,
+  .row {
+    height: 100%;
+  }
+}
+
+#projects {
+  padding-top: 130px;
+}
+
+// #my-work{
+//   #my-work-search{
+//     .icon-prepend {
+//       position: absolute;
+//       z-index: 2;
+//       display: block;
+//       width: 100%;
+//       text-align: right;
+//       pointer-events: none;
+//       padding-right: 45px;
+//     }
+//     input{
+//       padding-left: 20px;
+//       border-radius: 15px;
+//     }
+//     .custom-icon{
+//       height: 20px;
+//       width: 20px;
+//     }
+//   }
+// }
 
 /* Card
 ============================================= */
-  .card-work{
-    border-radius: 30px;
-    overflow: hidden;
-    img{
-      border-radius: 30px;
-      // filter: blur(5px);
-    }
-    .card-body{
-      padding-top: 40px;
-    }
-    .card-text{
-      padding-top: 30px;
-    }
-  }
+// .card-work {
+//   border-radius: 30px;
+//   overflow: hidden;
+//   img {
+//     border-radius: 30px;
+//     // filter: blur(5px);
+//   }
+//   .card-body {
+//     padding-top: 40px;
+//   }
+//   .card-text {
+//     padding-top: 30px;
+//   }
+// }
 
 /* Custom icon
 ============================================= */
-.custom-icon{
+.custom-icon {
   width: 23px;
   height: 23px;
   @extend %base-transition;
 }
 
-
 /* Transition 
 ============================================= */
-h1,h2,h3,h4,h5,p,.subtitle{
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.subtitle {
   @extend %base-transition;
 }
 
 /* Title 
 ============================================= */
-
-h1{
+h1 {
   font-size: 4em;
   font-weight: 600;
 }
 
-h2{
+h2 {
   font-size: 3em;
   font-weight: 600;
 }
 
-h3{
+h3 {
   font-size: 2em;
   font-weight: 600;
 }
 
 /* Subtitle 
 ============================================= */
-.subtitle{
-  position:relative;
-  line-height:1.4px;
+.subtitle {
+  position: relative;
+  line-height: 1.4px;
   font-weight: 600;
   padding-left: 40px;
-  &.subtitle-left { float: left; }
-  &.subtitle-right { float: right; }
-  &::before{
+  &.subtitle-left {
+    float: left;
+  }
+  &.subtitle-right {
+    float: right;
+  }
+  &::before {
     content: "";
-    position:absolute;
+    position: absolute;
     left: 0px;
-    width:30px;
+    width: 30px;
     height: 2px;
   }
 }
 
 /* Search 
 ============================================= */
-
-
-.bootstrap-select{
-  .dropdown-menu{
-    cursor: initial;
-  }
-}
+// .bootstrap-select {
+//   .dropdown-menu {
+//     cursor: initial;
+//   }
+// }
 
 /* Colors 
 ============================================= */

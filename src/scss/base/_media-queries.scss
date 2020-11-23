@@ -12,7 +12,6 @@ See variables.scss breakpoint
 
 ============================================= */
 
-
 /* Media large
 ============================================= */
 @include mediaLarge {
@@ -27,7 +26,7 @@ See variables.scss breakpoint
   .header-item-icon {
     width: 20px;
     height: 20px;
-    margin-right:10px;
+    margin-right: 10px;
   }
 
   .header-burger {
@@ -35,7 +34,8 @@ See variables.scss breakpoint
     height: 30px;
   }
 
-  .header-burger:before, .header-burger:after {
+  .header-burger:before,
+  .header-burger:after {
     width: 25px;
   }
 
@@ -50,8 +50,8 @@ See variables.scss breakpoint
   }
 
   .main-bg {
-    img{ 
-        max-width: 900px;
+    img {
+      max-width: 900px;
     }
   }
 
@@ -67,11 +67,11 @@ See variables.scss breakpoint
 /* Media medium
 ============================================= */
 @include mediaMedium {
-  body{
+  body {
     overflow-x: hidden;
   }
 
-  .header-item-logo{
+  .header-item-logo {
     margin-right: 80px;
   }
 
@@ -81,8 +81,8 @@ See variables.scss breakpoint
 
   .main-bg {
     right: -35px;
-    img{ 
-        // max-width: 800px;
+    img {
+      // max-width: 800px;
     }
   }
 }
@@ -97,14 +97,15 @@ See variables.scss breakpoint
     display: none !important;
   }
   .header-burger {
-    &:after, &:before{
+    &:after,
+    &:before {
       background: $color_black;
     }
   }
 }
 
-  @media only screen and (max-width: 882px) {
-    .main-bg {
-      right: -148px;
-    }
+@media only screen and (max-width: 882px) {
+  .main-bg {
+    right: -148px;
   }
+}
