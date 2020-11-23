@@ -42,7 +42,7 @@ main {
 ============================================= */
 #about {
   position: relative;
-  text-align: center;
+  text-align: left;
   height: 500px;
   #about-text {
     position: absolute;
@@ -68,7 +68,10 @@ main {
 }
 
 #projects {
-  padding-top: 130px;
+  padding-top: 165px;
+  article {
+    padding-bottom: 165px;
+  }
 }
 
 // #my-work{

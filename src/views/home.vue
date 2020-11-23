@@ -3,7 +3,7 @@
   <section id="about">
     <div class="container-fluid">
       <div class="row justify-content-md-center">
-        <div id="about-text" class="col-12">
+        <div id="about-text" class="col-8">
           <h1 class="user-select-none">
             I am a junior production manager.
           </h1>
