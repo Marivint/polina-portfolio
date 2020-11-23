@@ -10,7 +10,7 @@
     <p>{{ subtitlesDisplay }}</p>
 
     <span
-      class="project-cta subtitle subtitle-blue"
+      class="project-cta subtitle subtitle-black"
       :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
       Learn more

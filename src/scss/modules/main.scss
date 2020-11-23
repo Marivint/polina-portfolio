@@ -69,8 +69,26 @@ main {
 
 #projects {
   padding-top: 165px;
-  article {
+  article:not(:last-child) {
     padding-bottom: 165px;
+  }
+}
+
+#contact {
+  padding-top: 165px;
+  color: $color_white;
+  #contact-card {
+    position: relative;
+    padding: 162px 100px 60px;
+    background: $color_black;
+    border-radius: 48px;
+  }
+  #contact-form {
+    padding-top: 100px;
+  }
+  #contact-portrait {
+    height: 350px;
+    border-radius: 10px;
   }
 }
 
@@ -156,7 +174,7 @@ h3 {
   position: relative;
   line-height: 1.4px;
   font-weight: 600;
-  padding-left: 40px;
+  padding-left: 60px;
   &.subtitle-left {
     float: left;
   }
@@ -167,7 +185,7 @@ h3 {
     content: "";
     position: absolute;
     left: 0px;
-    width: 30px;
+    width: 40px;
     height: 2px;
   }
 }
