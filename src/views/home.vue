@@ -75,19 +75,29 @@
                 assumenda natus.
               </p>
             </div>
-            <div class="col-6 text-center">
-              <img
-                id="contact-portrait"
-                src="@/assets/portrait/black-white.png"
-                alt=""
-              />
-            </div>
+            <div class="col-6 text-center"></div>
           </div>
-          <div id="contact-form" class="row">
+          <form id="contact-form" class="row">
             <div class="col-6">
-              <p>gusarova@gmail.com</p>
-              <p>06 55 44 66 89</p>
-              <p>Charenton-le-pont</p>
+              <span class="svg-text">
+                <icon-message
+                  colorClass="custom-icon-white"
+                  otherClass=""
+                  height="30"
+                  width="30"
+                />
+                <div class="text-wrapper">gusarova@gmail.com</div>
+              </span>
+
+              <span class="svg-text">
+                <icon-location
+                  colorClass="custom-icon-white"
+                  otherClass=""
+                  height="30"
+                  width="30"
+                />
+                <div class="text-wrapper">Charenton-le-pont</div>
+              </span>
             </div>
             <div class="col-6">
               <div class="form-label-group">
@@ -97,10 +107,10 @@
                   class="form-control"
                   placeholder="Email address"
                   required
-                  autofocus
                 />
-                <label for="inputEmail">Email address</label>
               </div>
+
+              <br />
 
               <div class="form-label-group">
                 <input
@@ -110,17 +120,31 @@
                   placeholder="Password"
                   required
                 />
-                <label for="inputPassword">Password</label>
               </div>
+
+              <br />
 
               <textarea
                 class="form-control"
                 id="inputMessage"
                 placeholder="Your message"
+                rows="10"
                 required
               ></textarea>
+
+              <br />
+
+              <button class="btn btn-blue col-8">
+                Send
+                <icon-arrow-right
+                  colorClass="custom-icon-white"
+                  otherClass=""
+                  height="30"
+                  width="30"
+                />
+              </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -129,8 +153,11 @@
 
 <script>
 import project from "../components/project/project.vue";
+import iconMessage from "../components/icons/icon-message.vue";
+import iconLocation from "../components/icons/icon-location.vue";
+import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 
 export default {
-  components: { project }
+  components: { project, iconMessage, iconLocation, iconArrowRight }
 };
 </script>

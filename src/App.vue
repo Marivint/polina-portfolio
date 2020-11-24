@@ -33,6 +33,8 @@
   <!-- Router view -->
   <router-view />
   <!-- End router view -->
+
+  <footer></footer>
 </template>
 
 <script>

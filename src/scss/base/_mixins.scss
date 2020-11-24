@@ -10,9 +10,13 @@
       color: $hex;
     }
 
+    .btn-#{$name} {
+      background-color: $hex;
+    }
+
     .custom-icon-#{$name} {
       path {
-        stroke: $hex;
+        fill: $hex;
       }
     }
 

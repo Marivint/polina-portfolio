@@ -75,20 +75,40 @@ main {
 }
 
 #contact {
-  padding-top: 165px;
+  padding: 165px 0px 165px 0px;
   color: $color_white;
   #contact-card {
     position: relative;
     padding: 162px 100px 60px;
     background: $color_black;
-    border-radius: 48px;
-  }
-  #contact-form {
-    padding-top: 100px;
-  }
-  #contact-portrait {
-    height: 350px;
-    border-radius: 10px;
+    border-radius: 30px;
+    .form-control,
+    .btn {
+      border-radius: 12px;
+    }
+    #contact-form {
+      padding-top: 100px;
+      input {
+        padding: 0px 20px 0px 20px;
+        height: 70px;
+        @extend %contact-form-input;
+      }
+      textarea {
+        padding: 15px 0px 0px 20px;
+        @extend %contact-form-input;
+      }
+      .svg-text:not(:last-child) {
+        padding-bottom: 40px;
+      }
+      .btn {
+        color: $color_white;
+        height: 70px;
+        &:hover {
+          background-color: $color_black;
+          border-color: $color_white;
+        }
+      }
+    }
   }
 }
 
@@ -131,13 +151,29 @@ main {
 //   }
 // }
 
-/* Custom icon
+/* Custom icon && for icon
 ============================================= */
 .custom-icon {
-  width: 23px;
-  height: 23px;
+  // width: 23px;
+  // height: 23px;
   @extend %base-transition;
 }
+
+.svg-text {
+  position: relative;
+  display: block;
+  .text-wrapper {
+    position: relative;
+    display: inline;
+    padding: 0px 0px 0px 40px;
+  }
+}
+
+// .test {
+//   width: 100px;
+//   height: 100px;
+//   background-image: url(~@/assets/icon/message.svg);
+// }
 
 /* Transition 
 ============================================= */
