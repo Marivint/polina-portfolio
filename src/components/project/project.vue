@@ -1,8 +1,8 @@
 <template>
   <transition>
-    <article class="row align-items-center project">
+    <article class="row justify-content-center align-items-center project">
       <template v-if="showFormat == 1">
-        <project-image :src="src"></project-image>
+        <project-image :showFormat="showFormat" :src="src"></project-image>
         <project-text
           :showFormat="showFormat"
           :page="page"
@@ -17,7 +17,7 @@
           :title="title"
           :subtitles="subtitles"
         ></project-text>
-        <project-image :src="src"></project-image>
+        <project-image :showFormat="showFormat" :src="src"></project-image>
       </template>
     </article>
   </transition>

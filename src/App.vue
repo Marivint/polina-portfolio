@@ -34,7 +34,26 @@
   <router-view />
   <!-- End router view -->
 
-  <footer></footer>
+  <footer>
+    <div class="container-fluid">
+      <div class="row justify-content-around">
+        <div class="col-12"></div>
+      </div>
+      <div class="row justify-content-around" id="footer-copyright">
+        <div class="col-12"><hr /></div>
+        <div class="w-100"></div>
+        <div class="col-4 text-left" id="copyright">
+          &copy; Copyright 2020, Polina Gusarova.
+        </div>
+        <div class="col-4 text-right">
+          Made by
+          <a href="#"
+            ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>

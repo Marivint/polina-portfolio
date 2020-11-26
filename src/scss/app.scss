@@ -20,6 +20,10 @@
 // @import "modules/floating-labels"; // Floating labels
 // @import 'modules/cursor.scss'; // Cursor
 
+/* Views
+============================================= */
+@import "views/home.scss"; // Home.vue
+
 /* Media queries
 ============================================= */
 @import "base/media-queries";

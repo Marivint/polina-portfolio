@@ -1,5 +1,8 @@
 <template>
-  <div class="col-6 project-img">
+  <div
+    class="col-5 project-img"
+    :class="showFormat === 1 ? 'text-left' : 'text-right'"
+  >
     <img :src="src" />
   </div>
 </template>

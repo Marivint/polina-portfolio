@@ -1,0 +1,145 @@
+/* Section
+============================================= */
+#about {
+  position: relative;
+  text-align: left;
+  height: 600px;
+  #about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#skills {
+  position: relative;
+  // To validate ?
+  // display: flex;
+  // text-align: center;
+  // align-items: center;
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+  color: $color_white;
+  height: 300px;
+  .container-fluid,
+  .row {
+    height: 100%;
+  }
+  &::after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: $color_black;
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+}
+
+#scroll-down {
+  margin: 180px 0px 200px 0px;
+}
+
+#projects {
+  article:not(:last-child) {
+    margin-bottom: 200px;
+  }
+}
+
+#contact {
+  padding: 200px 0px 200px 0px;
+  color: $color_white;
+  #contact-card {
+    position: relative;
+    padding: 162px 100px 60px;
+    background: $color_black;
+    border-radius: 15px;
+    .form-control,
+    .btn {
+      border-radius: 12px;
+    }
+    #contact-form {
+      padding-top: 100px;
+      input {
+        padding: 0px 20px 0px 20px;
+        height: 70px;
+        @extend %contact-form-input;
+      }
+      textarea {
+        padding: 15px 0px 0px 20px;
+        @extend %contact-form-input;
+      }
+      .svg-text:not(:last-child) {
+        padding-bottom: 40px;
+      }
+      .btn {
+        color: $color_white;
+        height: 70px;
+        // &:hover {
+        //   background-color: $color_black;
+        //   border-color: $color_white;
+        // }
+      }
+    }
+  }
+  &::before {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 30%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: #e2e2e2;
+    -webkit-transform: skewY(-11deg);
+    -ms-transform: skewY(-11deg);
+    transform: skewY(-11deg);
+    -webkit-transform-origin: 200% 0;
+    -ms-transform-origin: 200% 0;
+    transform-origin: 200% 0;
+  }
+  &::after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 60%;
+    margin-top: -40%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: #e2e2e2;
+  }
+}
+
+// #my-work{
+//   #my-work-search{
+//     .icon-prepend {
+//       position: absolute;
+//       z-index: 2;
+//       display: block;
+//       width: 100%;
+//       text-align: right;
+//       pointer-events: none;
+//       padding-right: 45px;
+//     }
+//     input{
+//       padding-left: 20px;
+//       border-radius: 15px;
+//     }
+//     .custom-icon{
+//       height: 20px;
+//       width: 20px;
+//     }
+//   }
+// }
