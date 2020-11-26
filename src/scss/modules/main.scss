@@ -58,13 +58,35 @@ main {
   // text-align: center;
   // align-items: center;
   text-align: center;
-  background-color: $color_black;
+  padding: 30px 0px 0px 0px;
   color: $color_white;
   height: 300px;
   .container-fluid,
   .row {
     height: 100%;
   }
+  &::after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: $color_black;
+    bottom: 0;
+    -webkit-transform: skewY(-1.5deg);
+    -ms-transform: skewY(-1.5deg);
+    transform: skewY(-1.5deg);
+    -webkit-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+}
+
+#scroll-down {
+  margin: 100px 0px 100px 0px;
 }
 
 #projects {
@@ -103,10 +125,10 @@ main {
       .btn {
         color: $color_white;
         height: 70px;
-        &:hover {
-          background-color: $color_black;
-          border-color: $color_white;
-        }
+        // &:hover {
+        //   background-color: $color_black;
+        //   border-color: $color_white;
+        // }
       }
     }
   }
@@ -150,6 +172,30 @@ main {
 //     padding-top: 30px;
 //   }
 // }
+
+/* Btn
+============================================= */
+.btn-icon-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  border-radius: 50%;
+  background: $color_full_white;
+  -webkit-box-shadow: 0 5px 20px rgba($color_black, 0.05);
+  box-shadow: 0 5px 20px rgba($color_black, 0.05);
+  @extend %base-transition;
+}
 
 /* Custom icon && for icon
 ============================================= */

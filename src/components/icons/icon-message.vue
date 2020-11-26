@@ -1,7 +1,7 @@
 <template>
   <svg
     class="custom-icon"
-    :class="colorClass + otherClass"
+    :class="colorClass + ' ' + otherClass"
     fill="none"
     :width="width"
     :height="height"

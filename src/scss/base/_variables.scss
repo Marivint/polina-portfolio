@@ -17,6 +17,7 @@ $image_path: "../../img";
 /* Colors 
 ============================================= */
 $color_black: #1e2022;
+$color_full_white: #ffffff;
 $color_white: #f0f5f9;
 $color_grey: #52616a;
 $color_light_grey: #c9d6de;
@@ -25,8 +26,9 @@ $color_red: #ff6f91;
 
 // To generate colors
 $list_color: (
-  black: $color_black,
+  full-white: $color_full_white,
   white: $color_white,
+  black: $color_black,
   grey: $color_grey,
   light_grey: $color_light_grey,
   blue: $color_blue,

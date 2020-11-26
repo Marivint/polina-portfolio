@@ -31,6 +31,21 @@
     </div>
   </section>
 
+  <div id="scroll-down" class="container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-1">
+        <i class="btn-icon-round">
+          <icon-arrow-down
+            colorClass="custom-icon-black"
+            otherClass="btn-round"
+            height="30"
+            width="30"
+          />
+        </i>
+      </div>
+    </div>
+  </div>
+
   <!-- Projects -->
   <section id="projects">
     <div class="container-fluid">
@@ -156,8 +171,15 @@ import project from "../components/project/project.vue";
 import iconMessage from "../components/icons/icon-message.vue";
 import iconLocation from "../components/icons/icon-location.vue";
 import iconArrowRight from "../components/icons/icon-arrow-right.vue";
+import iconArrowDown from "../components/icons/icon-arrow-down.vue";
 
 export default {
-  components: { project, iconMessage, iconLocation, iconArrowRight }
+  components: {
+    project,
+    iconMessage,
+    iconLocation,
+    iconArrowRight,
+    iconArrowDown
+  }
 };
 </script>
