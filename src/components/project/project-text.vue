@@ -13,7 +13,7 @@
       class="project-cta subtitle subtitle-black"
       :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
-      Learn more
+      <router-link :to="{ name: 'project' }">Learn more</router-link>
     </span>
   </div>
 </template>

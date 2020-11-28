@@ -31,7 +31,9 @@
   <!-- End header -->
 
   <!-- Router view -->
-  <router-view />
+  <transition name="fade">
+    <router-view />
+  </transition>
   <!-- End router view -->
 </template>
 

@@ -6,6 +6,7 @@ import {
   createWebHistory
 } from "vue-router";
 import vHome from "@/views/home.vue";
+import vProject from "@/views/project.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
 
@@ -25,8 +26,13 @@ const routes = [{
   },
   {
     path: "/about",
-    name: "About",
+    name: "about",
     component: vAbout
+  },
+  {
+    path: "/project",
+    name: "project",
+    component: vProject
   },
   {
     path: "/:catchAll(.*)",
