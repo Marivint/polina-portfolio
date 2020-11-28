@@ -15,8 +15,9 @@ body {
   line-height: 1.77778;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $primary-text-color;
+  color: $color_black;
   background-color: transparent;
+  // background-color: $color_light_white;
   // cursor: none;
 }
 
@@ -38,61 +39,6 @@ main {
 //   }
 // }
 
-/* Section
-============================================= */
-#about {
-  position: relative;
-  text-align: center;
-  height: 500px;
-  #about-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-
-#skills {
-  position: relative;
-  // To validate ?
-  // display: flex;
-  // text-align: center;
-  // align-items: center;
-  text-align: center;
-  background-color: $color_black;
-  color: $color_white;
-  height: 300px;
-  .container-fluid,
-  .row {
-    height: 100%;
-  }
-}
-
-#projects {
-  padding-top: 130px;
-}
-
-// #my-work{
-//   #my-work-search{
-//     .icon-prepend {
-//       position: absolute;
-//       z-index: 2;
-//       display: block;
-//       width: 100%;
-//       text-align: right;
-//       pointer-events: none;
-//       padding-right: 45px;
-//     }
-//     input{
-//       padding-left: 20px;
-//       border-radius: 15px;
-//     }
-//     .custom-icon{
-//       height: 20px;
-//       width: 20px;
-//     }
-//   }
-// }
-
 /* Card
 ============================================= */
 // .card-work {
@@ -110,12 +56,46 @@ main {
 //   }
 // }
 
-/* Custom icon
+/* Btn
+============================================= */
+.btn-icon-round {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 24px;
+  border-radius: 50%;
+  background: $color_full_white;
+  -webkit-box-shadow: 0 5px 20px rgba($color_black, 0.15);
+  box-shadow: 0 5px 20px rgba($color_black, 0.15);
+  @extend %base-transition;
+}
+
+/* Custom icon && for icon
 ============================================= */
 .custom-icon {
-  width: 23px;
-  height: 23px;
+  // width: 23px;
+  // height: 23px;
   @extend %base-transition;
+}
+
+.svg-text {
+  position: relative;
+  display: block;
+  .text-wrapper {
+    position: relative;
+    display: inline;
+    padding: 0px 0px 0px 40px;
+  }
 }
 
 /* Transition 
@@ -153,7 +133,7 @@ h3 {
   position: relative;
   line-height: 1.4px;
   font-weight: 600;
-  padding-left: 40px;
+  padding-left: 60px;
   &.subtitle-left {
     float: left;
   }
@@ -164,7 +144,7 @@ h3 {
     content: "";
     position: absolute;
     left: 0px;
-    width: 30px;
+    width: 40px;
     height: 2px;
   }
 }

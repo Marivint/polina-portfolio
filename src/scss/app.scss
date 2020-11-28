@@ -15,8 +15,14 @@
 ============================================= */
 @import "modules/main.scss"; // Main
 @import "modules/header.scss"; // Header
-@import "modules/project.scss"; // Header
+@import "modules/project.scss"; // Project
+@import "modules/footer.scss"; // Header
+// @import "modules/floating-labels"; // Floating labels
 // @import 'modules/cursor.scss'; // Cursor
+
+/* Views
+============================================= */
+@import "views/home.scss"; // Home.vue
 
 /* Media queries
 ============================================= */

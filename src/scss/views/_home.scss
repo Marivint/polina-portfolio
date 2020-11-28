@@ -1,0 +1,90 @@
+/* Section
+============================================= */
+#about {
+  position: relative;
+  text-align: left;
+  height: 600px;
+  #about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+#skills {
+  position: relative;
+  background-color: $color_black;
+  // To validate ?
+  // display: flex;
+  // text-align: center;
+  // align-items: center;
+  text-align: center;
+  color: $color_white;
+  height: 300px;
+  .container-fluid,
+  .row {
+    height: 100%;
+  }
+}
+
+#scroll-down {
+  margin: 180px 0px 200px 0px;
+}
+
+#projects {
+  article {
+    margin-bottom: 200px;
+  }
+}
+
+#lotte-hotel {
+  padding: 200px 0px 0px 0px;
+  background: url(~@/assets/lotte-hotel-bw.jpg);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  footer {
+    margin-top: 200px;
+    background-color: transparent;
+    color: $color_white;
+    box-shadow: inset 0 -300px 50px 0px rgb($color_full_black, 0.4);
+    hr {
+      border-color: $color_white;
+    }
+  }
+}
+
+#contact {
+  color: $color_white;
+  #contact-card {
+    position: relative;
+    padding: 162px 100px 60px;
+    background: $color_black;
+    border-radius: 15px;
+    .form-control,
+    .btn {
+      border-radius: 12px;
+    }
+    #contact-form {
+      padding-top: 100px;
+      input {
+        padding: 0px 20px 0px 20px;
+        height: 70px;
+        @extend %contact-form-input;
+      }
+      textarea {
+        padding: 15px 0px 0px 20px;
+        @extend %contact-form-input;
+      }
+      .svg-text:not(:last-child) {
+        padding-bottom: 40px;
+      }
+      .btn {
+        color: $color_white;
+        height: 70px;
+      }
+    }
+  }
+}

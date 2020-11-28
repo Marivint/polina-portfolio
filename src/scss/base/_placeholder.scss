@@ -5,3 +5,20 @@
   -o-transition: all 0.25s;
   transition: all 0.25s;
 }
+
+%contact-form-input {
+  background-color: $color_black;
+  border-color: $color_white;
+  color: $color_white;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  &::placeholder {
+    color: $color_white;
+  }
+  &:focus {
+    background-color: lighten($color_black, 10%);
+    // border-color: $color_black;
+    // color: $color_black;
+  }
+}

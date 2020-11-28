@@ -1,15 +1,18 @@
 <template>
-  <div class="col-6 project-text">
+  <div
+    class="col-5 project-text"
+    :class="showFormat === 1 ? 'text-left' : 'text-right'"
+  >
     <p class="project-page">{{ page }}</p>
+
     <h3>{{ title }}</h3>
+
     <p>{{ subtitlesDisplay }}</p>
+
     <span
-      v-if="showFormat == 1"
-      class="project-cta subtitle subtitle-blue subtitle-left"
+      class="project-cta subtitle subtitle-black"
+      :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
-      Learn more
-    </span>
-    <span v-else class="project-cta subtitle subtitle-blue subtitle-left">
       Learn more
     </span>
   </div>
