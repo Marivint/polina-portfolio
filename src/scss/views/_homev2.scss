@@ -1,6 +1,6 @@
 body,
 html {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /* Parallax base styles
@@ -19,7 +19,7 @@ html {
 
 .parallax__group {
   position: relative;
-  height: 500px; /* fallback for older browsers */
+  //   height: 500px; /* fallback for older browsers */
   height: 100vh;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -62,57 +62,123 @@ html {
 /* style the groups
   --------------------------------------------- */
 
-#group1 {
+#about {
+  position: relative;
   z-index: 5; /* slide over group 2 */
+  text-align: left;
+  height: 600px;
+  margin-top: 130px;
+  #about-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
-#group1 .parallax__layer--base {
-  background: rgb(102, 204, 102);
+#about .parallax__layer--base {
+  //   background: rgb(102, 204, 102);
 }
 
-#group2 {
+#skills {
+  position: relative;
+  background-color: $color_black;
+  text-align: center;
+  color: $color_white;
+  height: 300px;
   z-index: 3; /* slide under groups 1 and 3 */
+  .container-fluid,
+  .row {
+    height: 100%;
+  }
 }
-#group2 .parallax__layer--back {
+#skills .parallax__layer--back {
   background: rgb(123, 210, 102);
 }
 
-#group3 {
+#scroll-down {
+  height: 100px;
+  margin: 180px 0px 200px 0px;
   z-index: 4; /* slide over group 2 and 4 */
 }
-#group3 .parallax__layer--base {
-  background: rgb(153, 216, 101);
+#scroll-down .parallax__layer--base {
+  //   background: rgb(153, 216, 101);
 }
 
-#group4 {
+#projects {
   z-index: 2; /* slide under group 3 and 5 */
-}
-#group4 .parallax__layer--deep {
-  background: rgb(184, 223, 101);
+  article:not(:last-child) {
+    margin-bottom: 300px;
+  }
 }
 
-#group5 {
+#projects .parallax__layer--deep {
+  //   background: rgb(184, 223, 101);
+}
+
+#contact {
   z-index: 3; /* slide over group 4 and 6 */
+  margin: 400px 0px 200px 0px;
+  color: $color_white;
+  #contact-card {
+    position: relative;
+    padding: 162px 100px 60px;
+    background: $color_black;
+    border-radius: 15px;
+    .form-control,
+    .btn {
+      border-radius: 12px;
+    }
+    #contact-form {
+      padding-top: 100px;
+      input {
+        padding: 0px 20px 0px 20px;
+        height: 70px;
+        @extend %contact-form-input;
+      }
+      textarea {
+        padding: 15px 0px 0px 20px;
+        @extend %contact-form-input;
+      }
+      .svg-text:not(:last-child) {
+        padding-bottom: 40px;
+      }
+      .btn {
+        color: $color_white;
+        height: 70px;
+        // &:hover {
+        //   background-color: $color_black;
+        //   border-color: $color_white;
+        // }
+      }
+    }
+  }
 }
-#group5 .parallax__layer--base {
-  background: rgb(214, 229, 100);
+#contact .parallax__layer--base {
+  //   background: rgb(214, 229, 100);
 }
 
-#group6 {
-  z-index: 2; /* slide under group 5 and 7 */
-}
-#group6 .parallax__layer--back {
-  background: rgb(245, 235, 100);
-}
+// #group6 {
+//   z-index: 2; /* slide under group 5 and 7 */
+// }
+// #group6 .parallax__layer--back {
+//   background: rgb(245, 235, 100);
+// }
 
-#group7 {
-  z-index: 3; /* slide over group 7 */
-}
-#group7 .parallax__layer--base {
-  background: rgb(255, 241, 100);
-}
+// #group7 {
+//   z-index: 3; /* slide over group 7 */
+// }
+// #group7 .parallax__layer--base {
+//   background: rgb(255, 241, 100);
+// }
+
+// #group8 {
+//   z-index: 4; /* slide over group 7 */
+// }
+// #group8 .parallax__layer--base {
+//   background: rgb(255, 241, 100);
+// }
 
 .parallax {
-  font-size: 200%;
+  //   font-size: 200%;
 }
 
 /* centre the content in the parallax layers */
