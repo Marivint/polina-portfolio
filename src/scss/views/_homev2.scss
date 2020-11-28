@@ -1,70 +1,9 @@
-body,
-html {
-  overflow: hidden !important;
-}
-
-/* Parallax base styles
-  --------------------------------------------- */
-
-.parallax {
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
-  -webkit-perspective-origin-x: 100%;
-  perspective-origin-x: 100%;
-}
-
-.parallax__group {
-  position: relative;
-  //   height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-}
-
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  -webkit-transform-origin-x: 100%;
-  transform-origin-x: 100%;
-}
-
-.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(0.7);
-  transform: translateZ(90px) scale(0.7);
-  z-index: 1;
-}
-
-.parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
-}
-
-.parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
-}
-
-.parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
-}
-
-/* style the groups
-  --------------------------------------------- */
+/* Sections
+============================================= */
 
 #about {
   position: relative;
-  z-index: 5; /* slide over group 2 */
+  z-index: 0;
   text-align: left;
   height: 600px;
   margin-top: 130px;
@@ -74,48 +13,57 @@ html {
     transform: translateY(-50%);
   }
 }
-#about .parallax__layer--base {
-  //   background: rgb(102, 204, 102);
-}
 
 #skills {
   position: relative;
+  z-index: 1; /* section over scroll-down */
   background-color: $color_black;
   text-align: center;
   color: $color_white;
   height: 300px;
-  z-index: 3; /* slide under groups 1 and 3 */
+  -webkit-box-shadow: 0 50px 50px 0px rgba($color_full_white, 100);
+  box-shadow: 0 50px 50px 0px rgba($color_full_white, 100);
   .container-fluid,
   .row {
     height: 100%;
   }
 }
-#skills .parallax__layer--back {
-  background: rgb(123, 210, 102);
-}
 
 #scroll-down {
+  z-index: 0; /* section under skills and projects */
   height: 100px;
   margin: 180px 0px 200px 0px;
-  z-index: 4; /* slide over group 2 and 4 */
-}
-#scroll-down .parallax__layer--base {
-  //   background: rgb(153, 216, 101);
 }
 
 #projects {
-  z-index: 2; /* slide under group 3 and 5 */
+  z-index: 1; /* section over scroll-down */
+  //   height: 500px;
+  background-color: $color_full_white;
+  -webkit-box-shadow: 0 -170px 50px 0px rgba($color_full_white, 100);
+  box-shadow: 0 -130px 50px 0px rgba($color_full_white, 100);
+  box-shadow: 0 0px 20px rgb(255 255 255 / 67%);
   article:not(:last-child) {
     margin-bottom: 300px;
   }
 }
 
-#projects .parallax__layer--deep {
-  //   background: rgb(184, 223, 101);
+#lotte-hotel {
+  height: 800px;
+  .parallax__layer--back {
+    background: url(~@/assets/lotte-hotel.jpg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  img {
+    margin-right: -20px;
+    margin-left: -25px;
+  }
 }
 
 #contact {
-  z-index: 3; /* slide over group 4 and 6 */
   margin: 400px 0px 200px 0px;
   color: $color_white;
   #contact-card {
@@ -151,42 +99,4 @@ html {
       }
     }
   }
-}
-#contact .parallax__layer--base {
-  //   background: rgb(214, 229, 100);
-}
-
-// #group6 {
-//   z-index: 2; /* slide under group 5 and 7 */
-// }
-// #group6 .parallax__layer--back {
-//   background: rgb(245, 235, 100);
-// }
-
-// #group7 {
-//   z-index: 3; /* slide over group 7 */
-// }
-// #group7 .parallax__layer--base {
-//   background: rgb(255, 241, 100);
-// }
-
-// #group8 {
-//   z-index: 4; /* slide over group 7 */
-// }
-// #group8 .parallax__layer--base {
-//   background: rgb(255, 241, 100);
-// }
-
-.parallax {
-  //   font-size: 200%;
-}
-
-/* centre the content in the parallax layers */
-.title {
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }

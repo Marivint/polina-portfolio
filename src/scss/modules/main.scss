@@ -1,4 +1,4 @@
-/* Html 
+/* Html body
 ============================================= */
 html,
 body {
@@ -6,10 +6,6 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: $font-size-base;
-}
-
-body,
-html {
   overflow: hidden !important;
 }
 

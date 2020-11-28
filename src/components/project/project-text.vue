@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-5 project-text"
+    class="col-sm-12 col-md-12 col-lg-5 project-text"
     :class="showFormat === 1 ? 'text-left' : 'text-right'"
   >
     <p class="project-page">{{ page }}</p>

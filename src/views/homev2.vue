@@ -1,5 +1,5 @@
 <template>
-  <div id="about" class="parallax__group">
+  <section id="about" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <!-- <section id="about"> -->
       <div class="container-fluid">
@@ -19,8 +19,9 @@
       </div>
       <!-- </section> -->
     </div>
-  </div>
-  <div id="skills" class="parallax__group">
+  </section>
+
+  <section id="skills" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <!-- <section id="skills"> -->
       <div class="container-fluid">
@@ -34,9 +35,11 @@
       </div>
       <!-- </section> -->
     </div>
-  </div>
-  <div id="scroll-down" class="parallax__group">
-    <div class="parallax__layer parallax__layer--base">
+  </section>
+
+  <section id="scroll-down" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base"></div>
+    <div class="parallax__layer parallax__layer--back">
       <div class="container-fluid">
         <div class="row justify-content-md-center">
           <div class="col-1">
@@ -52,8 +55,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <div id="projects" class="parallax__group">
+  </section>
+
+  <section id="projects" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="container-fluid">
         <project
@@ -73,14 +77,25 @@
         ></project>
       </div>
     </div>
-    <!-- <div class="parallax__layer parallax__layer--back">
-      <div class="title">Background Layer</div>
+  </section>
+
+  <section id="lotte-hotel" class="parallax__group">
+    <div class="parallax__layer parallax__layer--back">
+      <!-- <div class="container-fluid">
+        <div class="row no-gutters">
+          <div class="col-12">
+            <img
+              src="~@/assets/lotte-hotel.jpg"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+      </div> -->
     </div>
-    <div class="parallax__layer parallax__layer--deep">
-      <div class="title">Deep Background Layer</div>
-    </div> -->
-  </div>
-  <div id="contact" class="parallax__group">
+  </section>
+
+  <section id="contact" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
@@ -177,22 +192,22 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 import project from "../components/project/project.vue";
-// import iconMessage from "../components/icons/icon-message.vue";
-// import iconLocation from "../components/icons/icon-location.vue";
-// import iconArrowRight from "../components/icons/icon-arrow-right.vue";
+import iconMessage from "../components/icons/icon-message.vue";
+import iconLocation from "../components/icons/icon-location.vue";
+import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 import iconArrowDown from "../components/icons/icon-arrow-down.vue";
 
 export default {
   components: {
     project,
-    // iconMessage,
-    // iconLocation,
-    // iconArrowRight,
+    iconMessage,
+    iconLocation,
+    iconArrowRight,
     iconArrowDown
   }
 };

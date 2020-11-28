@@ -64,8 +64,18 @@ export default {
       }
     }
   },
+  // beforeCreate() {
+  //   },
   mounted() {
     this.initFormat();
+    let oldHeight = document.getElementById("projects").style.height;
+    let newHeight = oldHeight.includes("px")
+      ? parseInt(oldHeight.slice(0, -2)) + 800
+      : 800;
+    // document.getElementById("projects").style.height = newHeight + "px";
+    document
+      .getElementById("projects")
+      .setAttribute("style", "height:" + newHeight + "px");
   }
 };
 </script>
