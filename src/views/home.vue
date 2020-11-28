@@ -54,15 +54,45 @@
         page="1-7"
         title="Lambinet Museum in complete privacy"
         :subtitles="['Conception', 'Management', 'Production']"
-        :src="require('@/assets/projects/placeholder-400x500.png')"
+        :src="require('@/assets/projects/resize/01-museelambinet.jpg')"
       ></project>
 
       <project
         format="right"
-        page="1-7"
+        page="2-7"
         title="Lambinet Museum in complete privacy"
         :subtitles="['Conception', 'Management', 'Production']"
-        :src="require('@/assets/projects/placeholder-400x500.png')"
+        :src="require('@/assets/projects/resize/02-academie-fast.jpg')"
+      ></project>
+      <project
+        format="left"
+        page="3-7"
+        title="Lambinet Museum in complete privacy"
+        :subtitles="['Conception', 'Management', 'Production']"
+        :src="require('@/assets/projects/resize/03-alexander-vassiliev.jpg')"
+      ></project>
+      <project
+        format="right"
+        page="4-7"
+        title="Lambinet Museum in complete privacy"
+        :subtitles="['Conception', 'Management', 'Production']"
+        :src="
+          require('@/assets/projects/resize/04-festa-della-liberta-dei-popoli.jpg')
+        "
+      ></project>
+      <project
+        format="left"
+        page="5-7"
+        title="Lambinet Museum in complete privacy"
+        :subtitles="['Conception', 'Management', 'Production']"
+        :src="require('@/assets/projects/resize/05-diagonales.jpg')"
+      ></project>
+      <project
+        format="right"
+        page="6-7"
+        title="Lambinet Museum in complete privacy"
+        :subtitles="['Conception', 'Management', 'Production']"
+        :src="require('@/assets/projects/resize/06-vol-de-vie.jpg')"
       ></project>
     </div>
   </section>

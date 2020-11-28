@@ -4,8 +4,8 @@
   .project-img {
     text-align: center;
     img {
-      height: 500px;
-      width: 400px;
+      max-height: 500px;
+      max-width: 400px;
       border-radius: 10px;
     }
   }
