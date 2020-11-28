@@ -13,36 +13,37 @@
 
 #skills {
   position: relative;
+  background-color: $color_black;
   // To validate ?
   // display: flex;
   // text-align: center;
   // align-items: center;
   text-align: center;
-  padding: 30px 0px 0px 0px;
+  // padding: 30px 0px 0px 0px;
   color: $color_white;
   height: 300px;
   .container-fluid,
   .row {
     height: 100%;
   }
-  &::after {
-    background: inherit;
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    background-color: $color_black;
-    bottom: 0;
-    -webkit-transform: skewY(-1.5deg);
-    -ms-transform: skewY(-1.5deg);
-    transform: skewY(-1.5deg);
-    -webkit-transform-origin: 100% 0;
-    -ms-transform-origin: 100% 0;
-    transform-origin: 100% 0;
-  }
+  // &::after {
+  //   background: inherit;
+  //   content: "";
+  //   display: block;
+  //   height: 100%;
+  //   left: 0;
+  //   position: absolute;
+  //   right: 0;
+  //   z-index: -1;
+  //   background-color: $color_black;
+  //   bottom: 0;
+  //   -webkit-transform: skewY(-1.5deg);
+  //   -ms-transform: skewY(-1.5deg);
+  //   transform: skewY(-1.5deg);
+  //   -webkit-transform-origin: 100% 0;
+  //   -ms-transform-origin: 100% 0;
+  //   transform-origin: 100% 0;
+  // }
 }
 
 #scroll-down {
@@ -55,8 +56,14 @@
   }
 }
 
+// #lotte-hotel {
+//   width: 100px;
+//   height: 100px;
+//   background: url(~@/assets/lotte-hotel.jpg);
+// }
+
 #contact {
-  padding: 200px 0px 200px 0px;
+  padding: 400px 0px 200px 0px;
   color: $color_white;
   #contact-card {
     position: relative;
@@ -91,35 +98,35 @@
       }
     }
   }
-  &::before {
-    background: inherit;
-    content: "";
-    display: block;
-    height: 30%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    background-color: #e2e2e2;
-    -webkit-transform: skewY(-11deg);
-    -ms-transform: skewY(-11deg);
-    transform: skewY(-11deg);
-    -webkit-transform-origin: 200% 0;
-    -ms-transform-origin: 200% 0;
-    transform-origin: 200% 0;
-  }
-  &::after {
-    background: inherit;
-    content: "";
-    display: block;
-    height: 60%;
-    margin-top: -40%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-    background-color: #e2e2e2;
-  }
+  // &::before {
+  //   background: inherit;
+  //   content: "";
+  //   display: block;
+  //   height: 30%;
+  //   left: 0;
+  //   position: absolute;
+  //   right: 0;
+  //   z-index: -1;
+  //   background-color: #e2e2e2;
+  //   -webkit-transform: skewY(-11deg);
+  //   -ms-transform: skewY(-11deg);
+  //   transform: skewY(-11deg);
+  //   -webkit-transform-origin: 200% 0;
+  //   -ms-transform-origin: 200% 0;
+  //   transform-origin: 200% 0;
+  // }
+  // &::after {
+  //   background: inherit;
+  //   content: "";
+  //   display: block;
+  //   height: 60%;
+  //   margin-top: -40%;
+  //   left: 0;
+  //   position: absolute;
+  //   right: 0;
+  //   z-index: -1;
+  //   background-color: #e2e2e2;
+  // }
 }
 
 // #my-work{

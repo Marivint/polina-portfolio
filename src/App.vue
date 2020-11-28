@@ -36,12 +36,25 @@
 
   <footer>
     <div class="container-fluid">
-      <div class="row justify-content-around">
-        <div class="col-12"></div>
+      <div class="row">
+        <div class="col-12"><hr /></div>
+        <div class="col-2 offset-md-1">
+          <span class="project-cta subtitle subtitle-grey subtitle-left"
+            >About me
+          </span>
+        </div>
+        <div class="col-2">
+          <span class="project-cta subtitle subtitle-grey subtitle-left"
+            >My projects
+          </span>
+        </div>
+        <div class="col-2">
+          <span class="project-cta subtitle subtitle-grey subtitle-left"
+            >Contact me
+          </span>
+        </div>
       </div>
       <div class="row justify-content-around" id="footer-copyright">
-        <div class="col-12"><hr /></div>
-        <div class="w-100"></div>
         <div class="col-4 text-left" id="copyright">
           &copy; Copyright 2020, Polina Gusarova.
         </div>

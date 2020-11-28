@@ -117,10 +117,10 @@
             <div class="col-6">
               <div class="form-label-group">
                 <input
-                  type="email"
-                  id="inputEmail"
+                  type="text"
+                  id="inputName"
                   class="form-control"
-                  placeholder="Email address"
+                  placeholder="Name"
                   required
                 />
               </div>
@@ -129,10 +129,10 @@
 
               <div class="form-label-group">
                 <input
-                  type="password"
-                  id="inputPassword"
+                  type="email"
+                  id="inputEmail"
                   class="form-control"
-                  placeholder="Password"
+                  placeholder="Email address"
                   required
                 />
               </div>
