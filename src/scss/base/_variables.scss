@@ -16,6 +16,7 @@ $image_path: "../../img";
 
 /* Colors 
 ============================================= */
+$color_full_black: #000000;
 $color_black: #1e2022;
 $color_full_white: #ffffff;
 $color_white: #f0f5f9;
@@ -30,6 +31,7 @@ $list_color: (
   full-white: $color_full_white,
   white: $color_white,
   light-white: $color_white,
+  full-black: $color_full_black,
   black: $color_black,
   grey: $color_grey,
   light-grey: $color_light_grey,

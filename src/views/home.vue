@@ -165,6 +165,55 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-2 offset-md-1">
+            <span class="project-cta subtitle subtitle-white subtitle-left"
+              >About me
+            </span>
+          </div>
+          <div class="col-2">
+            <span class="project-cta subtitle subtitle-white subtitle-left"
+              >My projects
+            </span>
+          </div>
+          <div class="col-2">
+            <span class="project-cta subtitle subtitle-white subtitle-left"
+              >Contact me
+            </span>
+          </div>
+          <div class="col-4 text-right">
+            <icon-linkedin
+              colorClass="custom-icon-white"
+              otherClass=""
+              height="30"
+              width="30"
+            />
+          </div>
+        </div>
+        <div class="row justify-content-around" id="footer-copyright">
+          <div class="col-10 footer-hr"></div>
+          <div class="w-100"></div>
+          <div class="col-4 text-left" id="copyright">
+            &copy; Copyright 2020, Polina Gusarova.
+          </div>
+          <div class="col-4 text-right">
+            Made with
+            <icon-heart
+              colorClass="custom-icon-white"
+              otherClass=""
+              height="15"
+              width="15"
+            />
+            by
+            <a href="#"
+              ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -174,6 +223,8 @@ import iconMessage from "../components/icons/icon-message.vue";
 import iconLocation from "../components/icons/icon-location.vue";
 import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 import iconArrowDown from "../components/icons/icon-arrow-down.vue";
+import iconLinkedin from "../components/icons/icon-linkedin.vue";
+import iconHeart from "../components/icons/icon-heart.vue";
 
 export default {
   components: {
@@ -181,7 +232,9 @@ export default {
     iconMessage,
     iconLocation,
     iconArrowRight,
-    iconArrowDown
+    iconArrowDown,
+    iconLinkedin,
+    iconHeart
   }
 };
 </script>
