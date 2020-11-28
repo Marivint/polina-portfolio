@@ -5,7 +5,8 @@ import {
   createRouter,
   createWebHistory
 } from "vue-router";
-import vHome from "@/views/home.vue";
+// import vHome from "@/views/home.vue";
+import vHomev2 from "@/views/homev2.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
 
@@ -15,7 +16,7 @@ import vNotFound from "@/views/404.vue";
 const routes = [{
     path: "/",
     name: "Home",
-    _component: vHome,
+    _component: vHomev2,
     get component() {
       return this._component;
     },
