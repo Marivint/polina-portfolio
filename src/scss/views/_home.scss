@@ -51,19 +51,27 @@
 }
 
 #projects {
-  article:not(:last-child) {
+  article {
     margin-bottom: 200px;
   }
 }
 
-// #lotte-hotel {
-//   width: 100px;
-//   height: 100px;
-//   background: url(~@/assets/lotte-hotel.jpg);
-// }
+#lotte-hotel {
+  padding: 200px 0px 200px 0px;
+  background: url(~@/assets/lotte-hotel.jpg);
+  /* Set a specific height */
+  height: 100%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #contact {
-  padding: 400px 0px 200px 0px;
+  // padding: 400px 0px 200px 0px;
   color: $color_white;
   #contact-card {
     position: relative;

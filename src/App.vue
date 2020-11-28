@@ -35,9 +35,10 @@
   <!-- End router view -->
 
   <footer>
+    <br />
+    <br />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12"><hr /></div>
         <div class="col-2 offset-md-1">
           <span class="project-cta subtitle subtitle-grey subtitle-left"
             >About me
