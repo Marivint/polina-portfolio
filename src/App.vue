@@ -33,6 +33,8 @@
     <router-view />
     <!-- End router view -->
 
+    <!-- <div id="footer" class="parallax__group"> -->
+    <!-- <div class="parallax__layer parallax__layer--base"> -->
     <footer>
       <div class="container-fluid">
         <div class="row">
@@ -67,6 +69,8 @@
       </div>
     </footer>
   </div>
+  <!-- </div> -->
+  <!-- </div> -->
 </template>
 
 <script>

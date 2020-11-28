@@ -80,23 +80,7 @@
   </section>
 
   <section id="lotte-hotel" class="parallax__group">
-    <div class="parallax__layer parallax__layer--back">
-      <!-- <div class="container-fluid">
-        <div class="row no-gutters">
-          <div class="col-12">
-            <img
-              src="~@/assets/lotte-hotel.jpg"
-              class="img-fluid"
-              alt="Responsive image"
-            />
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </section>
-
-  <section id="contact" class="parallax__group">
-    <div class="parallax__layer parallax__layer--base">
+    <div id="contact" class="parallax__layer parallax__layer--base">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div id="contact-card" class="col-9">
@@ -192,7 +176,10 @@
         </div>
       </div>
     </div>
+    <div class="parallax__layer parallax__layer--back"></div>
   </section>
+
+  <section id="contact" class="parallax__group"></section>
 </template>
 
 <script>

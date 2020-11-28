@@ -41,21 +41,20 @@
   background-color: $color_full_white;
   -webkit-box-shadow: 0 -170px 50px 0px rgba($color_full_white, 100);
   box-shadow: 0 -130px 50px 0px rgba($color_full_white, 100);
-  box-shadow: 0 0px 20px rgb(255 255 255 / 67%);
   article:not(:last-child) {
     margin-bottom: 300px;
   }
 }
 
 #lotte-hotel {
-  height: 800px;
+  //   height: 800px;
   .parallax__layer--back {
     background: url(~@/assets/lotte-hotel.jpg);
     max-width: 100%;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
   }
   img {
     margin-right: -20px;
