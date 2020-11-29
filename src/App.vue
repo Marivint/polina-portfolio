@@ -32,9 +32,32 @@
     <!-- End header -->
 
     <!-- Router view -->
-    <transition name="fade" mode="out-in" v-on:after-enter="afterEnter">
+    <!-- <transition
+      name="fade"
+      mode="out-in"
+      appear
+      v-on:leave="leave"
+      v-on:enter="enter"
+      v-on:after-enter="afterEnter"
+      ref="routerViewRef"
+    >
       <router-view />
-    </transition>
+    </transition> -->
+
+    <router-view v-slot="{ Component }">
+      <transition
+        name="fade"
+        mode="out-in"
+        appear
+        v-on:leave="leave"
+        v-on:enter="enter"
+        v-on:after-enter="afterEnter"
+        ref="routerViewRef"
+      >
+        <component :is="Component" />
+      </transition>
+    </router-view>
+
     <!-- End router view -->
   </div>
 </template>
@@ -49,10 +72,17 @@ export default {
   //   }
   // }
   methods: {
-    afterEnter: function(el) {
-      // how to have this per-route
-      console.log("Route entered");
+    leave: function(el) {
+      console.log("Leave");
       console.log(el);
+    },
+    enter: function() {
+      console.log("Enter");
+      // console.log(el);
+    },
+    afterEnter: function() {
+      console.log("After enter");
+      // console.log(el);
     }
   }
 };
