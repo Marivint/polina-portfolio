@@ -1,7 +1,7 @@
 <template>
   <div class="projet1">
-    <h1>Projet 1</h1>
-    <router-link :to="{ name: 'project2' }">Project 2</router-link>
+    <h1>Projet 2</h1>
+    <router-link :to="{ name: 'project' }">Project 1</router-link>
   </div>
 </template>
 

@@ -7,6 +7,7 @@ import {
 } from "vue-router";
 import vHome from "@/views/home.vue";
 import vProject from "@/views/project.vue";
+import vProject2 from "@/views/project2.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
 
@@ -15,7 +16,7 @@ import vNotFound from "@/views/404.vue";
 // eslint-disable-next-line prettier/prettier
 const routes = [{
     path: "/",
-    name: "Home",
+    name: "home",
     _component: vHome,
     get component() {
       return this._component;
@@ -27,12 +28,17 @@ const routes = [{
   {
     path: "/about",
     name: "about",
-    component: vAbout
+    vHome: vAbout
   },
   {
     path: "/project",
     name: "project",
     component: vProject
+  },
+  {
+    path: "/project2",
+    name: "project2",
+    component: vProject2
   },
   {
     path: "/:catchAll(.*)",
