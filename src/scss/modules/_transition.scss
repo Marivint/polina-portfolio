@@ -1,12 +1,12 @@
 /* Transitions 
 ============================================= */
-// .fade-enter,
+// .fade-enter-from,
 // .fade-leave-to {
 //   opacity: 0;
 // }
 // .fade-enter-active,
 // .fade-leave-active {
-//   transition: 0.5s;
+//   transition: opacity 1.5s;
 // }
 
 // .slide-enter {
@@ -41,33 +41,6 @@
 //   transform: perspective(500px) rotate3d(0, 1, 0, -90deg);
 // }
 
-// .slide-enter-active,
-// .slide-leave-active {
-//   transition: 300ms;
-// }
-// .slide-enter-to {
-//   position: relative;
-//   left: 0;
-// }
-// .slide-leave {
-//   position: absolute;
-// }
-// .slide-enter {
-//   left: -100vw;
-//   position: absolute;
-// }
-// .slide-leave-to {
-//   right: -100vw;
-// }
-
-// .fade-enter-active, .fade-leave-active {
-//     transition: opacity 0.3s
-//   }
-
-//   .fade-enter, .fade-leave-active {
-//     opacity: 0
-//   }
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 1.5s;
@@ -77,6 +50,4 @@
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-  transition: opacity 1.5s;
-  // position: relative;
 }

@@ -6,8 +6,7 @@ import {
   createWebHistory
 } from "vue-router";
 import vHome from "@/views/home.vue";
-import vProject from "@/views/project.vue";
-import vProject2 from "@/views/project2.vue";
+import vMuseeLambinet from "@/views/musee-lambinet.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
 
@@ -31,14 +30,9 @@ const routes = [{
     vHome: vAbout
   },
   {
-    path: "/project",
-    name: "project",
-    component: vProject
-  },
-  {
-    path: "/project2",
-    name: "project2",
-    component: vProject2
+    path: "/musee-lambinet",
+    name: "museeLambinet",
+    component: vMuseeLambinet
   },
   {
     path: "/:catchAll(.*)",
@@ -51,7 +45,17 @@ const routes = [{
 ============================================= */
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return {
+        x: 0,
+        y: 0
+      };
+    }
+  }
 });
 
 // eslint-disable-next-line prettier/prettier

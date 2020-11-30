@@ -65,7 +65,8 @@
           page="1-7"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/resize/01-museelambinet.jpg')"
+          :src="require('@/assets/projects/recadre/01-museelambinet.jpg')"
+          ctaRouteName="museeLambinet"
         ></project>
 
         <project
@@ -73,14 +74,16 @@
           page="2-7"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/resize/02-academie-fast.jpg')"
+          :src="require('@/assets/projects/recadre/02-academie-fast.jpg')"
+          ctaRouteName="museeLambinet"
         ></project>
         <project
           format="left"
           page="3-7"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/resize/03-alexander-vassiliev.jpg')"
+          :src="require('@/assets/projects/recadre/03-alexander-vassiliev.jpg')"
+          ctaRouteName="museeLambinet"
         ></project>
         <project
           format="right"
@@ -88,22 +91,25 @@
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
           :src="
-            require('@/assets/projects/resize/04-festa-della-liberta-dei-popoli.jpg')
+            require('@/assets/projects/recadre/04-festa-della-liberta-dei-popoli.jpg')
           "
+          ctaRouteName="museeLambinet"
         ></project>
         <project
           format="left"
           page="5-7"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/resize/05-diagonales.jpg')"
+          :src="require('@/assets/projects/recadre/05-diagonales.jpg')"
+          ctaRouteName="museeLambinet"
         ></project>
         <project
           format="right"
           page="6-7"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/resize/06-vol-de-vie.jpg')"
+          :src="require('@/assets/projects/recadre/06-vol-de-vie.jpg')"
+          ctaRouteName="museeLambinet"
         ></project>
       </div>
     </section>
