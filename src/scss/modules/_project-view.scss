@@ -1,0 +1,8 @@
+#project-view {
+  height: 100vh;
+  .container-fluid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
