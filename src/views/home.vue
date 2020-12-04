@@ -1,18 +1,19 @@
 <template>
-  <div class="test3">
+  <main>
     <!-- About -->
     <section id="about">
       <div class="container-fluid">
         <div class="row justify-content-md-center">
           <div id="about-text" class="col-11">
             <h1 class="user-select-none">
-              I am a junior <br />Production Manager.
+              I am a cultural<br />
+              product manager.
             </h1>
 
             <p>
               Passionate about creating and development of cultural projects, I
               bring my managerial <br />
-              and artistic skills acquired during my international career.
+              and artistic br skills acquired during my international career.
             </p>
 
             <!-- <div id="demo">
@@ -62,228 +63,81 @@
       <div class="container-fluid">
         <project
           format="left"
-          page="1-7"
-          title="Lambinet Museum in complete privacy"
-          :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/recadre/01-museelambinet.jpg')"
-          ctaRouteName="museeLambinet"
-        ></project>
-
-        <project
-          format="right"
-          page="2-7"
-          title="Lambinet Museum in complete privacy"
-          :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/recadre/02-academie-fast.jpg')"
-          ctaRouteName="museeLambinet"
-        ></project>
-        <project
-          format="left"
-          page="3-7"
-          title="Lambinet Museum in complete privacy"
-          :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/recadre/03-alexander-vassiliev.jpg')"
-          ctaRouteName="museeLambinet"
-        ></project>
-        <project
-          format="right"
-          page="4-7"
+          page="1-6"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
           :src="
-            require('@/assets/projects/recadre/04-festa-della-liberta-dei-popoli.jpg')
+            require('@/assets/projects/musee-lambinet/cover-musee-lambinet.jpg')
           "
           ctaRouteName="museeLambinet"
         ></project>
-        <project
-          format="left"
-          page="5-7"
-          title="Lambinet Museum in complete privacy"
-          :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/recadre/05-diagonales.jpg')"
-          ctaRouteName="museeLambinet"
-        ></project>
+
         <project
           format="right"
-          page="6-7"
-          title="Lambinet Museum in complete privacy"
-          :subtitles="['Conception', 'Management', 'Production']"
-          :src="require('@/assets/projects/recadre/06-vol-de-vie.jpg')"
-          ctaRouteName="museeLambinet"
+          page="2-6"
+          title="Meet my project"
+          :subtitles="['Partnership', 'Production']"
+          :src="
+            require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg')
+          "
+          ctaRouteName="meetMyProject"
+        ></project>
+
+        <project
+          format="left"
+          page="3-6"
+          title="Academy FAST"
+          :subtitles="['Management', 'Production', 'Communication']"
+          :src="
+            require('@/assets/projects/academy-fast/cover-academy-fast.jpg')
+          "
+          ctaRouteName="academyFast"
+        ></project>
+
+        <project
+          format="right"
+          page="4-6"
+          title="Alexander Vasiliev’s Volga Seasons"
+          :subtitles="['Pre-production', 'Production']"
+          :src="
+            require('@/assets/projects/alexander-vassiliev/cover-alexander-vassiliev.jpg')
+          "
+          ctaRouteName="alexanderVasilievVolga"
+        ></project>
+
+        <project
+          format="left"
+          page="5-6"
+          title="Fashion Collection"
+          :subtitles="['Conception', 'Realisation']"
+          :src="
+            require('@/assets/projects/fashion-collection/cover-fashion-collection.jpg')
+          "
+          ctaRouteName="fashionCollection"
+        ></project>
+
+        <project
+          format="right"
+          page="6-6"
+          title="‘Life Flight’ Performance"
+          :subtitles="['Conception', 'Creation']"
+          :src="
+            require('@/assets/projects/life-flight-performance/cover-life-flight-performance.jpg')
+          "
+          ctaRouteName="lifeFlightPerformance"
         ></project>
       </div>
     </section>
-
-    <div id="lotte-hotel">
-      <!-- Contact -->
-      <section id="contact">
-        <div class="container-fluid">
-          <div class="row justify-content-center align-items-center">
-            <div id="contact-card" class="col-9">
-              <div class="row">
-                <div class="col-6">
-                  <span
-                    class="project-cta subtitle subtitle-white subtitle-left"
-                    >Contact me
-                  </span>
-
-                  <br />
-
-                  <h2>Let's Work <br />Together.</h2>
-
-                  <br />
-
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Deleniti, esse architecto dolorum alias iusto ab voluptatum,
-                    assumenda natus.
-                  </p>
-                </div>
-                <div class="col-6 text-center"></div>
-              </div>
-              <form id="contact-form" class="row">
-                <div class="col-6">
-                  <span class="svg-text">
-                    <icon-message
-                      colorClass="custom-icon-white"
-                      otherClass=""
-                      height="30"
-                      width="30"
-                    />
-                    <div class="text-wrapper">gusarova@gmail.com</div>
-                  </span>
-
-                  <span class="svg-text">
-                    <icon-location
-                      colorClass="custom-icon-white"
-                      otherClass=""
-                      height="30"
-                      width="30"
-                    />
-                    <div class="text-wrapper">Charenton-le-pont</div>
-                  </span>
-                </div>
-                <div class="col-6">
-                  <div class="form-label-group">
-                    <input
-                      type="text"
-                      id="inputName"
-                      class="form-control"
-                      placeholder="Name"
-                      required
-                    />
-                  </div>
-
-                  <br />
-
-                  <div class="form-label-group">
-                    <input
-                      type="email"
-                      id="inputEmail"
-                      class="form-control"
-                      placeholder="Email address"
-                      required
-                    />
-                  </div>
-
-                  <br />
-
-                  <textarea
-                    class="form-control"
-                    id="inputMessage"
-                    placeholder="Your message"
-                    rows="10"
-                    required
-                  ></textarea>
-
-                  <br />
-
-                  <button class="btn btn-blue col-8">
-                    Send
-                    <icon-arrow-right
-                      colorClass="custom-icon-white"
-                      otherClass=""
-                      height="30"
-                      width="30"
-                    />
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-2 offset-md-1">
-              <span class="project-cta subtitle subtitle-white subtitle-left"
-                >About me
-              </span>
-            </div>
-            <div class="col-2">
-              <span class="project-cta subtitle subtitle-white subtitle-left"
-                >My projects
-              </span>
-            </div>
-            <div class="col-2">
-              <span class="project-cta subtitle subtitle-white subtitle-left"
-                >Contact me
-              </span>
-            </div>
-            <div class="col-4 text-right">
-              <icon-linkedin
-                colorClass="custom-icon-white"
-                otherClass=""
-                height="30"
-                width="30"
-              />
-            </div>
-          </div>
-          <div class="row justify-content-around" id="footer-copyright">
-            <div class="col-10 footer-hr"></div>
-            <div class="w-100"></div>
-            <div class="col-4 text-left" id="copyright">
-              &copy; Copyright 2020, Polina Gusarova.
-            </div>
-            <div class="col-4 text-right">
-              Made with
-              <icon-heart
-                colorClass="custom-icon-white"
-                otherClass=""
-                height="15"
-                width="15"
-              />
-              by
-              <a href="#"
-                ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </div>
+  </main>
 </template>
 
 <script>
 import project from "../components/project/project.vue";
-import iconMessage from "../components/icons/icon-message.vue";
-import iconLocation from "../components/icons/icon-location.vue";
-import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 import iconArrowDown from "../components/icons/icon-arrow-down.vue";
-import iconLinkedin from "../components/icons/icon-linkedin.vue";
-import iconHeart from "../components/icons/icon-heart.vue";
-
 export default {
   components: {
     project,
-    iconMessage,
-    iconLocation,
-    iconArrowRight,
-    iconArrowDown,
-    iconLinkedin,
-    iconHeart
+    iconArrowDown
   },
   data() {
     return {

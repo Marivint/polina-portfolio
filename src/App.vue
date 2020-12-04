@@ -30,19 +30,6 @@
   </header>
   <!-- End header -->
 
-  <!-- Router view -->
-  <!-- <transition
-      name="fade"
-      mode="out-in"
-      appear
-      v-on:leave="leave"
-      v-on:enter="enter"
-      v-on:after-enter="afterEnter"
-      ref="routerViewRef"
-    >
-      <router-view />
-    </transition> -->
-
   <router-view v-slot="{ Component }">
     <transition
       name="custom-classes-transition"
@@ -50,16 +37,33 @@
       :enter-active-class="enterActiveClass"
       :leave-active-class="leaveActiveClass"
       ref="routerViewRef"
+      v-on:enter="enter"
     >
       <component :is="Component" />
     </transition>
   </router-view>
 
+  <v-footer></v-footer>
   <!-- End router view -->
 </template>
 
 <script>
+import vFooter from "./components/footer.vue";
+import iconMessage from "./components/icons/icon-message.vue";
+import iconLocation from "./components/icons/icon-location.vue";
+import iconArrowRight from "./components/icons/icon-arrow-right.vue";
+import iconLinkedin from "./components/icons/icon-linkedin.vue";
+import iconHeart from "./components/icons/icon-heart.vue";
+
 export default {
+  components: {
+    vFooter,
+    iconMessage,
+    iconLocation,
+    iconArrowRight,
+    iconLinkedin,
+    iconHeart
+  },
   watch: {
     $route(to, from) {
       let toDepth = to.path.split("/").length;
@@ -82,9 +86,10 @@ export default {
     //   console.log("Leave");
     //   console.log(el);
     // },
-    // enter: function() {
-    //   console.log("Enter");
-    // },
+    enter: function() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
     // afterEnter: function() {
     //   console.log("After enter");
     // }

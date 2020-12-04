@@ -1,8 +1,8 @@
 <template>
-  <section id="project-view">
-    <div class="container-fluid">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-4">
+  <main id="project-view">
+    <div class="container-fluid h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-4 offset-1">
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
@@ -11,21 +11,21 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="@/assets/projects/recadre/01-museelambinet.jpg"
+                  src="@/assets/projects/meet-my-project/cover-meet-my-project.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="@/assets/projects/recadre/02-academie-fast.jpg"
+                  src="@/assets/projects/meet-my-project/cover-meet-my-project.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="@/assets/projects/recadre/03-alexander-vassiliev.jpg"
+                  src="@/assets/projects/meet-my-project/cover-meet-my-project.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
@@ -34,6 +34,7 @@
             <a
               class="carousel-control-prev"
               href="#carouselExampleFade"
+              z
               role="button"
               data-slide="prev"
             >
@@ -58,41 +59,23 @@
           </div>
         </div>
         <div class="offset-1 col-5">
-          <h3>Lambinet Museum in complete privacy</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea ut,
-            autem iusto aut pariatur minima libero odio earum. Est nemo soluta
-            cupiditate laudantium reprehenderit ad fugit tenetur dolorum
-            corporis modi. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Dolor neque, rerum sapiente iste ipsum maxime aperiam vitae
-            adipisci modi non nesciunt incidunt molestiae dolorem aspernatur
-            totam consequatur minus magni. Natus. Officiis quasi fuga similique
-            illum. Mollitia suscipit esse voluptate quam corrupti culpa quia,
-            accusantium eum tempora tenetur id blanditiis quasi molestiae
-            aperiam et dolorum, repellat omnis dolore ipsam, perspiciatis
-            reiciendis. Suscipit neque unde autem accusamus, architecto vero
-            dolor beatae repellat fugit distinctio maxime a quia facere?
-            Repellendus, quis? Qui consectetur consequuntur non cupiditate
-            veritatis nesciunt aperiam accusamus, voluptate est delectus? Culpa
-            neque blanditiis ab est laudantium omnis asperiores molestiae,
-            officiis ratione voluptate nobis voluptates repellendus mollitia.
-            Tempore beatae neque officiis voluptates. Ratione adipisci nulla
-            itaque possimus molestias aliquam sequi saepe. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Debitis ipsa ipsum provident
-            perferendis a in quibusdam, unde velit ad, minus, animi perspiciatis
-            quod numquam! Laboriosam animi ratione omnis. Alias, iste.
-          </p>
+          <h3>{{ title }}</h3>
+          <slot></slot>
         </div>
       </div>
     </div>
-  </section>
+  </main>
 </template>
 
 <script>
 export default {
   props: {
-    format: {
+    title: {
       type: String,
+      required: true
+    },
+    images: {
+      type: Array,
       required: true
     }
   },
