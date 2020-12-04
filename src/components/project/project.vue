@@ -1,26 +1,26 @@
 <template>
-  <transition>
-    <article class="row justify-content-center align-items-center project">
-      <template v-if="showFormat == 1">
-        <project-image :showFormat="showFormat" :src="src"></project-image>
-        <project-text
-          :showFormat="showFormat"
-          :page="page"
-          :title="title"
-          :subtitles="subtitles"
-        ></project-text>
-      </template>
-      <template v-if="showFormat == 2">
-        <project-text
-          :showFormat="showFormat"
-          :page="page"
-          :title="title"
-          :subtitles="subtitles"
-        ></project-text>
-        <project-image :showFormat="showFormat" :src="src"></project-image>
-      </template>
-    </article>
-  </transition>
+  <article class="row justify-content-center align-items-center project">
+    <template v-if="showFormat == 1">
+      <project-image :showFormat="showFormat" :src="src"></project-image>
+      <project-text
+        :showFormat="showFormat"
+        :page="page"
+        :title="title"
+        :subtitles="subtitles"
+        :ctaRouteName="ctaRouteName"
+      ></project-text>
+    </template>
+    <template v-if="showFormat == 2">
+      <project-text
+        :showFormat="showFormat"
+        :page="page"
+        :title="title"
+        :subtitles="subtitles"
+        :ctaRouteName="ctaRouteName"
+      ></project-text>
+      <project-image :showFormat="showFormat" :src="src"></project-image>
+    </template>
+  </article>
 </template>
 
 <script>
@@ -46,6 +46,10 @@ export default {
     },
     subtitles: {
       type: Array,
+      required: true
+    },
+    ctaRouteName: {
+      type: String,
       required: true
     }
   },

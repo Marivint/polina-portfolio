@@ -13,7 +13,7 @@
       class="project-cta subtitle subtitle-black"
       :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
-      <router-link :to="{ name: 'project' }">Learn more</router-link>
+      <router-link :to="{ name: ctaRouteName }">Learn more</router-link>
     </span>
   </div>
 </template>
@@ -35,6 +35,10 @@ export default {
     },
     subtitles: {
       type: Array,
+      required: true
+    },
+    ctaRouteName: {
+      type: String,
       required: true
     },
     someClass: {
