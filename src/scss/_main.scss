@@ -78,7 +78,6 @@ body {
   flex-shrink: 0;
   width: 80px;
   height: 80px;
-  margin-right: 24px;
   border-radius: 50%;
   background: $color_full_white;
   -webkit-box-shadow: 0 5px 20px rgba($color_black, 0.15);
@@ -100,7 +99,7 @@ body {
   .text-wrapper {
     position: relative;
     display: inline;
-    padding: 0px 0px 0px 40px;
+    padding: 0px 0px 0px 20px;
   }
 }
 

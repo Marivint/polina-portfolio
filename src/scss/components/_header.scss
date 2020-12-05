@@ -19,11 +19,7 @@ header:after {
   width: 100%;
   height: 6px;
   background: $color_black;
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: -webkit-transform 0.25s;
-  -o-transition: transform 0.25s;
-  transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
+  @extend %base-transition;
 }
 
 .header-center {

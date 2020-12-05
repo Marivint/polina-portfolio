@@ -15,95 +15,262 @@ See variables.scss breakpoint
 /* Media large
 ============================================= */
 @include mediaLarge {
-  .header-logo {
-    // width: 30px;
-    margin-right: 80px;
-  }
+  /* Header
+  ============================================= */
+  header {
+    .header-logo {
+      // width: 30px;
+      margin-right: 80px;
+    }
+    .header-item {
+      font-size: 0.9em;
+    }
+    .header-burger {
+      width: 30px;
+      height: 30px;
+    }
 
-  .header-item {
-    font-size: 0.9em;
-  }
+    .header-burger:before,
+    .header-burger:after {
+      width: 25px;
+    }
 
-  .custom-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 20px !important;
-  }
+    .header-burger:before {
+      height: 1px;
+      margin-bottom: 3px;
+    }
 
-  .header-burger {
-    width: 30px;
-    height: 30px;
-  }
+    .header-burger:after {
+      height: 2px;
+      margin-top: 3px;
+    }
 
-  .header-burger:before,
-  .header-burger:after {
-    width: 25px;
-  }
-
-  .header-burger:before {
-    height: 1px;
-    margin-bottom: 3px;
-  }
-
-  .header-burger:after {
-    height: 2px;
-    margin-top: 3px;
-  }
-
-  .main-bg {
-    img {
-      max-width: 900px;
+    .custom-icon {
+      margin-right: 20px !important;
     }
   }
 
+  /* Typographie
+  ============================================= */
   h1 {
-    font-size: 2em;
+    font-size: 2.5rem;
   }
-
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
   .subtitle {
     font-size: 0.9em;
   }
+  p {
+    font-size: 0.9em;
+  }
+
+  /* Sections
+  ============================================= */
+  #about {
+    height: 500px;
+  }
+  #scroll-down {
+    margin: 100px 0px 130px 0px;
+    .btn-icon-round {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  #projects {
+    img {
+      max-width: 360px;
+      max-height: 440px;
+    }
+  }
+
+  #lotte-hotel {
+    h2 {
+      font-size: 2.5em;
+    }
+    #contact {
+      #contact-card {
+        padding: 100px 60px 60px;
+        .svg-text {
+          .text-wrapper {
+            font-size: 0.9em;
+          }
+        }
+        #contact-form {
+          padding-top: 80px;
+          .btn,
+          textarea,
+          input {
+            font-size: 0.9em;
+          }
+          .btn,
+          input {
+            height: 50px;
+          }
+          textarea {
+            height: 180px;
+          }
+        }
+      }
+    }
+    footer {
+      // margin-top: 100px;
+      // background-color: transparent;
+      // color: $color_white;
+      // box-shadow: inset 0 -300px 50px 0px rgb($color_full_black, 0.4);
+      // hr {
+      //   border-color: $color_white;
+      // }
+    }
+  }
+
+  /* Icon
+  ============================================= */
+  .custom-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
+
+// @media only screen and (max-width: 960px) {
+//   #projects {
+//     img {
+//       max-width: 288px;
+//       max-height: 352px;
+//     }
+//   }
+// }
 
 /* Media medium
 ============================================= */
 @include mediaMedium {
+  /* Body
+  ============================================= */
   body {
     overflow-x: hidden;
   }
-
-  .header-item-logo {
-    margin-right: 50px;
+  /* Header
+  ============================================= */
+  header {
+    padding-top: 0px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    .header-item-logo {
+      margin-right: 50px;
+    }
+    .custom-icon {
+      margin-right: 10px !important;
+    }
   }
 
-  .custom-icon {
-    margin-right: 10px !important;
-  }
-
+  /* Typographie
+  ============================================= */
   h1 {
+    font-size: 2em;
+  }
+  h2 {
     font-size: 1.5em;
+  }
+
+  /* Sections
+  ============================================= */
+  #about {
+    height: 400px;
+  }
+
+  #projects {
+    img {
+      max-width: 288px;
+      max-height: 352px;
+    }
+  }
+
+  #lotte-hotel {
+    #contact {
+      #contact-card {
+        border-radius: 0%;
+        #contact-form {
+          input {
+            height: 60px;
+          }
+          .btn {
+            height: 50px;
+          }
+          textarea {
+            height: 140px;
+          }
+        }
+      }
+    }
+    footer {
+      // margin-top: 100px;
+      // background-color: transparent;
+      // color: $color_white;
+      // box-shadow: inset 0 -300px 50px 0px rgb($color_full_black, 0.4);
+      // hr {
+      //   border-color: $color_white;
+      // }
+    }
   }
 }
 
 /* Media small
 ============================================= */
 @include mediaSmall {
-  .header-item {
-    display: none !important;
-  }
-  .main-bg {
-    display: none !important;
-  }
-  .header-burger {
-    &:after,
-    &:before {
-      background: $color_black;
+  /* Header
+  ============================================= */
+  header {
+    .header-item {
+      display: none !important;
+    }
+    .header-burger {
+      &:after,
+      &:before {
+        background: $color_black;
+      }
     }
   }
-}
 
-@media only screen and (max-width: 882px) {
-  .main-bg {
-    right: -148px;
+  #skills {
+    .wrapper-col {
+      padding-top: 200px;
+    }
+  }
+
+  /* Sections
+  ============================================= */
+  #scroll-down {
+    margin: 80px 0px 80px 0px;
+  }
+
+  .project {
+    .project-img {
+      text-align: center !important;
+      padding: 0;
+      img {
+        width: 100% !important;
+        max-width: none !important;
+        max-height: none !important;
+        height: auto !important;
+        border-radius: 0;
+      }
+    }
+    .project-text {
+      -webkit-box-ordinal-group: 1 !important;
+      -ms-flex-order: 1 !important;
+      order: 1 !important;
+      text-align: left !important;
+      padding-top: 80px;
+      .project-page {
+        display: none;
+      }
+      .subtitle {
+        float: left !important;
+      }
+    }
   }
 }

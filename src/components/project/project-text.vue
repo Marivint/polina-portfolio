@@ -1,7 +1,11 @@
 <template>
   <div
-    class="col-5 project-text"
-    :class="showFormat === 1 ? 'text-left' : 'text-right'"
+    class="project-text"
+    :class="
+      showFormat === 1
+        ? 'offset-1 col-11 offset-md-0 col-md-5 text-left'
+        : 'offset-1 col-11 col-md-4 text-right'
+    "
   >
     <p class="project-page">{{ page }}</p>
 

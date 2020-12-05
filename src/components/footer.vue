@@ -4,19 +4,17 @@
     <section id="contact">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
-          <div id="contact-card" class="col-9">
+          <div id="contact-card" class="col-12 col-md-10 col-lg-9">
             <div class="row">
-              <div class="col-6">
+              <div class="col-12">
                 <span class="project-cta subtitle subtitle-white subtitle-left"
                   >Contact me
                 </span>
-
                 <br />
-
                 <h2>Let's Work <br />Together.</h2>
-
+              </div>
+              <div class="col-12 col-md-6">
                 <br />
-
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Deleniti, esse architecto dolorum alias iusto ab voluptatum,
@@ -26,7 +24,7 @@
               <div class="col-6 text-center"></div>
             </div>
             <form id="contact-form" class="row">
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <span class="svg-text">
                   <icon-message
                     colorClass="custom-icon-white"
@@ -47,7 +45,7 @@
                   <div class="text-wrapper">Charenton-le-pont</div>
                 </span>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <div class="form-label-group">
                   <input
                     type="text"
@@ -82,7 +80,7 @@
 
                 <br />
 
-                <button class="btn btn-blue col-8">
+                <button class="btn btn-blue col-5 col-lg-7">
                   Send
                   <icon-arrow-right
                     colorClass="custom-icon-white"
@@ -100,22 +98,31 @@
     <footer>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-2 offset-md-1">
-            <span class="project-cta subtitle subtitle-white subtitle-left"
-              >About me
-            </span>
+          <div class="offset-1 col-11 col-lg-2">
+            <br class="d-block d-lg-none" />
+            <p>
+              <span class="project-cta subtitle subtitle-white subtitle-left"
+                >About me
+              </span>
+            </p>
           </div>
-          <div class="col-2">
-            <span class="project-cta subtitle subtitle-white subtitle-left"
-              >My projects
-            </span>
+          <div class="offset-1 col-11 col-sm-4 offset-lg-0 col-lg-2">
+            <br class="d-block d-lg-none" />
+            <p>
+              <span class="project-cta subtitle subtitle-white subtitle-left"
+                >My projects
+              </span>
+            </p>
           </div>
-          <div class="col-2">
-            <span class="project-cta subtitle subtitle-white subtitle-left"
-              >Contact me
-            </span>
+          <div class="offset-1 col-6 col-sm-4 offset-lg-0 col-lg-2">
+            <br class="d-block d-lg-none" />
+            <p>
+              <span class="project-cta subtitle subtitle-white subtitle-left"
+                >Contact me
+              </span>
+            </p>
           </div>
-          <div class="col-4 text-right">
+          <div class="col-4 col-sm-1 col-lg-4 text-right">
             <icon-linkedin
               colorClass="custom-icon-white"
               otherClass=""
@@ -124,17 +131,23 @@
             />
           </div>
         </div>
-        <div class="row justify-content-around" id="footer-copyright">
-          <div class="col-10 footer-hr"></div>
+        <div id="footer-copyright" class="row">
+          <div class="offset-1 col-10 footer-hr"></div>
           <div class="w-100"></div>
-          <div class="col-4 text-left" id="copyright">
-            &copy; Copyright 2020, Polina Gusarova.
+          <div class="offset-1 col-5 text-left" id="copyright">
+            <p>
+              &copy; <span class="d-none d-md-inline">Copyright</span>
+              2020
+              <span class="d-none d-md-inline">Polina Gusarova.</span>
+            </p>
           </div>
-          <div class="col-4 text-right">
-            Made by
-            <a href="#"
-              ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
-            /></a>
+          <div class="col-5 text-right">
+            <p>
+              Made by
+              <a href="#"
+                ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
+              /></a>
+            </p>
           </div>
         </div>
       </div>

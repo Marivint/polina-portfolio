@@ -3,8 +3,8 @@
     <!-- About -->
     <section id="about">
       <div class="container-fluid">
-        <div class="row justify-content-md-center">
-          <div id="about-text" class="col-11">
+        <div class="row">
+          <div id="about-text" class="offset-1 col-10">
             <h1 class="user-select-none">
               I am a cultural<br />
               product manager.
@@ -15,16 +15,6 @@
               bring my managerial <br />
               and artistic br skills acquired during my international career.
             </p>
-
-            <!-- <div id="demo">
-              <button @click="show = !show">
-                Toggle
-              </button>
-
-              <transition name="fade">
-                <p v-if="show">hello</p>
-              </transition>
-            </div> -->
           </div>
         </div>
       </div>
@@ -32,20 +22,26 @@
 
     <!-- Skills -->
     <section id="skills">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="col-4"><h2>Production</h2></div>
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-12 col-md-4 wrapper-col h-100 bg-black">
+            <span class="wrapper-vertical"><h2>Production</h2></span>
+          </div>
 
-          <div class="col-4"><h2>Communication</h2></div>
+          <div class="col-12 col-md-4 wrapper-col h-100 bg-black">
+            <span class="wrapper-vertical"><h2>Communication</h2></span>
+          </div>
 
-          <div class="col-4"><h2>Creation</h2></div>
+          <div class="col-12 col-md-4 wrapper-col h-100 bg-black">
+            <span class="wrapper-vertical"><h2>Creation</h2></span>
+          </div>
         </div>
       </div>
     </section>
 
     <div id="scroll-down" class="container-fluid">
-      <div class="row justify-content-md-center">
-        <div class="col-1">
+      <div class="row justify-content-center">
+        <div class="col-auto">
           <i class="btn-icon-round">
             <icon-arrow-down
               colorClass="custom-icon-black"

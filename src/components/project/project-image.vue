@@ -1,9 +1,13 @@
 <template>
   <div
-    class="col-5 project-img"
-    :class="showFormat === 1 ? 'text-left' : 'text-right'"
+    class="project-img"
+    :class="
+      showFormat === 1
+        ? 'offset-md-1 col-12 col-md-6 text-left'
+        : 'offset-md-1 col-12 col-md-5 text-right'
+    "
   >
-    <img :src="src" />
+    <img class="img-fluid" :src="src" />
   </div>
 </template>
 

@@ -4,6 +4,7 @@
   position: relative;
   text-align: left;
   height: 600px;
+  @extend %base-transition;
   #about-text {
     position: absolute;
     top: 50%;
@@ -13,17 +14,26 @@
 
 #skills {
   position: relative;
-  background-color: $color_black;
+  // background-color: $color_black;
   // To validate ?
   // display: flex;
   // text-align: center;
   // align-items: center;
   text-align: center;
   color: $color_white;
-  height: 300px;
-  .container-fluid,
-  .row {
-    height: 100%;
+  // height: 300px;
+  // .container-fluid,
+  // .row {
+  //   height: 100%;
+  // }
+  .wrapper-col {
+    padding-top: 300px;
+    .wrapper-vertical {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) translateX(-50%);
+      left: 50%;
+    }
   }
 }
 
@@ -49,7 +59,7 @@
     color: $color_white;
     #contact-card {
       position: relative;
-      padding: 162px 100px 60px;
+      padding: 100px 100px 60px;
       background: $color_black;
       border-radius: 15px;
       .form-control,
@@ -68,11 +78,15 @@
           @extend %contact-form-input;
         }
         .svg-text:not(:last-child) {
+          padding-bottom: 20px;
+        }
+        .svg-text:last-child {
           padding-bottom: 40px;
         }
         .btn {
           color: $color_white;
           height: 70px;
+          @extend %base-transition;
         }
       }
     }

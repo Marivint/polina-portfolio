@@ -2,11 +2,12 @@
 ============================================= */
 .project {
   .project-img {
-    text-align: center;
+    // text-align: center;
     img {
-      height: 550px;
-      width: 450px;
+      max-width: 450px;
+      max-height: 550px;
       border-radius: 10px;
+      @extend %base-transition;
     }
   }
   .project-text {
