@@ -16,17 +16,18 @@ See variables.scss breakpoint
 ============================================= */
 @include mediaLarge {
   .header-logo {
-    width: 30px;
+    // width: 30px;
+    margin-right: 80px;
   }
 
   .header-item {
     font-size: 0.9em;
   }
 
-  .header-item-icon {
+  .custom-icon {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
+    margin-right: 20px !important;
   }
 
   .header-burger {
@@ -72,18 +73,15 @@ See variables.scss breakpoint
   }
 
   .header-item-logo {
-    margin-right: 80px;
+    margin-right: 50px;
+  }
+
+  .custom-icon {
+    margin-right: 10px !important;
   }
 
   h1 {
     font-size: 1.5em;
-  }
-
-  .main-bg {
-    right: -35px;
-    img {
-      // max-width: 800px;
-    }
   }
 }
 

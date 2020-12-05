@@ -1,33 +1,6 @@
 <template>
   <!-- Header -->
-  <header>
-    <div class="container-fluid">
-      <nav class="row header-center">
-        <div class="col-10">
-          <div class="d-inline header-item-logo">
-            <!-- <logo class="header-logo"></logo> -->
-            Polina Gusarova
-          </div>
-
-          <div class="d-inline header-item header-item-grey">
-            <!-- <img src="@/assets/icon/chart.svg" /> -->
-            About
-          </div>
-
-          <div class="d-inline header-item header-item-grey">
-            Work
-          </div>
-
-          <div class="d-inline header-item header-item-grey">
-            Contact
-          </div>
-        </div>
-        <div class="col text-right">
-          <button class="header-burger"></button>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <v-header></v-header>
   <!-- End header -->
 
   <router-view v-slot="{ Component }">
@@ -48,21 +21,13 @@
 </template>
 
 <script>
+import vHeader from "./components/header.vue";
 import vFooter from "./components/footer.vue";
-import iconMessage from "./components/icons/icon-message.vue";
-import iconLocation from "./components/icons/icon-location.vue";
-import iconArrowRight from "./components/icons/icon-arrow-right.vue";
-import iconLinkedin from "./components/icons/icon-linkedin.vue";
-import iconHeart from "./components/icons/icon-heart.vue";
 
 export default {
   components: {
-    vFooter,
-    iconMessage,
-    iconLocation,
-    iconArrowRight,
-    iconLinkedin,
-    iconHeart
+    vHeader,
+    vFooter
   },
   watch: {
     $route(to, from) {

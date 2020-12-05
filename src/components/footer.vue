@@ -131,14 +131,7 @@
             &copy; Copyright 2020, Polina Gusarova.
           </div>
           <div class="col-4 text-right">
-            Made with
-            <icon-heart
-              colorClass="custom-icon-white"
-              otherClass=""
-              height="15"
-              width="15"
-            />
-            by
+            Made by
             <a href="#"
               ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
             /></a>
@@ -150,7 +143,19 @@
 </template>
 
 <script>
+import iconMessage from "../components/icons/icon-message.vue";
+import iconLocation from "../components/icons/icon-location.vue";
+import iconArrowRight from "../components/icons/icon-arrow-right.vue";
+import iconLinkedin from "../components/icons/icon-linkedin.vue";
+// import iconHeart from "../components/icons/icon-heart.vue";
+
 export default {
+  components: {
+    iconMessage,
+    iconLocation,
+    iconArrowRight,
+    iconLinkedin
+  },
   props: {
     height: {
       type: String,
