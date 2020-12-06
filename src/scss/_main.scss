@@ -6,6 +6,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: $font-size-base;
+  scroll-behavior: smooth;
 }
 
 /* Body 
@@ -88,8 +89,8 @@ body {
 /* Custom icon && for icon
 ============================================= */
 .custom-icon {
-  // width: 23px;
-  // height: 23px;
+  width: 23px;
+  height: 23px;
   @extend %base-transition;
 }
 
@@ -115,7 +116,7 @@ p,
   @extend %base-transition;
 }
 
-/* Title 
+/* TYPOGRAPHIE
 ============================================= */
 h1 {
   font-size: 4em;
@@ -128,8 +129,13 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 600;
+}
+
+p {
+  line-height: 2;
+  letter-spacing: 0.05em;
 }
 
 /* Subtitle 
@@ -139,6 +145,7 @@ h3 {
   line-height: 1.4px;
   font-weight: 600;
   padding-left: 60px;
+  // font-size: 1.5em;
   &.subtitle-left {
     float: left;
   }
@@ -149,7 +156,7 @@ h3 {
     content: "";
     position: absolute;
     left: 0px;
-    width: 40px;
+    width: 45px;
     height: 2px;
   }
 }

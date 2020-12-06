@@ -2,20 +2,36 @@
 ============================================= */
 .project {
   .project-img {
-    // text-align: center;
+    text-align: center;
+    &.pr {
+      padding-right: 4%;
+    }
+    &.pl {
+      padding-left: 4%;
+    }
     img {
-      max-width: 450px;
-      max-height: 550px;
+      // width: 428px;
+      // height: 523px;
+      width: -webkit-fill-available;
+      height: auto;
+      // max-width: 572px;
+      // max-height: 700px;
       border-radius: 10px;
       @extend %base-transition;
     }
   }
   .project-text {
+    &.pr {
+      padding-right: 4%;
+    }
+    &.pl {
+      padding-left: 4%;
+    }
     .project-page {
-      padding-bottom: 3rem;
+      padding-bottom: 2rem;
     }
     .project-cta {
-      padding-top: 5rem;
+      padding-top: 3rem;
     }
   }
 }

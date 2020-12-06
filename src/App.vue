@@ -47,17 +47,14 @@ export default {
     }
   },
   methods: {
-    // leave: function(el) {
-    //   console.log("Leave");
-    //   console.log(el);
-    // },
     enter: function() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      if (this.$route.hash) {
+        location.href = this.$route.hash;
+      } else {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
     }
-    // afterEnter: function() {
-    //   console.log("After enter");
-    // }
   },
   data() {
     return {

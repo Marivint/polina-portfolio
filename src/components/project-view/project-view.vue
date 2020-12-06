@@ -2,33 +2,20 @@
   <main id="project-view">
     <div class="container-fluid h-100">
       <div class="row align-items-center h-100">
-        <div class="col-4 offset-1">
+        <div class="offset-0 col-12 offset-md-1 col-md-4">
           <div
             id="carouselExampleFade"
             class="carousel slide carousel-fade"
             data-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="@/assets/projects/meet-my-project/cover-meet-my-project.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="@/assets/projects/meet-my-project/cover-meet-my-project.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="@/assets/projects/meet-my-project/cover-meet-my-project.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                />
+              <div
+                v-for="(imagePath, index) in images"
+                v-bind:key="imagePath"
+                class="carousel-item"
+                :class="[!index ? 'active' : '']"
+              >
+                <img :src="imagePath" class="d-block w-100" alt="..." />
               </div>
             </div>
             <a
@@ -58,7 +45,7 @@
             </a>
           </div>
         </div>
-        <div class="offset-1 col-5">
+        <div class="offset-1 col-10 offset-md-1 col-md-5">
           <h3>{{ title }}</h3>
           <slot></slot>
         </div>

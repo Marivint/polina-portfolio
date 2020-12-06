@@ -11,7 +11,7 @@
                   >Contact me
                 </span>
                 <br />
-                <h2>Let's Work <br />Together.</h2>
+                <h2 class="color-blue-dark">Let's Work <br />Together.</h2>
               </div>
               <div class="col-12 col-md-6">
                 <br />
@@ -80,7 +80,7 @@
 
                 <br />
 
-                <button class="btn btn-blue col-5 col-lg-7">
+                <button class="btn col-5 col-lg-7">
                   Send
                   <icon-arrow-right
                     colorClass="custom-icon-white"
@@ -97,54 +97,68 @@
     </section>
     <footer>
       <div class="container-fluid">
-        <div class="row">
-          <div class="offset-1 col-11 col-lg-2">
+        <div class="row justify-content-center">
+          <div class="col-11 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <span class="project-cta subtitle subtitle-white subtitle-left"
-                >About me
-              </span>
+              <a href="#">
+                <span class="project-cta subtitle subtitle-white subtitle-left"
+                  >About me
+                </span>
+              </a>
             </p>
           </div>
-          <div class="offset-1 col-11 col-sm-4 offset-lg-0 col-lg-2">
+          <div class="col-11 col-sm-5 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <span class="project-cta subtitle subtitle-white subtitle-left"
-                >My projects
-              </span>
+              <a href="#projects">
+                <span class="project-cta subtitle subtitle-white subtitle-left"
+                  >My projects
+                </span>
+              </a>
             </p>
           </div>
-          <div class="offset-1 col-6 col-sm-4 offset-lg-0 col-lg-2">
+          <div class="col-7 col-sm-5 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <span class="project-cta subtitle subtitle-white subtitle-left"
-                >Contact me
-              </span>
+              <a href="#contact">
+                <span class="project-cta subtitle subtitle-white subtitle-left"
+                  >Contact me
+                </span>
+              </a>
             </p>
           </div>
-          <div class="col-4 col-sm-1 col-lg-4 text-right">
-            <icon-linkedin
-              colorClass="custom-icon-white"
-              otherClass=""
-              height="30"
-              width="30"
-            />
+          <div class="col-4 col-sm-1 col-lg-5 text-right">
+            <br class="d-block d-lg-none" />
+            <a
+              href="https://www.linkedin.com/in/polina-gusarova-2791a4198/"
+              target="_blank"
+            >
+              <icon-linkedin
+                colorClass="custom-icon-white"
+                otherClass="svg-linkedin"
+                height="30"
+                width="30"
+              />
+            </a>
           </div>
         </div>
-        <div id="footer-copyright" class="row">
-          <div class="offset-1 col-10 footer-hr"></div>
+        <div id="footer-copyright" class="row justify-content-center">
+          <div class="col-11"><hr /></div>
           <div class="w-100"></div>
-          <div class="offset-1 col-5 text-left" id="copyright">
+          <div class="col-5 text-left" id="copyright">
             <p>
               &copy; <span class="d-none d-md-inline">Copyright</span>
               2020
               <span class="d-none d-md-inline">Polina Gusarova.</span>
             </p>
           </div>
-          <div class="col-5 text-right">
+          <div class="col-6 text-right">
             <p>
               Made by
-              <a href="#"
+              <a
+                href="https://www.linkedin.com/in/yvann-marivint-60810b121/"
+                target="_blank"
                 ><img id="logo-ym" src="@/assets/logos/logo-ym.png" alt=""
               /></a>
             </p>

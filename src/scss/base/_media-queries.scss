@@ -12,7 +12,43 @@ See variables.scss breakpoint
 
 ============================================= */
 
-/* Media large
+/* Media Ultra Wide
+============================================= */
+@include mediaUltraWide {
+  .project {
+    .project-img {
+      &.pr {
+        padding-right: 10% !important;
+      }
+      &.pl {
+        padding-left: 10% !important;
+      }
+    }
+    .project-text {
+      &.pr {
+        padding-right: 10% !important;
+      }
+      &.pl {
+        padding-left: 10% !important;
+      }
+    }
+  }
+}
+
+/* Media Extra Large
+============================================= */
+@include mediaExtraLarge {
+  .project {
+    .project-img {
+      img {
+        max-width: 572px;
+        max-height: 700px;
+      }
+    }
+  }
+}
+
+/* Media Large
 ============================================= */
 @include mediaLarge {
   /* Header
@@ -46,7 +82,7 @@ See variables.scss breakpoint
     }
 
     .custom-icon {
-      margin-right: 20px !important;
+      margin-right: 15px !important;
     }
   }
 
@@ -80,12 +116,6 @@ See variables.scss breakpoint
       height: 70px;
     }
   }
-  #projects {
-    img {
-      max-width: 360px;
-      max-height: 440px;
-    }
-  }
 
   #lotte-hotel {
     h2 {
@@ -116,15 +146,6 @@ See variables.scss breakpoint
         }
       }
     }
-    footer {
-      // margin-top: 100px;
-      // background-color: transparent;
-      // color: $color_white;
-      // box-shadow: inset 0 -300px 50px 0px rgb($color_full_black, 0.4);
-      // hr {
-      //   border-color: $color_white;
-      // }
-    }
   }
 
   /* Icon
@@ -135,16 +156,7 @@ See variables.scss breakpoint
   }
 }
 
-// @media only screen and (max-width: 960px) {
-//   #projects {
-//     img {
-//       max-width: 288px;
-//       max-height: 352px;
-//     }
-//   }
-// }
-
-/* Media medium
+/* Media Medium
 ============================================= */
 @include mediaMedium {
   /* Body
@@ -182,17 +194,9 @@ See variables.scss breakpoint
     height: 400px;
   }
 
-  #projects {
-    img {
-      max-width: 288px;
-      max-height: 352px;
-    }
-  }
-
   #lotte-hotel {
     #contact {
       #contact-card {
-        border-radius: 0%;
         #contact-form {
           input {
             height: 60px;
@@ -206,19 +210,10 @@ See variables.scss breakpoint
         }
       }
     }
-    footer {
-      // margin-top: 100px;
-      // background-color: transparent;
-      // color: $color_white;
-      // box-shadow: inset 0 -300px 50px 0px rgb($color_full_black, 0.4);
-      // hr {
-      //   border-color: $color_white;
-      // }
-    }
   }
 }
 
-/* Media small
+/* Media Small
 ============================================= */
 @include mediaSmall {
   /* Header
@@ -237,8 +232,20 @@ See variables.scss breakpoint
 
   #skills {
     .wrapper-col {
-      padding-top: 200px;
+      padding-top: 150px;
     }
+    .wrapper-col:not(:last-child) {
+      border-bottom: 1px solid $color_light_grey;
+    }
+  }
+
+  /* Typographie
+  ============================================= */
+  .subtitle {
+    font-size: 1em; // not below 16px for mobile!
+  }
+  p {
+    font-size: 1em; // not below 16px for mobile!
   }
 
   /* Sections
@@ -247,10 +254,26 @@ See variables.scss breakpoint
     margin: 80px 0px 80px 0px;
   }
 
+  #projects {
+    padding: 70px 0px 100px 0px;
+    #subtitle-portfolio {
+      padding: 0px 0px 70px 0px;
+      // .subtitle {
+      //   font-size: 1.4em;
+      // }
+    }
+  }
+
   .project {
     .project-img {
       text-align: center !important;
       padding: 0;
+      &.pr {
+        padding-right: 0px !important;
+      }
+      &.pl {
+        padding-left: 0px !important;
+      }
       img {
         width: 100% !important;
         max-width: none !important;
@@ -264,13 +287,45 @@ See variables.scss breakpoint
       -ms-flex-order: 1 !important;
       order: 1 !important;
       text-align: left !important;
-      padding-top: 80px;
+      padding-top: 50px;
+      &.pr {
+        padding-right: 0px !important;
+      }
+      &.pl {
+        padding-left: 0px !important;
+      }
       .project-page {
         display: none;
+      }
+      .project-cta {
+        padding-top: 2rem;
       }
       .subtitle {
         float: left !important;
       }
+    }
+  }
+
+  #lotte-hotel {
+    #contact {
+      #contact-card {
+        border-radius: 0%;
+      }
+    }
+  }
+
+  #project-view {
+    padding: 0px 0px 50px 0px;
+    h3 {
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+  }
+
+  footer {
+    padding: 100px 0px 0px 0px;
+    #footer-copyright {
+      padding-top: 0px;
     }
   }
 }

@@ -37,7 +37,13 @@ header:after {
 }
 
 .header-item-logo {
-  margin-right: 120px;
+  margin-right: 100px;
+  a {
+    color: $color_black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   @extend %base-transition;
 }
 
@@ -47,10 +53,27 @@ header:after {
   font-weight: 500;
   font-size: 1em;
   margin-right: 50px;
+  a {
+    color: transparentize($color_black, 0.5);
+  }
+  &:hover {
+    a {
+      color: $color_black;
+      text-decoration: none;
+    }
+    .custom-icon {
+      path {
+        fill: $color_blue_dark;
+      }
+    }
+  }
   // vertical-align: middle;
   @extend %base-transition;
   .custom-icon {
-    margin-right: 30px;
+    margin-right: 20px;
+    path {
+      fill: transparentize($color_black, 0.5);
+    }
   }
 }
 

@@ -4,37 +4,48 @@
       <nav class="row header-center">
         <div class="col-auto col-md-11">
           <div class="d-inline header-item-logo">
-            Polina Gusarova
+            <router-link :to="{ name: 'home' }">
+              Polina Gusarova
+            </router-link>
           </div>
 
           <div class="d-inline header-item header-item-grey">
-            <icon-profile
-              colorClass="custom-icon-black"
-              otherClass="header-item-icon"
-              height="24"
-              width="24"
-            ></icon-profile>
-            About
+            <a href="#">
+              <icon-profile
+                colorClass="custom-icon-black"
+                otherClass="header-item-icon"
+                height="24"
+                width="24"
+              ></icon-profile>
+              About
+            </a>
           </div>
 
           <div class="d-inline header-item header-item-grey">
-            <icon-category
-              colorClass="custom-icon-black"
-              otherClass="header-item-icon"
-              height="24"
-              width="24"
-            ></icon-category>
-            Work
+            <router-link
+              :to="{ name: 'home', hash: '#projects' }"
+              v-on:click="triggerClick"
+            >
+              <icon-category
+                colorClass="custom-icon-black"
+                otherClass="header-item-icon"
+                height="24"
+                width="24"
+              ></icon-category>
+              Work
+            </router-link>
           </div>
 
           <div class="d-inline header-item header-item-grey">
-            <icon-message
-              colorClass="custom-icon-black"
-              otherClass="header-item-icon"
-              height="24"
-              width="24"
-            ></icon-message>
-            Contact
+            <a href="#contact">
+              <icon-message
+                colorClass="custom-icon-black"
+                otherClass="header-item-icon"
+                height="24"
+                width="24"
+              ></icon-message>
+              Contact
+            </a>
           </div>
         </div>
         <div class="col text-right">

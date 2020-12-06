@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row">
           <div id="about-text" class="offset-1 col-10">
-            <h1 class="user-select-none">
+            <h1 class="user-select-none color-blue-dark">
               I am a cultural<br />
               product manager.
             </h1>
@@ -39,7 +39,7 @@
       </div>
     </section>
 
-    <div id="scroll-down" class="container-fluid">
+    <!-- <div id="scroll-down" class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-auto">
           <i class="btn-icon-round">
@@ -52,11 +52,21 @@
           </i>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Projects -->
     <section id="projects">
       <div class="container-fluid">
+        <div id="subtitle-portfolio" class="row">
+          <div class="offset-1 col-10">
+            <span class="subtitle subtitle-left subtitle-blue-dark">
+              Portfolio
+            </span>
+            <br />
+            <h1>Look at my<br />Projects.</h1>
+          </div>
+        </div>
+
         <project
           format="left"
           page="1-6"
@@ -129,11 +139,11 @@
 
 <script>
 import project from "../components/project/project.vue";
-import iconArrowDown from "../components/icons/icon-arrow-down.vue";
+// import iconArrowDown from "../components/icons/icon-arrow-down.vue";
 export default {
   components: {
-    project,
-    iconArrowDown
+    project
+    // iconArrowDown
   },
   data() {
     return {

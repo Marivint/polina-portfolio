@@ -3,8 +3,8 @@
     class="project-text"
     :class="
       showFormat === 1
-        ? 'offset-1 col-11 offset-md-0 col-md-5 text-left'
-        : 'offset-1 col-11 col-md-4 text-right'
+        ? 'offset-1 col-11 offset-md-0 col-md-5 text-left pl'
+        : 'offset-1 col-11 col-md-5 text-right pr'
     "
   >
     <p class="project-page">{{ page }}</p>
@@ -14,7 +14,7 @@
     <p>{{ subtitlesDisplay }}</p>
 
     <span
-      class="project-cta subtitle subtitle-black"
+      class="project-cta subtitle subtitle-blue-dark"
       :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
       <router-link :to="{ name: ctaRouteName }">Learn more</router-link>
