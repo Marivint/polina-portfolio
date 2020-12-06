@@ -14,6 +14,10 @@
       background-color: $hex;
     }
 
+    .bg-#{$name} {
+      background-color: $hex;
+    }
+
     .custom-icon-#{$name} {
       path {
         fill: $hex;
@@ -26,6 +30,9 @@
 
     .subtitle-#{$name} {
       color: $hex;
+      a {
+        color: $hex;
+      }
       &::before {
         background: $hex;
       }
@@ -43,20 +50,32 @@
 
 /* Breakpoint
 ============================================= */
-@mixin mediaLarge {
-  @media only screen and (max-width: #{$breakpoint_extra_large}) {
+@mixin mediaUltraWide {
+  @media only screen and (min-width: #{$breakpoint_ultra_wide}) {
     @content;
   }
 }
 
-@mixin mediaMedium {
+@mixin mediaExtraLarge {
+  @media only screen and (min-width: #{$breakpoint_extra_large}) {
+    @content;
+  }
+}
+
+@mixin mediaLarge {
   @media only screen and (max-width: #{$breakpoint_large}) {
     @content;
   }
 }
 
-@mixin mediaSmall {
+@mixin mediaMedium {
   @media only screen and (max-width: #{$breakpoint_medium}) {
+    @content;
+  }
+}
+
+@mixin mediaSmall {
+  @media only screen and (max-width: #{$breakpoint_small}) {
     @content;
   }
 }

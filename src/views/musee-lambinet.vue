@@ -2,9 +2,11 @@
   <project-view
     title="Lambinet Museum in complete privacy"
     :images="[
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/projects/musee-lambinet/cover-musee-lambinet.jpg'),
+      require('@/assets/projects/musee-lambinet/musee-lambinet-02.jpg'),
+      require('@/assets/projects/musee-lambinet/musee-lambinet-03.jpg'),
+      require('@/assets/projects/musee-lambinet/musee-lambinet-04.jpg'),
+      require('@/assets/projects/musee-lambinet/musee-lambinet-05.jpg')
     ]"
   >
     <p>

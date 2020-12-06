@@ -1,5 +1,5 @@
 <template>
-  <article class="row justify-content-center align-items-center project">
+  <article class="row align-items-center project">
     <template v-if="showFormat == 1">
       <project-image :showFormat="showFormat" :src="src"></project-image>
       <project-text

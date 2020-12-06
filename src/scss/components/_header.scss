@@ -1,11 +1,11 @@
 /* Header
 ============================================= */
-header{
+header {
   position: absolute;
   top: 40px;
   left: 0;
   right: 0;
-  padding: 0 60px;
+  padding: 0 40px;
   z-index: 10;
 }
 
@@ -19,15 +19,10 @@ header:after {
   width: 100%;
   height: 6px;
   background: $color_black;
-  -webkit-transition: -webkit-transform .25s;
-  transition: -webkit-transform .25s;
-  -o-transition: transform .25s;
-  transition: transform .25s; 
-  transition: transform .25s, -webkit-transform .25s;
+  @extend %base-transition;
 }
 
-
-.header-center{
+.header-center {
   align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -35,30 +30,52 @@ header:after {
 
 /* Header logo
 ============================================= */
-.header-logo{
+.header-logo {
   width: 40px;
   height: auto;
   @extend %base-transition;
 }
 
-.header-item-logo{
-  margin-right: 120px;
+.header-item-logo {
+  margin-right: 100px;
+  a {
+    color: $color_black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   @extend %base-transition;
 }
 
 /* Header item
 ============================================= */
-.header-item{
+.header-item {
   font-weight: 500;
   font-size: 1em;
   margin-right: 50px;
+  a {
+    color: transparentize($color_black, 0.5);
+  }
+  &:hover {
+    a {
+      color: $color_black;
+      text-decoration: none;
+    }
+    .custom-icon {
+      path {
+        fill: $color_blue_dark;
+      }
+    }
+  }
+  // vertical-align: middle;
   @extend %base-transition;
-  .custom-icon{
-    margin-right:20px;
+  .custom-icon {
+    margin-right: 20px;
+    path {
+      fill: transparentize($color_black, 0.5);
+    }
   }
 }
-
-
 
 /* Header burger
 ============================================= */
@@ -72,22 +89,23 @@ header:after {
   padding: 5px;
   background: transparent;
   font-size: 0;
-  -webkit-transition: all .25s;
-  -o-transition: all .25s;
-  transition: all .25s;
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
   z-index: 20;
 }
 
-.header-burger:before, .header-burger:after {
+.header-burger:before,
+.header-burger:after {
   content: "";
   display: inline-block;
   width: 30px;
   background: $color_black;
-  -webkit-transition: -webkit-transform .25s;
-  transition: -webkit-transform .25s;
-  -o-transition: transform .25s;
-  transition: transform .25s; 
-  transition: transform .25s, -webkit-transform .25s;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
 .header-burger:before {
@@ -128,4 +146,3 @@ header:after {
 //   -ms-transform: translateY(-5px) rotate(-45deg);
 //   transform: translateY(-5px) rotate(-45deg);
 // }
-

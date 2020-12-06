@@ -89,14 +89,14 @@ const router = createRouter({
     //     y: 0
     //   };
     // }
-    return new Promise(resolve => {
-      setTimeout(() => {
-        resolve({
-          x: 0,
-          y: 0
-        });
-      }, 600);
-    });
+    // return new Promise(resolve => {
+    //   setTimeout(() => {
+    //     resolve({
+    //       x: 0,
+    //       y: 0
+    //     });
+    //   }, 600);
+    // });
   }
 });
 
