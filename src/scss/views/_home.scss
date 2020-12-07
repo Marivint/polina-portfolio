@@ -6,6 +6,9 @@
   height: 500px;
   @extend %base-transition;
   #about-text {
+    // text-transform: uppercase;
+    // font-family: "Open Sans", sans-serif;
+    // font-weight: 100;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -19,6 +22,7 @@
   .wrapper-col {
     padding-top: 300px;
     .wrapper-vertical {
+      // text-transform: uppercase;
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -34,7 +38,7 @@
 
 #projects {
   padding: 150px 0px 100px 0px;
-  background: url(~@/assets/bg.png);
+  // background: url(~@/assets/bg.png);
   height: 100%;
   background-position-x: right;
   background-position-y: top;
@@ -46,6 +50,6 @@
     }
   }
   article {
-    margin-bottom: 100px;
+    margin-bottom: 180px;
   }
 }

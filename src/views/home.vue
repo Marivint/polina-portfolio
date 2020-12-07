@@ -13,7 +13,7 @@
             <p>
               Passionate about creating and development of cultural projects, I
               bring my managerial <br />
-              and artistic br skills acquired during my international career.
+              and artistic skills acquired during my international career.
             </p>
           </div>
         </div>
@@ -63,7 +63,7 @@
               Portfolio
             </span>
             <br />
-            <h1>Look at my<br />Projects.</h1>
+            <h2>My experiences</h2>
           </div>
         </div>
 

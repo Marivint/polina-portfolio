@@ -37,7 +37,10 @@
           </div>
 
           <div class="d-inline header-item header-item-grey">
-            <a href="#contact">
+            <router-link
+              :to="{ name: 'home', hash: '#contact' }"
+              v-on:click="triggerClick"
+            >
               <icon-message
                 colorClass="custom-icon-black"
                 otherClass="header-item-icon"
@@ -45,11 +48,11 @@
                 width="24"
               ></icon-message>
               Contact
-            </a>
+            </router-link>
           </div>
         </div>
         <div class="col text-right">
-          <button class="header-burger"></button>
+          <button id="header-burger"></button>
         </div>
       </nav>
     </div>

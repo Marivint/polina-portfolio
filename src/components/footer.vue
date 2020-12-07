@@ -1,17 +1,17 @@
 <template>
   <div id="lotte-hotel">
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" v-if="enableContact">
       <div class="container-fluid">
         <div class="row justify-content-center align-items-center">
           <div id="contact-card" class="col-12 col-md-10 col-lg-9">
             <div class="row">
               <div class="col-12">
-                <span class="project-cta subtitle subtitle-white subtitle-left"
+                <span class="project-cta subtitle subtitle-blue subtitle-left"
                   >Contact me
                 </span>
                 <br />
-                <h2 class="color-blue-dark">Let's Work <br />Together.</h2>
+                <h2>Let's Work <br />Together.</h2>
               </div>
               <div class="col-12 col-md-6">
                 <br />
@@ -184,21 +184,9 @@ export default {
     iconLinkedin
   },
   props: {
-    height: {
-      type: String,
-      required: false
-    },
-    width: {
-      type: String,
-      required: false
-    },
-    alt: {
-      type: String,
-      required: false
-    },
-    someClass: {
-      type: String,
-      required: false
+    enableContact: {
+      type: Boolean,
+      required: true
     }
   },
   data: function() {
