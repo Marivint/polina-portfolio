@@ -1,10 +1,10 @@
 <template>
-  <project-view
+  <experience-view
     title="Fashion collection"
     :images="[
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
     ]"
   >
     <p>
@@ -17,12 +17,12 @@
       Samara State Technical University, and was presented at fashion shows in
       Russia.
     </p>
-  </project-view>
+  </experience-view>
 </template>
 
 <script>
-import projectView from "../components/project-view/project-view.vue";
+import experienceView from "../components/experience/experience-view.vue";
 export default {
-  components: { projectView }
+  components: { experienceView }
 };
 </script>

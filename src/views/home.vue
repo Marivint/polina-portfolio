@@ -11,8 +11,8 @@
             </h1>
 
             <p>
-              Passionate about creating and development of cultural projects, I
-              bring my managerial <br />
+              Passionate about creating and development of cultural experiences,
+              I bring my managerial <br />
               and artistic skills acquired during my international career.
             </p>
           </div>
@@ -54,8 +54,8 @@
       </div>
     </div> -->
 
-    <!-- Projects -->
-    <section id="projects">
+    <!-- experiences -->
+    <section id="experiences">
       <div class="container-fluid">
         <div id="subtitle-portfolio" class="row">
           <div class="offset-1 col-10">
@@ -67,82 +67,82 @@
           </div>
         </div>
 
-        <project
+        <experience
           format="left"
           page="1-6"
           title="Lambinet Museum in complete privacy"
           :subtitles="['Conception', 'Management', 'Production']"
           :src="
-            require('@/assets/projects/musee-lambinet/cover-musee-lambinet.jpg')
+            require('@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg')
           "
           ctaRouteName="museeLambinet"
-        ></project>
+        ></experience>
 
-        <project
+        <experience
           format="right"
           page="2-6"
-          title="Meet my project"
+          title="Meet my experience"
           :subtitles="['Partnership', 'Production']"
           :src="
-            require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg')
+            require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
           "
-          ctaRouteName="meetMyProject"
-        ></project>
+          ctaRouteName="meetMyexperience"
+        ></experience>
 
-        <project
+        <experience
           format="left"
           page="3-6"
           title="Academy FAST"
           :subtitles="['Management', 'Production', 'Communication']"
           :src="
-            require('@/assets/projects/academy-fast/cover-academy-fast.jpg')
+            require('@/assets/experiences/academy-fast/cover-academy-fast.jpg')
           "
           ctaRouteName="academyFast"
-        ></project>
+        ></experience>
 
-        <project
+        <experience
           format="right"
           page="4-6"
           title="Alexander Vasiliev’s Volga Seasons"
           :subtitles="['Pre-production', 'Production']"
           :src="
-            require('@/assets/projects/alexander-vassiliev/cover-alexander-vassiliev.jpg')
+            require('@/assets/experiences/alexander-vassiliev/cover-alexander-vassiliev.jpg')
           "
           ctaRouteName="alexanderVasilievVolga"
-        ></project>
+        ></experience>
 
-        <project
+        <experience
           format="left"
           page="5-6"
           title="Fashion Collection"
           :subtitles="['Conception', 'Realisation']"
           :src="
-            require('@/assets/projects/fashion-collection/cover-fashion-collection.jpg')
+            require('@/assets/experiences/fashion-collection/cover-fashion-collection.jpg')
           "
           ctaRouteName="fashionCollection"
-        ></project>
+        ></experience>
 
-        <project
+        <experience
           format="right"
           page="6-6"
           title="‘Life Flight’ Performance"
           :subtitles="['Conception', 'Creation']"
           :src="
-            require('@/assets/projects/life-flight-performance/cover-life-flight-performance.jpg')
+            require('@/assets/experiences/life-flight-performance/cover-life-flight-performance.jpg')
           "
           ctaRouteName="lifeFlightPerformance"
-        ></project>
+        ></experience>
       </div>
     </section>
   </main>
 </template>
 
 <script>
-import project from "../components/project/project.vue";
+import experience from "../components/experience/experience.vue";
 // import iconArrowDown from "../components/icons/icon-arrow-down.vue";
 export default {
   components: {
-    project
+    experience
     // iconArrowDown
   },
   data() {

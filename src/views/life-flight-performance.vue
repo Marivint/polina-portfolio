@@ -1,10 +1,10 @@
 <template>
-  <project-view
+  <experience-view
     title="“Life Flight” Performance"
     :images="[
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
     ]"
   >
     <p>
@@ -26,12 +26,12 @@
       life. And everyone finds something of their own: unique places,
       recognition, art, love...
     </p>
-  </project-view>
+  </experience-view>
 </template>
 
 <script>
-import projectView from "../components/project-view/project-view.vue";
+import experienceView from "../components/experience/experience-view.vue";
 export default {
-  components: { projectView }
+  components: { experienceView }
 };
 </script>

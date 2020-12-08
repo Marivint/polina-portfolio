@@ -15,8 +15,8 @@ See variables.scss breakpoint
 /* Media Ultra Wide
 ============================================= */
 @include mediaUltraWide {
-  .project {
-    .project-img {
+  .experience {
+    .experience-img {
       &.pr {
         padding-right: 10% !important;
       }
@@ -24,7 +24,7 @@ See variables.scss breakpoint
         padding-left: 10% !important;
       }
     }
-    .project-text {
+    .experience-text {
       &.pr {
         padding-right: 10% !important;
       }
@@ -38,8 +38,8 @@ See variables.scss breakpoint
 /* Media Extra Large
 ============================================= */
 @include mediaExtraLarge {
-  .project {
-    .project-img {
+  .experience {
+    .experience-img {
       img {
         max-width: 572px;
         max-height: 700px;
@@ -254,7 +254,7 @@ See variables.scss breakpoint
     margin: 80px 0px 80px 0px;
   }
 
-  #projects {
+  #experiences {
     padding: 70px 0px 100px 0px;
     #subtitle-portfolio {
       padding: 0px 0px 70px 0px;
@@ -264,8 +264,8 @@ See variables.scss breakpoint
     }
   }
 
-  .project {
-    .project-img {
+  .experience {
+    .experience-img {
       text-align: center !important;
       padding: 0;
       &.pr {
@@ -282,7 +282,7 @@ See variables.scss breakpoint
         border-radius: 0;
       }
     }
-    .project-text {
+    .experience-text {
       -webkit-box-ordinal-group: 1 !important;
       -ms-flex-order: 1 !important;
       order: 1 !important;
@@ -294,10 +294,10 @@ See variables.scss breakpoint
       &.pl {
         padding-left: 0px !important;
       }
-      .project-page {
+      .experience-page {
         display: none;
       }
-      .project-cta {
+      .experience-cta {
         padding-top: 2rem;
       }
       .subtitle {
@@ -314,7 +314,7 @@ See variables.scss breakpoint
     }
   }
 
-  #project-view {
+  #experience-view {
     padding: 0px 0px 50px 0px;
     h3 {
       padding-top: 40px;

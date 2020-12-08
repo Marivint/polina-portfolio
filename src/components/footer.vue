@@ -7,7 +7,8 @@
           <div id="contact-card" class="col-12 col-md-10 col-lg-9">
             <div class="row">
               <div class="col-12">
-                <span class="project-cta subtitle subtitle-blue subtitle-left"
+                <span
+                  class="experience-cta subtitle subtitle-blue subtitle-left"
                   >Contact me
                 </span>
                 <br />
@@ -102,7 +103,8 @@
             <br class="d-block d-lg-none" />
             <p>
               <a href="#">
-                <span class="project-cta subtitle subtitle-white subtitle-left"
+                <span
+                  class="experience-cta subtitle subtitle-white subtitle-left"
                   >About me
                 </span>
               </a>
@@ -111,9 +113,10 @@
           <div class="col-11 col-sm-5 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <a href="#projects">
-                <span class="project-cta subtitle subtitle-white subtitle-left"
-                  >My projects
+              <a href="#experiences">
+                <span
+                  class="experience-cta subtitle subtitle-white subtitle-left"
+                  >My experiences
                 </span>
               </a>
             </p>
@@ -122,7 +125,8 @@
             <br class="d-block d-lg-none" />
             <p>
               <a href="#contact">
-                <span class="project-cta subtitle subtitle-white subtitle-left"
+                <span
+                  class="experience-cta subtitle subtitle-white subtitle-left"
                   >Contact me
                 </span>
               </a>

@@ -1,31 +1,31 @@
 <template>
-  <article class="row align-items-center project">
+  <article class="row align-items-center experience">
     <template v-if="showFormat == 1">
-      <project-image :showFormat="showFormat" :src="src"></project-image>
-      <project-text
+      <experience-image :showFormat="showFormat" :src="src"></experience-image>
+      <experience-text
         :showFormat="showFormat"
         :page="page"
         :title="title"
         :subtitles="subtitles"
         :ctaRouteName="ctaRouteName"
-      ></project-text>
+      ></experience-text>
     </template>
     <template v-if="showFormat == 2">
-      <project-text
+      <experience-text
         :showFormat="showFormat"
         :page="page"
         :title="title"
         :subtitles="subtitles"
         :ctaRouteName="ctaRouteName"
-      ></project-text>
-      <project-image :showFormat="showFormat" :src="src"></project-image>
+      ></experience-text>
+      <experience-image :showFormat="showFormat" :src="src"></experience-image>
     </template>
   </article>
 </template>
 
 <script>
-import projectImage from "./project-image.vue";
-import projectText from "./project-text.vue";
+import experienceImage from "./experience-image.vue";
+import experienceText from "./experience-text.vue";
 export default {
   props: {
     format: {
@@ -53,7 +53,7 @@ export default {
       required: true
     }
   },
-  components: { projectImage, projectText },
+  components: { experienceImage, experienceText },
   data: function() {
     return {
       showFormat: 0

@@ -1,20 +1,20 @@
 <template>
   <div
-    class="project-text"
+    class="experience-text"
     :class="
       showFormat === 1
         ? 'offset-1 col-11 offset-md-0 col-md-5 text-left pl'
         : 'offset-1 col-11 col-md-5 text-right pr'
     "
   >
-    <p class="project-page">{{ page }}</p>
+    <p class="experience-page">{{ page }}</p>
 
     <h3>{{ title }}</h3>
 
     <p>{{ subtitlesDisplay }}</p>
 
     <span
-      class="project-cta subtitle subtitle-blue-dark"
+      class="experience-cta subtitle subtitle-blue-dark"
       :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
       <router-link :to="{ name: ctaRouteName }">Learn more</router-link>

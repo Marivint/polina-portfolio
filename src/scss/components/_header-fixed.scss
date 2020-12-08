@@ -10,4 +10,20 @@
   z-index: 20;
   background: $color_full_white;
   @extend %base-transition;
+  #header-fixed-map {
+    height: 300px;
+    padding-bottom: 100px;
+  }
+  #header-fixed-informations {
+    // padding-top: 5%;
+    padding-left: 100px;
+    .svg-text {
+      padding-bottom: 30px;
+    }
+  }
+  #header-fixed-nav {
+    h1 {
+      padding-bottom: 30px;
+    }
+  }
 }

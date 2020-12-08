@@ -4,7 +4,11 @@
       <nav class="row header-center">
         <div class="col-auto col-md-11">
           <div class="d-inline header-item-logo">
-            <router-link :to="{ name: 'home' }">
+            <router-link
+              id="header-logo"
+              class="color-black"
+              :to="{ name: 'home' }"
+            >
               Polina Gusarova
             </router-link>
           </div>
@@ -23,7 +27,7 @@
 
           <div class="d-inline header-item header-item-grey">
             <router-link
-              :to="{ name: 'home', hash: '#projects' }"
+              :to="{ name: 'home', hash: '#experiences' }"
               v-on:click="triggerClick"
             >
               <icon-category

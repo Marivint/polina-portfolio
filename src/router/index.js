@@ -7,7 +7,7 @@ import {
 } from "vue-router";
 import vHome from "@/views/home.vue";
 import vMuseeLambinet from "@/views/musee-lambinet.vue";
-import vMeetMyProject from "@/views/meet-my-project.vue";
+import vMeetMyexperience from "@/views/meet-my-project.vue";
 import vAcademyFast from "@/views/academy-fast.vue";
 import vFashionCollection from "@/views/fashion-collection.vue";
 import vAlexanderVasilievVolga from "@/views/alexander-vasiliev-volga-season.vue";
@@ -41,8 +41,8 @@ const routes = [{
   },
   {
     path: "/meet-my-project.html",
-    name: "meetMyProject",
-    component: vMeetMyProject
+    name: "meetMyexperience",
+    component: vMeetMyexperience
   },
   {
     path: "/academy-fast.html",
