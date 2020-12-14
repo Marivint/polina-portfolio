@@ -18,54 +18,88 @@ app.use(router);
 
 app.mount("#app");
 
-/* Animate CSS
+/* OnLoad
 ============================================= */
-// const animateCSS = (element, animation, prefix = "animate__") => {
-//   return new Promise(resolve => {
-//     const animationName = `${prefix}${animation}`;
-//     const node = document.querySelector(element);
+// window.addEventListener("load", function () {
+//   // let headerFixed = $("#header-fixed");
+//   // console.log(headerFixed);
+//   // alert();
+//   // headerFixed.addEventListener("animationend", () => {
+//   //   headerFixed.addClass("hidden");
+//   //   alert();
+//   // });
+// });
 
-//     node.classList.add(`${prefix}animated`, animationName);
+/* Header fixed
+============================================= */
+const html = $("html");
+const body = $("body");
+const headerBurger = $("#header-burger");
+const headerFixed = $("#header-fixed");
+const headerLogo = $("#header-logo");
+const headerFixedLink = $(".header-fixed-link");
 
-//     function handleAnimationEnd() {
-//       node.classList.remove(`${prefix}animated`, animationName);
-//       resolve("Animation ended");
-//     }
+const animateHeaderFixed = () => {
+  headerBurger.toggleClass("active");
+  headerFixed.toggleClass("active");
+  // Enter / Leave trigger
+  if (headerFixed.hasClass("active")) {
+    headerFixed.addClass("visible");
+    enterHeaderFixed();
+  } else {
+    leaveHeaderFixed();
+  }
+};
 
-//     node.addEventListener("animationend", handleAnimationEnd, {
-//       once: true
-//     });
+// Animation end
+headerFixed.on("animationend", function () {
+  if (!headerFixed.hasClass("active")) {
+    headerFixed.addClass("hidden");
+  }
+});
+
+const enterHeaderFixed = () => {
+  // Remove
+  headerFixed.removeClass("hidden");
+  headerFixed.removeClass("animate__fadeOut");
+  // Add
+  headerBurger.addClass("active");
+  headerFixed.addClass("active");
+  headerFixed.addClass("visible");
+  headerFixed.addClass("animate__fadeIn");
+  html.addClass("no-scroll");
+  body.addClass("no-scroll");
+};
+
+const leaveHeaderFixed = () => {
+  // Remove
+  headerBurger.removeClass("active");
+  headerFixed.removeClass("active");
+  headerFixed.removeClass("visible");
+  headerFixed.removeClass("animate__fadeIn");
+  // Add
+  headerFixed.addClass("animate__fadeOut");
+  html.removeClass("no-scroll");
+  body.removeClass("no-scroll");
+};
+
+// const hideHeaderFixed = () => {
+//   headerFixed.addEventListener("animationend", () => {
+//     headerFixed.addClass("hidden");
 //   });
 // };
 
-/* Animate CSS
-============================================= */
-(function () {
-  let headerBurger = $("#header-burger");
-  let headerFixed = $("#header-fixed");
-  let headerLogo = $("#header-logo");
-  let html = $("html");
-  let body = $("body");
-  headerBurger.on("click", function () {
-    headerBurger.toggleClass("active");
-    headerFixed.toggleClass("active");
-    // Enter / Leave trigger
-    if (headerFixed.hasClass("active")) {
-      headerFixed.addClass("visible");
-      headerFixed.removeClass("animate__slideOutLeft");
-      headerLogo.addClass("color-white");
-      headerLogo.removeClass("color-black");
-      headerFixed.addClass("animate__slideInLeft");
-    } else {
-      headerLogo.addClass("color-black");
-      headerLogo.removeClass("color-white");
-      headerFixed.removeClass("animate__slideInLeft");
-      headerFixed.addClass("animate__slideOutLeft");
-    }
-    html.toggleClass("no-scroll");
-    body.toggleClass("no-scroll");
-  });
-})();
+headerBurger.on("click", function () {
+  animateHeaderFixed();
+});
+
+headerFixedLink.on("click", function () {
+  animateHeaderFixed();
+});
+
+headerLogo.on("click", function () {
+  leaveHeaderFixed();
+});
 
 /* Google maps
 ============================================= */

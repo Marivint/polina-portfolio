@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row">
           <div id="about-text" class="offset-1 col-10">
-            <h1 class="user-select-none color-blue-dark">
+            <h1 class="user-select-none color-purple">
               I am a cultural<br />
               product manager.
             </h1>
@@ -59,7 +59,7 @@
       <div class="container-fluid">
         <div id="subtitle-portfolio" class="row">
           <div class="offset-1 col-10">
-            <span class="subtitle subtitle-left subtitle-blue-dark">
+            <span class="subtitle subtitle-left subtitle-purple">
               Portfolio
             </span>
             <br />
@@ -142,13 +142,13 @@ import experience from "../components/experience/experience.vue";
 // import iconArrowDown from "../components/icons/icon-arrow-down.vue";
 export default {
   components: {
-    experience
+    experience,
     // iconArrowDown
   },
   data() {
     return {
-      show: true
+      show: true,
     };
-  }
+  },
 };
 </script>

@@ -2,13 +2,15 @@
   <div id="header-fixed" class="animate__animated animate__faster hidden">
     <div class="container-fluid h-100">
       <div class="row h-100 align-items-center">
-        <div class="col-3 bg-black h-100 color-white align-self-center"></div>
+        <div
+          class="d-none d-sm-block col-sm-4 col-md-3 bg-black h-100 color-white align-self-center"
+        ></div>
         <div class="col text-left">
           <div class="row">
-            <div id="header-fixed-map" class="offset-1 col-10">
-              <div id="map" class="h-100"></div>
-            </div>
-            <div id="header-fixed-informations" class="col-6">
+            <div
+              id="header-fixed-informations"
+              class="offset-1 col-md-10 col-lg-5 "
+            >
               <span class="svg-text">
                 <icon-message
                   colorClass="custom-icon-black"
@@ -28,10 +30,36 @@
                 <div class="text-wrapper">linkedin</div>
               </span>
             </div>
-            <div id="header-fixed-nav" class="col-5">
-              <h1>About me</h1>
-              <h1>Experiences</h1>
-              <h1>Contact</h1>
+            <div id="header-fixed-nav" class="offset-1 col-md-10 col-lg-5">
+              <router-link
+                :to="{ name: 'home', hash: '#experiences' }"
+                v-on:click="triggerClick"
+                class="color-black header-fixed-link"
+              >
+                <h1>About me</h1>
+              </router-link>
+
+              <router-link
+                :to="{ name: 'home', hash: '#experiences' }"
+                v-on:click="triggerClick"
+                class="color-purple header-fixed-link"
+              >
+                <h1>Experiences</h1>
+              </router-link>
+
+              <router-link
+                :to="{ name: 'home', hash: '#contact' }"
+                v-on:click="triggerClick"
+                class="color-black header-fixed-link"
+              >
+                <h1>Contact</h1>
+              </router-link>
+            </div>
+            <div
+              id="header-fixed-map"
+              class="offset-1 col-9 col-md-10 col-lg-10"
+            >
+              <div id="map" class="h-100"></div>
             </div>
           </div>
           <br />
@@ -53,6 +81,6 @@ export default {
   data: function() {
     return {};
   },
-  mounted() {}
+  mounted() {},
 };
 </script>

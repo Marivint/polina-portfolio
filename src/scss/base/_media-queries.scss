@@ -46,6 +46,16 @@ See variables.scss breakpoint
       }
     }
   }
+  #header-fixed-informations {
+    padding-top: 15px;
+  }
+
+  #header-fixed-nav {
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+    }
+  }
 }
 
 /* Media Large
@@ -86,6 +96,10 @@ See variables.scss breakpoint
     }
   }
 
+  #header-fixed-informations {
+    padding-top: 9px;
+  }
+
   /* Typographie
   ============================================= */
   h1 {
@@ -102,6 +116,13 @@ See variables.scss breakpoint
   }
   p {
     font-size: 0.9em;
+  }
+
+  #header-fixed-nav {
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+    }
   }
 
   /* Sections
@@ -150,10 +171,10 @@ See variables.scss breakpoint
 
   /* Icon
   ============================================= */
-  .custom-icon {
-    width: 20px;
-    height: 20px;
-  }
+  // .custom-icon {
+  //   width: 20px;
+  //   height: 20px;
+  // }
 }
 
 /* Media Medium
@@ -172,11 +193,34 @@ See variables.scss breakpoint
     padding-bottom: 0px;
     padding-left: 20px;
     .header-item-logo {
-      margin-right: 50px;
+      margin-right: 45px;
+    }
+    .header-item {
+      margin-right: 30px;
     }
     .custom-icon {
-      margin-right: 10px !important;
+      margin-right: 5px !important;
     }
+  }
+
+  #header-fixed-nav {
+    padding-top: 100px !important;
+    -webkit-box-ordinal-group: 0 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+  }
+
+  #header-fixed-informations {
+    padding-top: 100px !important;
+    -webkit-box-ordinal-group: 1 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+
+  #header-fixed-map {
+    -webkit-box-ordinal-group: 3 !important;
+    -ms-flex-order: 3 !important;
+    order: 3 !important;
   }
 
   /* Typographie
@@ -210,6 +254,12 @@ See variables.scss breakpoint
         }
       }
     }
+  }
+  /* Icon
+  ============================================= */
+  .custom-icon {
+    width: 18px;
+    height: 18px;
   }
 }
 

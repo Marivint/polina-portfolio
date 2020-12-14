@@ -54,6 +54,8 @@ export default {
     beforeEnter: function() {
       if (this.$route.name === "home") {
         this.enableContact = 1;
+      } else {
+        this.enableContact = 0;
       }
     },
     enter: function() {

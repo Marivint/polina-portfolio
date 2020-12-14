@@ -2,15 +2,16 @@
   <header>
     <div class="container-fluid">
       <nav class="row header-center">
-        <div class="col-auto col-md-11">
+        <div class="col-auto col-md-10">
           <div class="d-inline header-item-logo">
-            <router-link
+            <!-- <router-link
               id="header-logo"
               class="color-black"
               :to="{ name: 'home' }"
             >
               Polina Gusarova
-            </router-link>
+            </router-link> -->
+            <img class="header-logo" src="@/assets/logos/logo.png" alt="" />
           </div>
 
           <div class="d-inline header-item header-item-grey">
@@ -36,7 +37,7 @@
                 height="24"
                 width="24"
               ></icon-category>
-              Work
+              Experiences
             </router-link>
           </div>
 

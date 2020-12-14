@@ -92,8 +92,8 @@ body {
 /* Custom icon && for icon
 ============================================= */
 .custom-icon {
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   @extend %base-transition;
 }
 
@@ -171,6 +171,15 @@ p {
 //     cursor: initial;
 //   }
 // }
+
+/* Others 
+============================================= */
+a {
+  &:hover {
+    text-decoration: none;
+    color: $color_purple;
+  }
+}
 
 /* Colors 
 ============================================= */

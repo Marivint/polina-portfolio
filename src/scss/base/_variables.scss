@@ -9,7 +9,7 @@ $line_height_base: 1.6;
 $breakpoint_ultra_wide: 1920px; // >= 1920px
 $breakpoint_extra_large: 1400px; // >= 1200px
 $breakpoint_large: 1200px; // <= 1200px
-$breakpoint_medium: 992px; // <= 992px
+$breakpoint_medium: 991px; // <= 992px
 $breakpoint_small: 767px; // <= 767px
 
 /* Path 
@@ -26,7 +26,7 @@ $color_light_white: #f5f6f7;
 $color_grey: #52616a;
 $color_light_grey: #d8d8d833;
 $color_blue: #2b90d9;
-$color_blue_dark: #4c40f7;
+$color_purple: #4c40f7;
 $color_red: #df405a;
 
 // To generate colors
@@ -39,7 +39,7 @@ $list_color: (
   grey: $color_grey,
   light-grey: $color_light_grey,
   blue: $color_blue,
-  blue-dark: $color_blue_dark,
+  purple: $color_purple,
   red: $color_red,
 );
 

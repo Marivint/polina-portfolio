@@ -45,7 +45,7 @@
         }
         .btn {
           color: $color_white;
-          // background-color: darken($color_blue_dark, 40%);
+          // background-color: darken($color_purple, 40%);
           background-color: $color_blue;
           height: 70px;
           @extend %base-transition;
