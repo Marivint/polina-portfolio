@@ -34,11 +34,6 @@ header:after {
 
 /* Header logo
 ============================================= */
-.header-logo {
-  width: 40px;
-  height: auto;
-  @extend %base-transition;
-}
 
 .header-item-logo {
   position: relative;
@@ -51,6 +46,14 @@ header:after {
     }
   }
   @extend %base-transition;
+}
+
+#header-logo {
+  img {
+    width: 40px;
+    height: auto;
+    @extend %base-transition;
+  }
 }
 
 /* Header item

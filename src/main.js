@@ -37,6 +37,8 @@ const body = $("body");
 const headerBurger = $("#header-burger");
 const headerFixed = $("#header-fixed");
 const headerLogo = $("#header-logo");
+const logoWhite = $("#logo-white");
+const logoBlack = $("#logo-black");
 const headerFixedLink = $(".header-fixed-link");
 
 const animateHeaderFixed = () => {
@@ -44,7 +46,6 @@ const animateHeaderFixed = () => {
   headerFixed.toggleClass("active");
   // Enter / Leave trigger
   if (headerFixed.hasClass("active")) {
-    headerFixed.addClass("visible");
     enterHeaderFixed();
   } else {
     leaveHeaderFixed();
@@ -62,11 +63,13 @@ const enterHeaderFixed = () => {
   // Remove
   headerFixed.removeClass("hidden");
   headerFixed.removeClass("animate__fadeOut");
+  logoBlack.hide();
   // Add
   headerBurger.addClass("active");
   headerFixed.addClass("active");
   headerFixed.addClass("visible");
   headerFixed.addClass("animate__fadeIn");
+  logoWhite.show();
   html.addClass("no-scroll");
   body.addClass("no-scroll");
 };
@@ -77,8 +80,10 @@ const leaveHeaderFixed = () => {
   headerFixed.removeClass("active");
   headerFixed.removeClass("visible");
   headerFixed.removeClass("animate__fadeIn");
+  logoWhite.hide();
   // Add
   headerFixed.addClass("animate__fadeOut");
+  logoBlack.show();
   html.removeClass("no-scroll");
   body.removeClass("no-scroll");
 };
