@@ -9,7 +9,7 @@ import App from "./App.vue";
 /* Plugin
 ============================================= */
 import router from "./router";
-// import "bootstrap";
+// import axios from "axios";
 import $ from "jquery"; //import jQuery
 
 const app = createApp(App);

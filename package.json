@@ -7,16 +7,19 @@
     "inspect": "vue-cli-service inspect",
     "help": "vue-cli-service help",
     "lint": "vue-cli-service lint",
-    "build": "vue-cli-service build",
+    "build development": "vue-cli-service build --mode development",
+    "build production": "vue-cli-service build --mode production",
     "install-production": "npm install -g serve",
     "production": "serve -s dist"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "core-js": "^3.6.5",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
+    "querystring": "^0.2.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-rc.5"
   },

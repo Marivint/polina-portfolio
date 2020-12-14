@@ -24,7 +24,7 @@
               </div>
               <div class="col-6 text-center"></div>
             </div>
-            <form id="contact-form" class="row">
+            <form id="contact-form" class="row" @submit="submitContact">
               <div class="col-12 col-lg-6">
                 <span class="svg-text">
                   <icon-message
@@ -52,6 +52,7 @@
                     type="text"
                     id="inputName"
                     class="form-control"
+                    v-model="contactForm.name"
                     placeholder="Name"
                     required
                   />
@@ -64,6 +65,7 @@
                     type="email"
                     id="inputEmail"
                     class="form-control"
+                    v-model="contactForm.email"
                     placeholder="Email address"
                     required
                   />
@@ -74,6 +76,7 @@
                 <textarea
                   class="form-control"
                   id="inputMessage"
+                  v-model="contactForm.message"
                   placeholder="Your message"
                   rows="10"
                   required
@@ -180,6 +183,12 @@ import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 import iconLinkedin from "../components/icons/icon-linkedin.vue";
 // import iconHeart from "../components/icons/icon-heart.vue";
 
+import axios from "axios";
+const querystring = require("querystring");
+
+// alert(process.env.VUE_APP_URL);
+// alert(process.env.BASE_URL);
+
 export default {
   components: {
     iconMessage,
@@ -194,8 +203,29 @@ export default {
     }
   },
   data: function() {
-    return {};
+    return {
+      contactForm: {
+        name: "",
+        email: "",
+        message: "",
+        sent: false
+      }
+    };
   },
-  mounted() {}
+  mounted() {},
+  methods: {
+    submitContact(e) {
+      e.preventDefault();
+      console.log(this.$axios);
+      axios
+        .post(
+          process.env.BASE_URL + "mail.php",
+          querystring.stringify(this.contactForm)
+        )
+        .then(() => {
+          this.sent = true;
+        });
+    }
+  }
 };
 </script>
