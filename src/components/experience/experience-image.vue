@@ -1,6 +1,6 @@
 <template>
   <div
-    class="project-img"
+    class="experience-img"
     :class="
       showFormat === 1
         ? 'offset-md-1 col-12 col-md-5 text-right pr'

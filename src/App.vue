@@ -1,6 +1,7 @@
 <template>
   <!-- Header -->
-  <v-header></v-header>
+  <c-header></c-header>
+  <c-header-fixed></c-header-fixed>
   <!-- End header -->
 
   <router-view v-slot="{ Component }">
@@ -10,24 +11,27 @@
       :enter-active-class="enterActiveClass"
       :leave-active-class="leaveActiveClass"
       ref="routerViewRef"
+      v-on:before-enter="beforeEnter"
       v-on:enter="enter"
     >
       <component :is="Component" />
     </transition>
   </router-view>
 
-  <v-footer></v-footer>
+  <c-footer :enableContact="enableContact"></c-footer>
   <!-- End router view -->
 </template>
 
 <script>
-import vHeader from "./components/header.vue";
-import vFooter from "./components/footer.vue";
+import cHeader from "./components/header.vue";
+import cHeaderFixed from "./components/header-fixed.vue";
+import cFooter from "./components/footer.vue";
 
 export default {
   components: {
-    vHeader,
-    vFooter
+    cHeader,
+    cHeaderFixed,
+    cFooter
   },
   watch: {
     $route(to, from) {
@@ -47,6 +51,13 @@ export default {
     }
   },
   methods: {
+    beforeEnter: function() {
+      if (this.$route.name === "home") {
+        this.enableContact = 1;
+      } else {
+        this.enableContact = 0;
+      }
+    },
     enter: function() {
       if (this.$route.hash) {
         location.href = this.$route.hash;
@@ -59,7 +70,8 @@ export default {
   data() {
     return {
       enterActiveClass: "",
-      leaveActiveClass: ""
+      leaveActiveClass: "",
+      enableContact: 0
     };
   }
 };

@@ -1,19 +1,19 @@
 <template>
-  <project-view
+  <experience-view
     title="Alexander Vasiliev’s Volga Seasons"
     :images="[
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/projects/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
+      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
     ]"
   >
     <p>
       The fashion festival "Alexander Vasiliev's Volga Seasons" has been held in
       Samara since 2001 and is a traditional annual event. The goal of the
-      project is to create conditions for the development of young costume and
-      theater designers. The winners of the festival have repeatedly presented
-      their collections abroad, including in France and China, for example, at
-      the international Silk Road Fashion Week in China.
+      experience is to create conditions for the development of young costume
+      and theater designers. The winners of the festival have repeatedly
+      presented their collections abroad, including in France and China, for
+      example, at the international Silk Road Fashion Week in China.
       <br /><br />
       The artistic director of the festival is the all-Russian famous fashion
       historian and art critic, theater artist, collector and TV presenter
@@ -26,12 +26,12 @@
       the festival, I also assisted the production of the V`SEASONS Showroom of
       clothes and accessories.
     </p>
-  </project-view>
+  </experience-view>
 </template>
 
 <script>
-import projectView from "../components/project-view/project-view.vue";
+import experienceView from "../components/experience/experience-view.vue";
 export default {
-  components: { projectView }
+  components: { experienceView }
 };
 </script>

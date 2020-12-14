@@ -15,8 +15,8 @@ See variables.scss breakpoint
 /* Media Ultra Wide
 ============================================= */
 @include mediaUltraWide {
-  .project {
-    .project-img {
+  .experience {
+    .experience-img {
       &.pr {
         padding-right: 10% !important;
       }
@@ -24,7 +24,7 @@ See variables.scss breakpoint
         padding-left: 10% !important;
       }
     }
-    .project-text {
+    .experience-text {
       &.pr {
         padding-right: 10% !important;
       }
@@ -38,12 +38,22 @@ See variables.scss breakpoint
 /* Media Extra Large
 ============================================= */
 @include mediaExtraLarge {
-  .project {
-    .project-img {
+  .experience {
+    .experience-img {
       img {
         max-width: 572px;
         max-height: 700px;
       }
+    }
+  }
+  #header-fixed-informations {
+    padding-top: 15px;
+  }
+
+  #header-fixed-nav {
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
     }
   }
 }
@@ -86,6 +96,10 @@ See variables.scss breakpoint
     }
   }
 
+  #header-fixed-informations {
+    padding-top: 9px;
+  }
+
   /* Typographie
   ============================================= */
   h1 {
@@ -102,6 +116,13 @@ See variables.scss breakpoint
   }
   p {
     font-size: 0.9em;
+  }
+
+  #header-fixed-nav {
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+    }
   }
 
   /* Sections
@@ -150,10 +171,10 @@ See variables.scss breakpoint
 
   /* Icon
   ============================================= */
-  .custom-icon {
-    width: 20px;
-    height: 20px;
-  }
+  // .custom-icon {
+  //   width: 20px;
+  //   height: 20px;
+  // }
 }
 
 /* Media Medium
@@ -172,11 +193,34 @@ See variables.scss breakpoint
     padding-bottom: 0px;
     padding-left: 20px;
     .header-item-logo {
-      margin-right: 50px;
+      margin-right: 45px;
+    }
+    .header-item {
+      margin-right: 30px;
     }
     .custom-icon {
-      margin-right: 10px !important;
+      margin-right: 5px !important;
     }
+  }
+
+  #header-fixed-nav {
+    padding-top: 100px !important;
+    -webkit-box-ordinal-group: 0 !important;
+    -ms-flex-order: 0 !important;
+    order: 0 !important;
+  }
+
+  #header-fixed-informations {
+    padding-top: 100px !important;
+    -webkit-box-ordinal-group: 1 !important;
+    -ms-flex-order: 1 !important;
+    order: 1 !important;
+  }
+
+  #header-fixed-map {
+    -webkit-box-ordinal-group: 3 !important;
+    -ms-flex-order: 3 !important;
+    order: 3 !important;
   }
 
   /* Typographie
@@ -210,6 +254,12 @@ See variables.scss breakpoint
         }
       }
     }
+  }
+  /* Icon
+  ============================================= */
+  .custom-icon {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -254,7 +304,7 @@ See variables.scss breakpoint
     margin: 80px 0px 80px 0px;
   }
 
-  #projects {
+  #experiences {
     padding: 70px 0px 100px 0px;
     #subtitle-portfolio {
       padding: 0px 0px 70px 0px;
@@ -264,8 +314,8 @@ See variables.scss breakpoint
     }
   }
 
-  .project {
-    .project-img {
+  .experience {
+    .experience-img {
       text-align: center !important;
       padding: 0;
       &.pr {
@@ -282,7 +332,7 @@ See variables.scss breakpoint
         border-radius: 0;
       }
     }
-    .project-text {
+    .experience-text {
       -webkit-box-ordinal-group: 1 !important;
       -ms-flex-order: 1 !important;
       order: 1 !important;
@@ -294,10 +344,10 @@ See variables.scss breakpoint
       &.pl {
         padding-left: 0px !important;
       }
-      .project-page {
+      .experience-page {
         display: none;
       }
-      .project-cta {
+      .experience-cta {
         padding-top: 2rem;
       }
       .subtitle {
@@ -314,7 +364,7 @@ See variables.scss breakpoint
     }
   }
 
-  #project-view {
+  #experience-view {
     padding: 0px 0px 50px 0px;
     h3 {
       padding-top: 40px;
@@ -323,9 +373,9 @@ See variables.scss breakpoint
   }
 
   footer {
-    padding: 100px 0px 0px 0px;
+    padding: 50px 0px 0px 0px !important;
     #footer-copyright {
-      padding-top: 0px;
+      padding-top: 0px !important;
     }
   }
 }

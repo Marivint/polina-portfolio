@@ -1,7 +1,7 @@
-/* Project
+/* experience
 ============================================= */
-.project {
-  .project-img {
+.experience {
+  .experience-img {
     text-align: center;
     &.pr {
       padding-right: 4%;
@@ -20,17 +20,17 @@
       @extend %base-transition;
     }
   }
-  .project-text {
+  .experience-text {
     &.pr {
       padding-right: 4%;
     }
     &.pl {
       padding-left: 4%;
     }
-    .project-page {
+    .experience-page {
       padding-bottom: 2rem;
     }
-    .project-cta {
+    .experience-cta {
       padding-top: 3rem;
     }
   }

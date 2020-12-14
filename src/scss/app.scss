@@ -15,7 +15,7 @@
 /* Structure and layout files 
 ============================================= */
 @import "main.scss"; // Main
-@import "modules/transition.scss"; // Transition
+// @import "modules/transition.scss"; // Transition
 // @import "modules/parallax.scss"; // Parallax
 // @import "modules/floating-labels"; // Floating labels
 // @import 'modules/cursor.scss'; // Cursor
@@ -23,9 +23,10 @@
 /* Components
 ============================================= */
 @import "components/header.scss"; // Header
+@import "components/header-fixed.scss"; // Header fixed
 @import "components/footer.scss"; // Footer
-@import "components/project.scss"; // Project
-@import "components/project-view.scss"; // Project view
+@import "components/experience.scss"; // experience
+@import "components/experience-view.scss"; // experience view
 
 /* Views
 ============================================= */

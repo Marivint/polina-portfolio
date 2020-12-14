@@ -1,5 +1,5 @@
 <template>
-  <main id="project-view">
+  <main id="experience-view">
     <div class="container-fluid h-100">
       <div class="row align-items-center h-100">
         <div class="offset-0 col-12 offset-md-1 col-md-4">

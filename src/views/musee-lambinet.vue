@@ -1,20 +1,20 @@
 <template>
-  <project-view
+  <experience-view
     title="Lambinet Museum in complete privacy"
     :images="[
-      require('@/assets/projects/musee-lambinet/cover-musee-lambinet.jpg'),
-      require('@/assets/projects/musee-lambinet/musee-lambinet-02.jpg'),
-      require('@/assets/projects/musee-lambinet/musee-lambinet-03.jpg'),
-      require('@/assets/projects/musee-lambinet/musee-lambinet-04.jpg'),
-      require('@/assets/projects/musee-lambinet/musee-lambinet-05.jpg')
+      require('@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg'),
+      require('@/assets/experiences/musee-lambinet/musee-lambinet-02.jpg'),
+      require('@/assets/experiences/musee-lambinet/musee-lambinet-03.jpg'),
+      require('@/assets/experiences/musee-lambinet/musee-lambinet-04.jpg'),
+      require('@/assets/experiences/musee-lambinet/musee-lambinet-05.jpg')
     ]"
   >
     <p>
       In February 2020, the “Culture Sans Frontières” association proposed an
-      innovative cultural mediation project ‘Musée Lambinet en toute intimité’
-      within the Lambinet museum in the city of Versailles. More than a visit,
-      it's an immersive and sensitive experience during which visitors interfere
-      in the daily life of bourgeois in the time of Louis XV.
+      innovative cultural mediation experience ‘Musée Lambinet en toute
+      intimité’ within the Lambinet museum in the city of Versailles. More than
+      a visit, it's an immersive and sensitive experience during which visitors
+      interfere in the daily life of bourgeois in the time of Louis XV.
       <br /><br />
       The visit consisted of 4 workshops, each based on the different rhythms of
       the day: getting up, having lunch, afternoon games and reception in the
@@ -27,14 +27,14 @@
       <br /><br />
       With the association's team, I participated in all stages of the event:
       conception, promotion, management, production of mediation tools and
-      project implementation.
+      experience implementation.
     </p>
-  </project-view>
+  </experience-view>
 </template>
 
 <script>
-import projectView from "../components/project-view/project-view.vue";
+import experienceView from "../components/experience/experience-view.vue";
 export default {
-  components: { projectView }
+  components: { experienceView }
 };
 </script>

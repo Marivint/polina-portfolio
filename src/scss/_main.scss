@@ -7,6 +7,9 @@ body {
   -webkit-text-size-adjust: 100%;
   font-size: $font-size-base;
   scroll-behavior: smooth;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 /* Body 
@@ -89,8 +92,8 @@ body {
 /* Custom icon && for icon
 ============================================= */
 .custom-icon {
-  width: 23px;
-  height: 23px;
+  width: 18px;
+  height: 18px;
   @extend %base-transition;
 }
 
@@ -119,17 +122,17 @@ p,
 /* TYPOGRAPHIE
 ============================================= */
 h1 {
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
 }
 
@@ -169,6 +172,23 @@ p {
 //   }
 // }
 
+/* Others 
+============================================= */
+a {
+  &:hover {
+    text-decoration: none;
+    color: $color_purple;
+  }
+}
+
 /* Colors 
 ============================================= */
 @include generateColors;
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

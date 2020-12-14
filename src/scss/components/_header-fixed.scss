@@ -1,0 +1,31 @@
+/* Header
+============================================= */
+#header-fixed {
+  //   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: $color_full_white;
+  @extend %base-transition;
+  #header-fixed-map {
+    height: 300px;
+    padding-top: 100px;
+  }
+  #header-fixed-informations {
+    padding-top: 10px;
+    // padding-left: 100px;
+    .svg-text {
+      padding-bottom: 15px;
+    }
+  }
+  #header-fixed-nav {
+    h1 {
+      padding-bottom: 15px;
+      font-size: 2em;
+      font-weight: 600;
+    }
+  }
+}
