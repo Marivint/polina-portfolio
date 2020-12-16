@@ -1,6 +1,12 @@
 #experience-view {
-  padding: 150px 0px 150px 0px;
-  h3 {
-    padding-bottom: 20px;
+  padding: 100px 40px 150px 40px;
+  #experience-view-title {
+    padding-bottom: 100px;
+  }
+  #carousel-experience {
+    max-width: 500px;
+  }
+  #experience-view-text {
+    padding-left: 50px;
   }
 }

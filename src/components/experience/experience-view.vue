@@ -1,11 +1,18 @@
 <template>
   <main id="experience-view">
-    <div class="container-fluid h-100">
-      <div class="row align-items-center h-100">
-        <div class="offset-0 col-12 offset-md-1 col-md-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="experience-view-title" class="col-12 text-left">
+          <span class="experience-cta subtitle subtitle-left subtitle-black">
+            Experience 01/02/2020
+          </span>
+          <br />
+          <h3>{{ title }}</h3>
+        </div>
+        <div class="offset-0 col-12 col-lg-5 text-center">
           <div
-            id="carouselExampleFade"
-            class="carousel slide carousel-fade"
+            id="carousel-experience"
+            class="carousel slide d-block"
             data-ride="carousel"
           >
             <div class="carousel-inner">
@@ -13,15 +20,14 @@
                 v-for="(imagePath, index) in images"
                 v-bind:key="imagePath"
                 class="carousel-item"
-                :class="[!index ? 'active' : '']"
+                :class="[index == 0 ? 'active' : '']"
               >
                 <img :src="imagePath" class="d-block w-100" alt="..." />
               </div>
             </div>
             <a
               class="carousel-control-prev"
-              href="#carouselExampleFade"
-              z
+              href="#carousel-experience"
               role="button"
               data-slide="prev"
             >
@@ -33,7 +39,7 @@
             </a>
             <a
               class="carousel-control-next"
-              href="#carouselExampleFade"
+              href="#carousel-experience"
               role="button"
               data-slide="next"
             >
@@ -45,8 +51,7 @@
             </a>
           </div>
         </div>
-        <div class="offset-1 col-10 offset-md-1 col-md-5">
-          <h3>{{ title }}</h3>
+        <div id="experience-view-text" class="col-12 col-lg-6">
           <slot></slot>
         </div>
       </div>
