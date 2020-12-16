@@ -77,25 +77,6 @@ See variables.scss breakpoint
     .header-item {
       font-size: 0.9em;
     }
-    .header-burger {
-      width: 30px;
-      height: 30px;
-    }
-
-    .header-burger:before,
-    .header-burger:after {
-      width: 25px;
-    }
-
-    .header-burger:before {
-      height: 1px;
-      margin-bottom: 3px;
-    }
-
-    .header-burger:after {
-      height: 2px;
-      margin-top: 3px;
-    }
 
     .custom-icon {
       margin-right: 15px !important;
@@ -311,12 +292,43 @@ See variables.scss breakpoint
     .header-item {
       display: none !important;
     }
-    .header-burger {
-      &:after,
-      &:before {
-        background: $color_black;
-      }
+    #header-burger {
+      width: 40px;
+      height: 40px;
     }
+
+    #header-burger:before,
+    #header-burger:after {
+      width: 25px;
+    }
+
+    #header-burger.active {
+      background: transparent;
+    }
+
+    #header-burger.active:before,
+    #header-burger.active:after {
+      background: $color_black;
+    }
+
+    // #header-burger:before {
+    //   height: 2px;
+    //   margin-bottom: 4px;
+    // }
+
+    // #header-burger:after {
+    //   height: 3px;
+    //   margin-top: 4px;
+    // }
+  }
+
+  #header-fixed-informations {
+    padding-top: 0px !important;
+  }
+
+  #header-fixed-map {
+    padding-top: 0px !important;
+    height: 220px !important;
   }
 
   #skills {
@@ -426,7 +438,7 @@ See variables.scss breakpoint
   }
 
   footer {
-    padding: 50px 0px 0px 0px !important;
+    padding: 20px 0px 0px 0px !important;
     box-shadow: inset 0 -250px 20px 0px rgb($color_full_black, 0.4) !important;
     #footer-copyright {
       padding-top: 0px !important;

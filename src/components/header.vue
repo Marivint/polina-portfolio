@@ -5,13 +5,14 @@
         <div class="col-auto col-md-10">
           <div class="d-inline header-item-logo">
             <router-link id="header-logo" :to="{ name: 'home' }">
-              <img id="logo-black" src="@/assets/logos/logo-b.png" alt="" />
+              <!-- <img id="logo-black" src="@/assets/logos/logo-b.png" alt="" />
               <img
                 id="logo-white"
                 class="hidden"
                 src="@/assets/logos/logo-w.png"
                 alt=""
-              />
+              /> -->
+              Polina Gusarova
             </router-link>
           </div>
 

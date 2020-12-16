@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <div class="row">
         <div id="experience-view-title" class="col-12 text-left">
-          <span class="experience-cta subtitle subtitle-left subtitle-black">
+          <span class="experience-cta subtitle subtitle-left subtitle-purple">
             Experience 01/02/2020
           </span>
           <br />

@@ -2,6 +2,7 @@
 ============================================= */
 html,
 body {
+  position: relative;
   font-family: $font-family-sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -28,13 +29,18 @@ body {
 /* Main Page 
 ============================================= */
 #app {
-  margin-top: 130px;
+  padding-top: 130px;
 }
 
 .wrapper-center {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+a {
+  text-decoration: none;
+  color: $color_black;
 }
 
 // .main-bg{

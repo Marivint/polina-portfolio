@@ -18,16 +18,23 @@
                   height="30"
                   width="30"
                 />
-                <div class="text-wrapper">gusarova@gmail.com</div>
+                <div class="text-wrapper">
+                  <a href="mailto:{{emailTo}}">{{ emailTo }}</a>
+                </div>
               </span>
               <span class="svg-text">
-                <icon-linkedin
-                  colorClass="custom-icon-black"
-                  otherClass=""
-                  height="30"
-                  width="30"
-                />
-                <div class="text-wrapper">linkedin</div>
+                <a
+                  href="https://www.linkedin.com/in/polina-gusarova-2791a4198/"
+                  target="_blank"
+                >
+                  <icon-linkedin
+                    colorClass="custom-icon-black"
+                    otherClass=""
+                    height="30"
+                    width="30"
+                  />
+                  <div class="text-wrapper">linkedin</div>
+                </a>
               </span>
             </div>
             <div id="header-fixed-nav" class="offset-1 col-md-10 col-lg-5">
@@ -79,8 +86,10 @@ import iconLinkedin from "../components/icons/icon-linkedin.vue";
 export default {
   components: { iconMessage, iconLinkedin },
   data: function() {
-    return {};
+    return {
+      emailTo: process.env.VUE_APP_CONTACT_EMAIL
+    };
   },
-  mounted() {},
+  mounted() {}
 };
 </script>
