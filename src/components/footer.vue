@@ -25,6 +25,61 @@
               <div class="col-6 text-center"></div>
             </div>
             <form id="contact-form" class="row" @submit="submitContact">
+              <div v-show="contactForm.sent == true" class="col-12">
+                <div class="mb-5 alert alert-light" role="alert">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                      <icon-info-circle
+                        colorClass="custom-icon-blue"
+                        otherClass="custom-icon-big"
+                        height="30"
+                        width="30"
+                      />
+                    </div>
+                    <div class="col">
+                      Thank you for contacting me. <br />
+                      Your message has been successfully sent. I will contact
+                      you very soon!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-show="contactForm.sent == false" class="col-12">
+                <div class="mb-5 alert alert-danger" role="alert">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                      <icon-info-circle
+                        colorClass="custom-icon-red"
+                        otherClass="custom-icon-big"
+                        height="30"
+                        width="30"
+                      />
+                    </div>
+                    <div class="col">
+                      Sorry, your message has not been send. <br />
+                      Please contact me on
+                      <a href="mailto:{{emailTo}}">{{ emailTo }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-show="emailValid == false" class="col-12">
+                <div class="mb-5 alert alert-danger" role="alert">
+                  <div class="row justify-content-center align-items-center">
+                    <div class="col-auto">
+                      <icon-info-circle
+                        colorClass="custom-icon-red"
+                        otherClass="custom-icon-big"
+                        height="30"
+                        width="30"
+                      />
+                    </div>
+                    <div class="col">
+                      Invalid email address field.
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="col-12 col-lg-6">
                 <span class="svg-text">
                   <icon-message
@@ -33,7 +88,7 @@
                     height="30"
                     width="30"
                   />
-                  <div class="text-wrapper">gusarova@gmail.com</div>
+                  <div class="text-wrapper">{{ emailTo }}</div>
                 </span>
 
                 <span class="svg-text">
@@ -88,7 +143,6 @@
                   Send
                   <icon-arrow-right
                     colorClass="custom-icon-white"
-                    otherClass=""
                     height="30"
                     width="30"
                   />
@@ -105,34 +159,40 @@
           <div class="col-11 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <a href="#">
+              <router-link id="header-logo" :to="{ name: 'home' }">
                 <span
                   class="experience-cta subtitle subtitle-white subtitle-left"
                   >About me
                 </span>
-              </a>
+              </router-link>
             </p>
           </div>
           <div class="col-11 col-sm-5 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <a href="#experiences">
+              <router-link
+                :to="{ name: 'home', hash: '#experiences' }"
+                v-on:click="triggerClick"
+              >
                 <span
                   class="experience-cta subtitle subtitle-white subtitle-left"
                   >My experiences
                 </span>
-              </a>
+              </router-link>
             </p>
           </div>
           <div class="col-7 col-sm-5 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
-              <a href="#contact">
+              <router-link
+                :to="{ name: 'home', hash: '#contact' }"
+                v-on:click="triggerClick"
+              >
                 <span
                   class="experience-cta subtitle subtitle-white subtitle-left"
                   >Contact me
                 </span>
-              </a>
+              </router-link>
             </p>
           </div>
           <div class="col-4 col-sm-1 col-lg-5 text-right">
@@ -177,24 +237,23 @@
 </template>
 
 <script>
+import axios from "axios";
+const querystring = require("querystring");
+
+// Icons
 import iconMessage from "../components/icons/icon-message.vue";
 import iconLocation from "../components/icons/icon-location.vue";
 import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 import iconLinkedin from "../components/icons/icon-linkedin.vue";
-// import iconHeart from "../components/icons/icon-heart.vue";
-
-import axios from "axios";
-const querystring = require("querystring");
-
-// alert(process.env.VUE_APP_URL);
-// alert(process.env.BASE_URL);
+import iconInfoCircle from "../components/icons/icon-info-circle.vue";
 
 export default {
   components: {
     iconMessage,
     iconLocation,
     iconArrowRight,
-    iconLinkedin
+    iconLinkedin,
+    iconInfoCircle
   },
   props: {
     enableContact: {
@@ -204,11 +263,16 @@ export default {
   },
   data: function() {
     return {
+      emailTo: process.env.VUE_APP_CONTACT_EMAIL,
+      emailValid: true,
+      // eslint-disable-next-line no-useless-escape
+      reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/,
       contactForm: {
+        toEmail: process.env.VUE_APP_CONTACT_EMAIL,
         name: "",
         email: "",
         message: "",
-        sent: false
+        sent: null
       }
     };
   },
@@ -216,15 +280,29 @@ export default {
   methods: {
     submitContact(e) {
       e.preventDefault();
-      console.log(this.$axios);
-      axios
-        .post(
-          process.env.BASE_URL + "mail.php",
-          querystring.stringify(this.contactForm)
-        )
-        .then(() => {
-          this.sent = true;
-        });
+      if (this.isEmailValid() === true) {
+        axios
+          .post(
+            process.env.BASE_URL + "mail.php",
+            querystring.stringify(this.contactForm)
+          )
+          .then(() => {
+            this.contactForm.sent = true;
+          })
+          .catch(function() {
+            this.contactForm.sent = false;
+          });
+      }
+    },
+    isEmailValid() {
+      let res =
+        this.contactForm.email == ""
+          ? false
+          : this.reg.test(this.contactForm.email)
+          ? true
+          : false;
+      this.emailValid = res == true ? true : false;
+      return res;
     }
   }
 };

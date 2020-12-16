@@ -80,6 +80,12 @@
   }
 }
 
+@mixin mediaExtraSmall {
+  @media only screen and (max-width: #{$breakpoint_extra_small}) {
+    @content;
+  }
+}
+
 /* Transition
 ============================================= */
 @mixin transition($args) {

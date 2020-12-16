@@ -56,6 +56,12 @@ See variables.scss breakpoint
       font-weight: 600;
     }
   }
+
+  #experience-view {
+    #carousel-experience {
+      max-width: 500px;
+    }
+  }
 }
 
 /* Media Large
@@ -115,7 +121,7 @@ See variables.scss breakpoint
     font-size: 0.9em;
   }
   p {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   #header-fixed-nav {
@@ -168,6 +174,12 @@ See variables.scss breakpoint
       }
     }
   }
+
+  // #experience-view {
+  //   #experience-view-text {
+  //     padding-left: 50px;
+  //   }
+  // }
 
   /* Icon
   ============================================= */
@@ -231,6 +243,15 @@ See variables.scss breakpoint
   h2 {
     font-size: 1.5em;
   }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .subtitle {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 0.7em;
+  }
 
   /* Sections
   ============================================= */
@@ -260,6 +281,24 @@ See variables.scss breakpoint
   .custom-icon {
     width: 18px;
     height: 18px;
+  }
+  .custom-icon-big {
+    width: 30px;
+    height: 30px;
+  }
+
+  #experience-view {
+    #experience-view-title {
+      padding-bottom: 65px;
+    }
+    #carousel-experience {
+      max-width: none;
+      padding: 0px 140px;
+    }
+    #experience-view-text {
+      padding-top: 100px;
+      padding-left: 15px;
+    }
   }
 }
 
@@ -292,10 +331,10 @@ See variables.scss breakpoint
   /* Typographie
   ============================================= */
   .subtitle {
-    font-size: 1em; // not below 16px for mobile!
+    font-size: 0.9em;
   }
   p {
-    font-size: 1em; // not below 16px for mobile!
+    font-size: 0.9em;
   }
 
   /* Sections
@@ -365,11 +404,24 @@ See variables.scss breakpoint
   }
 
   #experience-view {
-    padding: 0px 0px 50px 0px;
-    h3 {
-      padding-top: 40px;
-      padding-bottom: 30px;
+    padding: 70px 0px 50px 0px;
+    // h3 {
+    //   padding-top: 40px;
+    //   padding-bottom: 30px;
+    // }
+    #carousel-experience {
+      max-width: none;
+      padding: 0px 15px;
     }
+    #experience-view-text {
+      // padding-top: 50px;
+      // padding-left: 0px;
+    }
+    // #carousel-experience{
+    //   img{
+    //     max-width: ;
+    //   }
+    // }
   }
 
   footer {
@@ -378,4 +430,9 @@ See variables.scss breakpoint
       padding-top: 0px !important;
     }
   }
+}
+
+/* Media Extra Small
+============================================= */
+@include mediaExtraSmall {
 }

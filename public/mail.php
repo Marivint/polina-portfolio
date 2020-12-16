@@ -1,19 +1,14 @@
 <?php
 
-$name = "Undefined name";
+$message = $_POST["message"];
 
-if(isset($_POST['name'])){
-    $name = $_POST['name'];
-}
+$to_email = $_POST["toEmail"];
 
-$message = "<p>Hi!</p>";
-$message .= "<p>Wazaaaaa $name</p>";
+$subject = 'Name :'.$_POST["name"];
 
-$to_email = 'contact@polina-gusarova.com';
-$subject = 'Mail subject';
 $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=UTF-8';
-$headers[] = 'From: Biloo <noreply@ydomain.com>';
+$headers[] = 'From: '.$_POST["name"].' <'.$_POST["email"].'>';
 
 mail($to_email, $subject, $message, implode("\r\n", $headers));
 

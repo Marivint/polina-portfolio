@@ -7,8 +7,8 @@
     "inspect": "vue-cli-service inspect",
     "help": "vue-cli-service help",
     "lint": "vue-cli-service lint",
-    "build development": "vue-cli-service build --mode development",
-    "build production": "vue-cli-service build --mode production",
+    "build-development": "vue-cli-service build --mode development",
+    "build-production": "vue-cli-service build --mode production",
     "install-production": "npm install -g serve",
     "production": "serve -s dist"
   },

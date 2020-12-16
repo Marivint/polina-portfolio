@@ -12,7 +12,7 @@
       :leave-active-class="leaveActiveClass"
       ref="routerViewRef"
       v-on:before-enter="beforeEnter"
-      v-on:enter="enter"
+      v-on:enter="afterEnter"
     >
       <component :is="Component" />
     </transition>
@@ -58,7 +58,7 @@ export default {
         this.enableContact = 0;
       }
     },
-    enter: function() {
+    afterEnter: function() {
       if (this.$route.hash) {
         location.href = this.$route.hash;
       } else {
