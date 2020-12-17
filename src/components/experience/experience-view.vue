@@ -4,8 +4,9 @@
       <div class="row">
         <div id="experience-view-title" class="col-12 text-left">
           <span class="experience-cta subtitle subtitle-left subtitle-purple">
-            Experience 01/02/2020
+            Experience {{ date }}
           </span>
+          <!-- <span>Experience {{ date }}</span> -->
           <br />
           <h3>{{ title }}</h3>
         </div>
@@ -31,10 +32,17 @@
               role="button"
               data-slide="prev"
             >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
+              <div class="wrapper-carousel-icon wrapper-carousel-icon-left">
+                <icon-arrow-left-small
+                  colorClass="custom-icon-white"
+                  height="30"
+                  width="30"
+                />
+                <span
+                  class="d-none carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+              </div>
               <span class="sr-only">Previous</span>
             </a>
             <a
@@ -43,10 +51,17 @@
               role="button"
               data-slide="next"
             >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
+              <div class="wrapper-carousel-icon wrapper-carousel-icon-right">
+                <icon-arrow-right-small
+                  colorClass="custom-icon-white"
+                  height="30"
+                  width="30"
+                />
+                <span
+                  class="d-none carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+              </div>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -60,9 +75,16 @@
 </template>
 
 <script>
+import iconArrowRightSmall from "../../components/icons/icon-arrow-right-small.vue";
+import iconArrowLeftSmall from "../../components/icons/icon-arrow-left-small.vue";
+
 export default {
   props: {
     title: {
+      type: String,
+      required: true
+    },
+    date: {
       type: String,
       required: true
     },
@@ -71,7 +93,7 @@ export default {
       required: true
     }
   },
-  components: {},
+  components: { iconArrowRightSmall, iconArrowLeftSmall },
   data: function() {
     return {};
   },

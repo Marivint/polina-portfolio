@@ -193,6 +193,27 @@ a {
   }
 }
 
+.wrapper-carousel-icon {
+  padding: 10px 10px 10px 10px;
+  opacity: 1;
+  color: $color_black;
+  svg {
+    height: 25px;
+    width: 25px;
+    path {
+      fill: $color_black;
+    }
+  }
+}
+
+.wrapper-carousel-icon-right {
+  margin-right: -110px;
+}
+
+.wrapper-carousel-icon-left {
+  margin-right: 110px;
+}
+
 /* Colors 
 ============================================= */
 @include generateColors;

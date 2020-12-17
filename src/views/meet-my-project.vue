@@ -18,7 +18,13 @@
       communication and the search for designers and special guests, as well as
       partner relations and exhibition setup.
       <br /><br />
-      Learn more ( http://www.meetmyexperience.com/ )
+      <b
+        >Learn more (
+        <a href="https://www.meetmyproject.com/" target="_blank"
+          >meetmyproject.com</a
+        >
+        )</b
+      >
     </p>
   </experience-view>
 </template>

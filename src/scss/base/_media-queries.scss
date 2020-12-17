@@ -425,6 +425,13 @@ See variables.scss breakpoint
     #carousel-experience {
       max-width: none;
       padding: 0px 15px;
+      .wrapper-carousel-icon-right {
+        margin-right: -50px;
+      }
+
+      .wrapper-carousel-icon-left {
+        margin-right: 50px;
+      }
     }
     #experience-view-text {
       // padding-top: 50px;
