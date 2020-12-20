@@ -7,7 +7,9 @@
         : 'col-12 col-md-5 text-left pl'
     "
   >
-    <img class="img-fluid" :src="src" />
+    <router-link :to="{ name: ctaRouteName }">
+      <img class="img-fluid" :src="src" />
+    </router-link>
   </div>
 </template>
 
@@ -16,16 +18,20 @@ export default {
   props: {
     showFormat: {
       type: Number,
-      required: true
+      required: true,
     },
     src: {
       type: String,
-      required: true
+      required: true,
     },
     someClass: {
       type: String,
-      required: false
-    }
-  }
+      required: false,
+    },
+    ctaRouteName: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>

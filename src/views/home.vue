@@ -5,16 +5,32 @@
       <div class="container-fluid">
         <div class="row">
           <div id="about-text" class="offset-1 col-10">
-            <h1 class="user-select-none color-purple">
+            <h1
+              class="user-select-none color-purple animate__animated animate__flipInX"
+            >
               I am a cultural<br />
               product manager.
             </h1>
-
-            <p>
+            <br />
+            <p class="animate__animated animate__flipInX animate__delay-1s">
               Passionate about creating and development of cultural experiences,
               I bring my managerial <br />
               and artistic skills acquired during my international career.
             </p>
+            <br />
+            <a
+              :href="require('@/assets/cv/cv-polina-gusarova.jpg')"
+              target="_blank"
+              class="animate__animated animate__fadeIn animate__delay-2s"
+            >
+              <strong>Download my resume</strong>
+              <!-- <button class="anim-btn">
+                <span class="circle" aria-hidden="true">
+                  <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Download my resume</span>
+              </button> -->
+            </a>
           </div>
         </div>
       </div>
@@ -24,15 +40,21 @@
     <section id="skills">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-12 col-md-4 wrapper-col h-100 bg-black">
+          <div
+            class="col-12 col-md-4 wrapper-col h-100 bg-black animate__animated animate__faster animate__fadeIn animate__delay-3s"
+          >
             <span class="wrapper-vertical"><h2>Production</h2></span>
           </div>
 
-          <div class="col-12 col-md-4 wrapper-col h-100 bg-black">
+          <div
+            class="col-12 col-md-4 wrapper-col h-100 bg-black animate__animated animate__faster animate__fadeIn animate__delay-4s"
+          >
             <span class="wrapper-vertical"><h2>Communication</h2></span>
           </div>
 
-          <div class="col-12 col-md-4 wrapper-col h-100 bg-black">
+          <div
+            class="col-12 col-md-4 wrapper-col h-100 bg-black animate__animated animate__faster animate__fadeIn animate__delay-5s"
+          >
             <span class="wrapper-vertical"><h2>Creation</h2></span>
           </div>
         </div>
@@ -57,7 +79,10 @@
     <!-- experiences -->
     <section id="experiences">
       <div class="container-fluid">
-        <div id="subtitle-portfolio" class="row">
+        <div
+          id="subtitle-portfolio"
+          class="row scroll-animate animate__animated"
+        >
           <div class="offset-1 col-10">
             <span class="subtitle subtitle-left subtitle-purple">
               Portfolio
@@ -81,23 +106,23 @@
         <experience
           format="right"
           page="2-6"
-          title="Meet my experience"
+          title="Meet my project"
           :subtitles="['Partnership', 'Production']"
           :src="
             require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
           "
-          ctaRouteName="meetMyexperience"
+          ctaRouteName="meetMyProject"
         ></experience>
 
         <experience
           format="left"
           page="3-6"
-          title="Academy FAST"
+          title="Svez'da production"
           :subtitles="['Management', 'Production', 'Communication']"
           :src="
-            require('@/assets/experiences/academy-fast/cover-academy-fast.jpg')
+            require('@/assets/experiences/svezda-production/cover-svezda-production.jpg')
           "
-          ctaRouteName="academyFast"
+          ctaRouteName="svezdaProduction"
         ></experience>
 
         <experience
@@ -142,13 +167,13 @@ import experience from "../components/experience/experience.vue";
 // import iconArrowDown from "../components/icons/icon-arrow-down.vue";
 export default {
   components: {
-    experience,
+    experience
     // iconArrowDown
   },
   data() {
     return {
-      show: true,
+      show: true
     };
-  },
+  }
 };
 </script>

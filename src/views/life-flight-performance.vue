@@ -2,18 +2,17 @@
   <experience-view
     title="“Life Flight” Performance"
     :images="[
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/experiences/life-flight-performance/cover-life-flight-performance.jpg'),
+      require('@/assets/experiences/life-flight-performance/life-flight-performance-02.jpg'),
+      require('@/assets/experiences/life-flight-performance/life-flight-performance-03.jpg')
     ]"
   >
     <p>
-      In 2017, in cooperation with the theater “Place of action”, I created a
-      performance, presented at the annual embankment art festival “VolgаFest”
-      in Samara, Russia. My main task was to design the costumes for this
-      theatrical procession, which was supposed to introduce the audience to the
-      various venues of the festival program.
-      <br /><br />
+      In 2017, in cooperation with the theater <b>“Place of action”</b>, I
+      created a performance, presented at the annual embankment art festival
+      “VolgаFest” in Samara, Russia. My main task was to design the costumes for
+      this theatrical procession, which was supposed to introduce the audience
+      to the various venues of the festival program. <br /><br />
       The concept of this performance is based on the Scandinavian method of
       navigation of medieval navigators.
       <br /><br />

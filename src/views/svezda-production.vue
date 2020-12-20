@@ -1,17 +1,17 @@
 <template>
   <experience-view
-    title="Academy FAST"
+    title="Svez'da Production"
     :images="[
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/experiences/svezda-production/svezda-production-01.jpg'),
+      require('@/assets/experiences/svezda-production/svezda-production-02.jpg'),
+      require('@/assets/experiences/svezda-production/svezda-production-03.jpg'),
+      require('@/assets/experiences/svezda-production/svezda-production-04.jpg')
     ]"
   >
     <p>
-      Svez’da Production – is an international event agency with sound
+      <b>Svez’da Production</b> – is an international event agency with sound
       experience in organization of international events and festivals, as well
-      as in artist’s management and consulting.
-      <br /><br />
+      as in artist’s management and consulting. <br /><br />
       I had to work on two experiences "Revealing the Stars" and "The FAST
       Academy". The first is an artistic competition that takes place in France
       and leads to an international competition in Los Angeles. The second is an

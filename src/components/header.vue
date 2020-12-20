@@ -16,7 +16,7 @@
             </router-link>
           </div>
 
-          <div class="d-inline header-item header-item-grey">
+          <!-- <div class="d-inline header-item header-item-grey">
             <a href="#">
               <icon-profile
                 colorClass="custom-icon-black"
@@ -26,7 +26,7 @@
               ></icon-profile>
               About
             </a>
-          </div>
+          </div> -->
 
           <div class="d-inline header-item header-item-grey">
             <router-link
@@ -66,13 +66,13 @@
   </header>
 </template>
 <script>
-import iconProfile from "../components/icons/icon-profile.vue";
+// import iconProfile from "../components/icons/icon-profile.vue";
 import iconCategory from "../components/icons/icon-category.vue";
 import iconMessage from "../components/icons/icon-message.vue";
 
 export default {
   components: {
-    iconProfile,
+    // iconProfile,
     iconCategory,
     iconMessage
   },

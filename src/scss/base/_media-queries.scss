@@ -114,9 +114,9 @@ See variables.scss breakpoint
 
   /* Sections
   ============================================= */
-  #about {
-    height: 500px;
-  }
+  // #about {
+  //   height: 500px;
+  // }
   #scroll-down {
     margin: 100px 0px 130px 0px;
     .btn-icon-round {
@@ -127,18 +127,18 @@ See variables.scss breakpoint
 
   #lotte-hotel {
     h2 {
-      font-size: 2.5em;
+      // font-size: 2.5em;
     }
     #contact {
       #contact-card {
-        padding: 100px 60px 60px;
+        padding: 60px 60px 60px 60px;
         .svg-text {
           .text-wrapper {
             font-size: 0.9em;
           }
         }
         #contact-form {
-          padding-top: 80px;
+          // padding-top: 80px;
           .btn,
           textarea,
           input {
@@ -184,7 +184,7 @@ See variables.scss breakpoint
     padding-top: 0px;
     padding-right: 40px;
     padding-bottom: 0px;
-    padding-left: 20px;
+    padding-left: 35px;
     .header-item-logo {
       margin-right: 45px;
     }
@@ -267,20 +267,6 @@ See variables.scss breakpoint
     width: 30px;
     height: 30px;
   }
-
-  #experience-view {
-    #experience-view-title {
-      padding-bottom: 65px;
-    }
-    #carousel-experience {
-      max-width: none;
-      padding: 0px 140px;
-    }
-    #experience-view-text {
-      padding-top: 100px;
-      padding-left: 15px;
-    }
-  }
 }
 
 /* Media Small
@@ -310,16 +296,6 @@ See variables.scss breakpoint
     #header-burger.active:after {
       background: $color_black;
     }
-
-    // #header-burger:before {
-    //   height: 2px;
-    //   margin-bottom: 4px;
-    // }
-
-    // #header-burger:after {
-    //   height: 3px;
-    //   margin-top: 4px;
-    // }
   }
 
   #header-fixed-informations {
@@ -329,15 +305,6 @@ See variables.scss breakpoint
   #header-fixed-map {
     padding-top: 0px !important;
     height: 220px !important;
-  }
-
-  #skills {
-    .wrapper-col {
-      padding-top: 150px;
-    }
-    .wrapper-col:not(:last-child) {
-      border-bottom: 1px solid $color_light_grey;
-    }
   }
 
   /* Typographie
@@ -355,13 +322,22 @@ See variables.scss breakpoint
     margin: 80px 0px 80px 0px;
   }
 
+  #about {
+    height: 420px;
+  }
+
+  #skills {
+    .wrapper-col {
+      padding-top: 130px;
+    }
+    .wrapper-col:not(:last-child) {
+      border-bottom: 1px solid $color_light_grey;
+    }
+  }
   #experiences {
     padding: 70px 0px 100px 0px;
     #subtitle-portfolio {
       padding: 0px 0px 70px 0px;
-      // .subtitle {
-      //   font-size: 1.4em;
-      // }
     }
   }
 
@@ -416,12 +392,18 @@ See variables.scss breakpoint
     }
   }
 
+  #experiences {
+    padding: 70px 0px 0px 0px;
+    article {
+      margin-bottom: 80px;
+    }
+  }
+
   #experience-view {
-    padding: 70px 0px 50px 0px;
-    // h3 {
-    //   padding-top: 40px;
-    //   padding-bottom: 30px;
-    // }
+    padding: 40px 0px 50px 0px;
+    #experience-view-title {
+      padding-bottom: 30px;
+    }
     #carousel-experience {
       max-width: none;
       padding: 0px 15px;
@@ -434,14 +416,8 @@ See variables.scss breakpoint
       }
     }
     #experience-view-text {
-      // padding-top: 50px;
-      // padding-left: 0px;
+      padding-top: 50px;
     }
-    // #carousel-experience{
-    //   img{
-    //     max-width: ;
-    //   }
-    // }
   }
 
   footer {
@@ -456,4 +432,21 @@ See variables.scss breakpoint
 /* Media Extra Small
 ============================================= */
 @include mediaExtraSmall {
+  #header-logo {
+    color: $color_black;
+  }
+  #lotte-hotel {
+    // background-attachment: scroll;
+  }
+
+  #experiences {
+    padding: 60px 0px 20px 0px;
+    #subtitle-portfolio {
+      padding: 0px 0px 50px 0px;
+    }
+  }
+
+  #header-fixed-nav {
+    padding-top: 50px !important;
+  }
 }

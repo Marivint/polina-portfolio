@@ -38,13 +38,13 @@
               </span>
             </div>
             <div id="header-fixed-nav" class="offset-1 col-md-10 col-lg-5">
-              <!-- <router-link
+              <router-link
                 :to="{ name: 'home', hash: '#experiences' }"
                 v-on:click="triggerClick"
                 class="color-black header-fixed-link"
               >
                 <h1>About me</h1>
-              </router-link> -->
+              </router-link>
 
               <router-link
                 :to="{ name: 'home', hash: '#experiences' }"

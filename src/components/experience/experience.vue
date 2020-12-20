@@ -1,7 +1,13 @@
 <template>
-  <article class="row align-items-center experience">
+  <article
+    class="row align-items-center experience scroll-animate animate__animated"
+  >
     <template v-if="showFormat == 1">
-      <experience-image :showFormat="showFormat" :src="src"></experience-image>
+      <experience-image
+        :showFormat="showFormat"
+        :src="src"
+        :ctaRouteName="ctaRouteName"
+      ></experience-image>
       <experience-text
         :showFormat="showFormat"
         :page="page"
@@ -18,7 +24,11 @@
         :subtitles="subtitles"
         :ctaRouteName="ctaRouteName"
       ></experience-text>
-      <experience-image :showFormat="showFormat" :src="src"></experience-image>
+      <experience-image
+        :showFormat="showFormat"
+        :src="src"
+        :ctaRouteName="ctaRouteName"
+      ></experience-image>
     </template>
   </article>
 </template>

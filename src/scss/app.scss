@@ -18,7 +18,7 @@
 // @import "modules/transition.scss"; // Transition
 // @import "modules/parallax.scss"; // Parallax
 // @import "modules/floating-labels"; // Floating labels
-// @import 'modules/cursor.scss'; // Cursor
+@import "modules/cursor.scss"; // Cursor
 
 /* Components
 ============================================= */
@@ -27,6 +27,7 @@
 @import "components/footer.scss"; // Footer
 @import "components/experience.scss"; // experience
 @import "components/experience-view.scss"; // experience view
+@import "components/anim-btn.scss"; // experience view
 
 /* Views
 ============================================= */

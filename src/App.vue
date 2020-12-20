@@ -4,6 +4,9 @@
   <c-header-fixed></c-header-fixed>
   <!-- End header -->
 
+  <!-- About me -->
+  <c-about-me></c-about-me>
+
   <router-view v-slot="{ Component }">
     <transition
       name="custom-classes-transition"
@@ -25,12 +28,14 @@
 <script>
 import cHeader from "./components/header.vue";
 import cHeaderFixed from "./components/header-fixed.vue";
+import cAboutMe from "./components/about-me.vue";
 import cFooter from "./components/footer.vue";
 
 export default {
   components: {
     cHeader,
     cHeaderFixed,
+    cAboutMe,
     cFooter
   },
   watch: {

@@ -13,6 +13,16 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  // .anim-btn {
+  //   width: 19rem;
+  //   .button-text {
+  //     font-size: 0.9em;
+  //   }
+  //   .circle {
+  //     width: 2rem;
+  //     height: 2rem;
+  //   }
+  // }
 }
 
 #skills {
@@ -37,19 +47,20 @@
 }
 
 #experiences {
-  padding: 150px 0px 100px 0px;
+  padding: 100px 0px 100px 0px;
   // background: url(~@/assets/bg.png);
   height: 100%;
   background-position-x: right;
   background-position-y: top;
   background-repeat: no-repeat;
   #subtitle-portfolio {
-    padding: 0px 0px 150px 0px;
+    opacity: 0;
+    padding: 0px 0px 100px 0px;
     .subtitle {
       font-size: 1.4em;
     }
   }
-  article {
-    margin-bottom: 180px;
+  article:not(:last-child) {
+    margin-bottom: 100px;
   }
 }

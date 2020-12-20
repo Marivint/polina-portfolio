@@ -1,6 +1,7 @@
 /* experience
 ============================================= */
 .experience {
+  opacity: 0;
   .experience-img {
     text-align: center;
     &.pr {
@@ -10,12 +11,8 @@
       padding-left: 4%;
     }
     img {
-      // width: 428px;
-      // height: 523px;
       width: -webkit-fill-available;
       height: auto;
-      // max-width: 572px;
-      // max-height: 700px;
       border-radius: 10px;
       @extend %base-transition;
     }

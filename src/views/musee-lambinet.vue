@@ -1,7 +1,6 @@
 <template>
   <experience-view
     title="Lambinet Museum in complete privacy"
-    date="01/02/2020"
     :images="[
       require('@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg'),
       require('@/assets/experiences/musee-lambinet/musee-lambinet-02.jpg'),

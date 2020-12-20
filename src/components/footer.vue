@@ -12,16 +12,9 @@
                   >Contact me
                 </span>
                 <br />
-                <h2>Let's Work <br />Together.</h2>
+                <h2>Let's Work <br class="d-none d-lg-inline" />Together.</h2>
               </div>
-              <div class="col-12 col-md-6">
-                <br />
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Deleniti, esse architecto dolorum alias iusto ab voluptatum,
-                  assumenda natus.
-                </p>
-              </div>
+
               <div class="col-6 text-center"></div>
             </div>
             <form id="contact-form" class="row" @submit="submitContact">
@@ -88,7 +81,9 @@
                     height="30"
                     width="30"
                   />
-                  <div class="text-wrapper">{{ emailTo }}</div>
+                  <div class="text-wrapper">
+                    <a href="mailto:{{emailTo}}">{{ emailTo }}</a>
+                  </div>
                 </span>
 
                 <span class="svg-text">
@@ -156,7 +151,7 @@
     <footer>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          <div class="col-11 col-lg-2">
+          <!-- <div class="col-11 col-lg-2">
             <br class="d-block d-lg-none" />
             <p>
               <router-link id="header-logo" :to="{ name: 'home' }">
@@ -166,8 +161,9 @@
                 </span>
               </router-link>
             </p>
-          </div>
-          <div class="col-11 col-sm-5 col-lg-2">
+          </div> -->
+          <!-- <div class="col-11 col-sm-5 col-lg-2"> -->
+          <div class="col-11 col-sm-5 col-lg-3">
             <br class="d-block d-lg-none" />
             <p>
               <router-link
@@ -181,7 +177,8 @@
               </router-link>
             </p>
           </div>
-          <div class="col-7 col-sm-5 col-lg-2">
+          <!-- <div class="col-7 col-sm-5 col-lg-2"> -->
+          <div class="col-7 col-sm-5 col-lg-3">
             <br class="d-block d-lg-none" />
             <p>
               <router-link

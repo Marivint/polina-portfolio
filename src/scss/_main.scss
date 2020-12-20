@@ -8,6 +8,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-size: $font-size-base;
   scroll-behavior: smooth;
+  cursor: none;
   &.no-scroll {
     overflow: hidden;
   }
@@ -24,6 +25,12 @@ body {
   background-color: transparent;
   // background-color: $color_light_white;
   // cursor: none;
+}
+
+/* Root
+============================================= */
+:root {
+  --animate-delay: 0.5s;
 }
 
 /* Main Page 
@@ -151,6 +158,12 @@ h3 {
 p {
   line-height: 2;
   letter-spacing: 0.05em;
+}
+
+a {
+  &:hover {
+    color: $color_purple;
+  }
 }
 
 /* Subtitle 

@@ -1,10 +1,13 @@
 <template>
   <experience-view
-    title="Meet my experience"
+    title="Meet my project"
     :images="[
       require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg'),
-      require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
+      require('@/assets/experiences/meet-my-project/meet-my-project-01.jpg'),
+      require('@/assets/experiences/meet-my-project/meet-my-project-02.jpg'),
+      require('@/assets/experiences/meet-my-project/meet-my-project-03.jpg'),
+      require('@/assets/experiences/meet-my-project/meet-my-project-04.jpg'),
+      require('@/assets/experiences/meet-my-project/meet-my-project-05.jpg')
     ]"
   >
     <p>
