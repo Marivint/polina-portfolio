@@ -1,7 +1,5 @@
 <template>
-  <article
-    class="row align-items-center experience scroll-animate animate__animated"
-  >
+  <article class="row align-items-center experience" :class="otherClass">
     <template v-if="showFormat == 1">
       <experience-image
         :showFormat="showFormat"
@@ -59,6 +57,10 @@ export default {
       required: true
     },
     ctaRouteName: {
+      type: String,
+      required: true
+    },
+    otherClass: {
       type: String,
       required: true
     }

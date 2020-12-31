@@ -11,7 +11,7 @@
     ]"
   >
     <p>
-      Created in 2009 as part of Paris Design Week, Meet My experience aims to
+      Created in 2019 as part of Paris Design Week, Meet My experience aims to
       promote contemporary design to the general public, but also to bring
       together talents. Architects, decorators, furniture editors,
       manufacturers, distributors… The event also aims to promote exchanges

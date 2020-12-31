@@ -30,7 +30,7 @@ body {
 /* Root
 ============================================= */
 :root {
-  --animate-delay: 0.5s;
+  --animate-delay: 0.3s;
 }
 
 /* Main Page 
@@ -155,7 +155,8 @@ h3 {
   font-weight: 600;
 }
 
-p {
+p,
+li {
   line-height: 2;
   letter-spacing: 0.05em;
 }

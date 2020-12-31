@@ -3,9 +3,14 @@
     <div class="container-fluid">
       <div class="row">
         <div id="experience-view-title" class="col-12 text-left">
-          <span class="experience-cta subtitle subtitle-left subtitle-purple">
-            Experience {{ date }}
-          </span>
+          <router-link
+            :to="{ name: 'home', hash: '#experiences' }"
+            v-on:click="triggerClick"
+          >
+            <span class="experience-cta subtitle subtitle-left subtitle-purple">
+              Experience {{ date }}
+            </span>
+          </router-link>
           <!-- <span>Experience {{ date }}</span> -->
           <br />
           <h3>{{ title }}</h3>

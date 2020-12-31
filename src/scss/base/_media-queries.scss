@@ -98,10 +98,12 @@ See variables.scss breakpoint
   h3 {
     font-size: 1.5rem;
   }
-  .subtitle {
+  .subtitle,
+  a {
     font-size: 0.9em;
   }
-  p {
+  p,
+  li {
     font-size: 0.8em;
   }
 
@@ -227,10 +229,12 @@ See variables.scss breakpoint
   h3 {
     font-size: 1.1rem;
   }
-  .subtitle {
+  .subtitle,
+  a {
     font-size: 0.8em;
   }
-  p {
+  p,
+  li {
     font-size: 0.7em;
   }
 
@@ -244,10 +248,13 @@ See variables.scss breakpoint
     .wrapper-col {
       padding-top: 180px;
     }
+    li {
+      font-size: 0.6em;
+    }
   }
 
   #experiences {
-    padding: 80px 0px 0px 0px;
+    padding: 80px 0px 80px 0px;
     #subtitle-portfolio {
       padding: 0px 0px 50px 0px;
     }
@@ -345,10 +352,12 @@ See variables.scss breakpoint
 
   /* Typographie
   ============================================= */
-  .subtitle {
+  .subtitle,
+  a {
     font-size: 0.9em;
   }
-  p {
+  p,
+  li {
     font-size: 0.9em;
   }
 
@@ -364,10 +373,17 @@ See variables.scss breakpoint
 
   #skills {
     .wrapper-col {
-      padding-top: 130px;
+      padding-top: 180px;
     }
     .wrapper-col:not(:last-child) {
       border-bottom: 1px solid $color_light_grey;
+    }
+    li {
+      font-size: 0.8em;
+    }
+    #skill-communication {
+      margin-right: 0px;
+      margin-left: 0px;
     }
   }
   #experiences {
@@ -388,9 +404,9 @@ See variables.scss breakpoint
         padding-left: 0px !important;
       }
       img {
-        width: 100% !important;
-        max-width: none !important;
-        max-height: none !important;
+        // width: 100% !important;
+        max-width: 300px !important;
+        // max-height: none !important;
         height: auto !important;
         border-radius: 0;
       }

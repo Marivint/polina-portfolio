@@ -65,6 +65,36 @@ if (window.isMobile) {
   });
 }
 
+/* AnimateCss
+============================================= */
+// eslint-disable-next-line no-unused-vars
+const animateCSS = (
+  element,
+  animation,
+  removeClass = true,
+  prefix = "animate__"
+) => {
+  // We create a Promise and return it
+  return new Promise(resolve => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd() {
+      event.stopPropagation();
+      if (removeClass == true)
+        node.classList.remove(`${prefix}animated`, animationName);
+      resolve("Animation ended");
+    }
+
+    node.addEventListener("animationend", handleAnimationEnd, {
+      once: true
+    });
+  });
+};
+
 /* Header fixed
 ============================================= */
 const html = $("html");
@@ -139,14 +169,30 @@ headerLogo.on("click", function () {
 
 /* Google maps
 ============================================= */
-// Create the script tag, set the appropriate attributes
-var script = document.createElement("script");
-// eslint-disable-next-line prettier/prettier
-script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBFIEMUarDpNfvAulDpUpg_gbfE7Ztnemw&callback=initMap";
-script.defer = true;
+window.addEventListener("load", () => {
+  /*
+  // Create the script tag, set the appropriate attributes
+  var script = document.createElement("script");
+  // eslint-disable-next-line prettier/prettier
+  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBFIEMUarDpNfvAulDpUpg_gbfE7Ztnemw&callback=initMap";
+  script.defer = true;
 
-// Attach your callback function to the `window` object
-window.initMap = function () {
+  // Attach your callback function to the `window` object
+  window.initMap = function () {
+    // eslint-disable-next-line no-unused-vars
+    let map;
+    // eslint-disable-next-line no-undef
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: {
+        lat: 48.8215897,
+        lng: 2.4118662
+      },
+      zoom: 14
+    });
+  };
+  // Append the 'script' element to 'head'
+  document.head.appendChild(script);
+  */
   // eslint-disable-next-line no-unused-vars
   let map;
   // eslint-disable-next-line no-undef
@@ -157,55 +203,43 @@ window.initMap = function () {
     },
     zoom: 14
   });
-};
+});
 
-// Append the 'script' element to 'head'
-document.head.appendChild(script);
+// // eslint-disable-next-line no-unused-vars
+// const initMap = () => {
+//   // eslint-disable-next-line no-undef
+//   new google.maps.Map(document.getElementById("map"), {
+//     center: {
+//       lat: 48.8215897,
+//       lng: 2.4118662
+//     },
+//     zoom: 14
+//   });
+// };
 
-/* Scroll animation
+// window.addEventListener("load", () => {
+//   if (window.isMobile) {
+//     // Temporarily disable for mobile
+//     $(".scroll-animate.animate__animated").each(function () {
+//       $(this).addClass("animate__fadeIn");
+//     });
+//   }
+// });
+
+/* Skills animations
 ============================================= */
-$(document).ready(function () {
-  // Check if element is scrolled into view
-  function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
-
-    var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
-
-    // Before we hit the element we display it
-    if (window.isMobile) {
-      elemBottom -= 750;
-    } else {
-      elemBottom -= 600;
-    }
-
-    return elemBottom <= docViewBottom && elemTop >= docViewTop;
-  }
-
-  if (window.isMobile) {
-    // Temporarily disable for mobile
-    $(".scroll-animate.animate__animated").each(function () {
-      $(this).addClass("animate__fadeIn");
-    });
-  } else {
-    // Trigger on ready but only fire for the first two element
-    let i = 0;
-    $(".scroll-animate.animate__animated").each(function () {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass("animate__fadeInUp");
-      }
-      i++;
-      if (i == 2) return false;
-    });
-
-    // If element is scrolled into view, fade it in
-    $(window).scroll(function () {
-      $(".scroll-animate.animate__animated").each(function () {
-        if (isScrolledIntoView(this) === true) {
-          $(this).addClass("animate__fadeInUp");
-        }
-      });
-    });
-  }
+window.addEventListener("load", () => {
+  // const skillAnimated1 = $("#skill-animated-1");
+  // const skillContentAnimated1 = $("#skill-content-animated-1");
+  // skillAnimated1.on("click", function () {
+  //   skillAnimated1.removeClass("animate__delay-3s");
+  //   skillAnimated1.removeClass("animate__fadeIn");
+  //   // skillAnimated1.addClass("animate__flipOutX");
+  //   // eslint-disable-next-line no-unused-vars
+  //   animateCSS("#skill-animated-1", "flip", false).then(message => {
+  //     skillAnimated1.hide();
+  //     skillContentAnimated1.addClass("visible");
+  //     animateCSS("#skill-content-animated-1", "flip");
+  //   });
+  // });
 });

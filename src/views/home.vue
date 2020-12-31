@@ -19,9 +19,11 @@
             </p>
             <br />
             <a
-              :href="require('@/assets/cv/cv-polina-gusarova.jpg')"
-              target="_blank"
+              :href="
+                `${$root.publicPath}CV-Polina-GUSAROVA-Communication-Production-Evenementielle.pdf`
+              "
               class="animate__animated animate__fadeIn animate__delay-2s"
+              download
             >
               <strong>Download my resume</strong>
               <!-- <button class="anim-btn">
@@ -41,21 +43,73 @@
       <div class="container-fluid h-100">
         <div class="row h-100">
           <div
-            class="col-12 col-md-4 wrapper-col h-100 bg-black animate__animated animate__faster animate__fadeIn animate__delay-3s"
+            id="skill-animated-1"
+            class="col-12 col-md-4 flip wrapper-col h-100  animate__animated animate__faster animate__fadeIn animate__delay-3s"
           >
-            <span class="wrapper-vertical"><h2>Production</h2></span>
+            <div class="flip-card-inner bg-black">
+              <div class="flip-card-front">
+                <span class="wrapper-vertical"><h2>Production</h2></span>
+              </div>
+              <div class="flip-card-back">
+                <span class="wrapper-vertical">
+                  <ul>
+                    <li>
+                      Definition and programming of the cultural project
+                    </li>
+                    <!-- <li class="d-none d-lg-inline">
+                      Implementation of the production and dissemination of
+                      projects
+                    </li> -->
+                    <li>Production of mediation tools</li>
+                    <li>Team coordination</li>
+                    <li>Editorial</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
           </div>
 
           <div
-            class="col-12 col-md-4 wrapper-col h-100 bg-black animate__animated animate__faster animate__fadeIn animate__delay-4s"
+            id="skill-communication"
+            class="col-12 col-md-4 flip wrapper-col h-100 animate__animated animate__faster animate__fadeIn animate__delay-4s"
           >
-            <span class="wrapper-vertical"><h2>Communication</h2></span>
+            <div class="flip-card-inner bg-black">
+              <div class="flip-card-front">
+                <span class="wrapper-vertical"><h2>Communication</h2></span>
+              </div>
+              <div class="flip-card-back">
+                <span class="wrapper-vertical">
+                  <ul>
+                    <li>Strategy and content creation for social networks</li>
+                    <!-- <li class="d-none d-lg-inline">
+                      Creation of communication supports
+                    </li> -->
+                    <li>Partner relationship</li>
+                    <li>Website monitoring and writing</li>
+                    <li>Translations</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
           </div>
 
           <div
-            class="col-12 col-md-4 wrapper-col h-100 bg-black animate__animated animate__faster animate__fadeIn animate__delay-5s"
+            class="col-12 col-md-4 flip wrapper-col h-100 animate__animated animate__faster animate__fadeIn animate__delay-5s"
           >
-            <span class="wrapper-vertical"><h2>Creation</h2></span>
+            <div class="flip-card-inner bg-black">
+              <div class="flip-card-front">
+                <span class="wrapper-vertical"><h2>Creation</h2></span>
+              </div>
+              <div class="flip-card-back">
+                <span class="wrapper-vertical">
+                  <ul>
+                    <li>Creation of graphic supports</li>
+                    <li>Design and creation of performances</li>
+                    <li>Clothing design</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -81,7 +135,7 @@
       <div class="container-fluid">
         <div
           id="subtitle-portfolio"
-          class="row scroll-animate animate__animated"
+          class="row animate__animated animate__faster animate__fadeIn animate__delay-5s"
         >
           <div class="offset-1 col-10">
             <span class="subtitle subtitle-left subtitle-purple">
@@ -101,6 +155,7 @@
             require('@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg')
           "
           ctaRouteName="museeLambinet"
+          otherClass="animate__animated animate__faster animate__fadeIn animate__delay-5s"
         ></experience>
 
         <experience
@@ -112,6 +167,7 @@
             require('@/assets/experiences/meet-my-project/cover-meet-my-project.jpg')
           "
           ctaRouteName="meetMyProject"
+          otherClass="scroll-animate animate__animated"
         ></experience>
 
         <experience
@@ -123,6 +179,7 @@
             require('@/assets/experiences/svezda-production/cover-svezda-production.jpg')
           "
           ctaRouteName="svezdaProduction"
+          otherClass="scroll-animate animate__animated"
         ></experience>
 
         <experience
@@ -134,6 +191,7 @@
             require('@/assets/experiences/alexander-vassiliev/cover-alexander-vassiliev.jpg')
           "
           ctaRouteName="alexanderVasilievVolga"
+          otherClass="scroll-animate animate__animated"
         ></experience>
 
         <experience
@@ -145,6 +203,7 @@
             require('@/assets/experiences/fashion-collection/cover-fashion-collection.jpg')
           "
           ctaRouteName="fashionCollection"
+          otherClass="scroll-animate animate__animated"
         ></experience>
 
         <experience
@@ -156,6 +215,7 @@
             require('@/assets/experiences/life-flight-performance/cover-life-flight-performance.jpg')
           "
           ctaRouteName="lifeFlightPerformance"
+          otherClass="scroll-animate animate__animated"
         ></experience>
       </div>
     </section>

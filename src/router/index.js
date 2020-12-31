@@ -14,6 +14,7 @@ import vAlexanderVasilievVolga from "@/views/alexander-vasiliev-volga-season.vue
 import vLifeFlightPerformance from "@/views/life-flight-performance.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
+// import app from "../App.vue";
 
 /* Routes 
 ============================================= */
@@ -77,11 +78,13 @@ const router = createRouter({
   history: createWebHistory(),
   mode: "history",
   routes,
+  // scrollBehavior(to, from, savedPosition) {
   scrollBehavior() {
-    // return {
-    //   x: 0,
-    //   y: 0
-    // };
+    // if (to.hash) {
+    //   return {
+    //     selector: to.hash
+    //   };
+    // }
     // if (savedPosition) {
     //   return savedPosition;
     // } else {
@@ -90,14 +93,15 @@ const router = createRouter({
     //     y: 0
     //   };
     // }
-    // return new Promise(resolve => {
-    //   setTimeout(() => {
-    //     resolve({
-    //       x: 0,
-    //       y: 0
-    //     });
-    //   }, 600);
-    // });
+    return new Promise(resolve => {
+      setTimeout(() => {
+        alert();
+        resolve({
+          x: 0,
+          y: 0
+        });
+      }, 2500);
+    });
   }
 });
 
