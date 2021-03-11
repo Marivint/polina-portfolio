@@ -40,6 +40,10 @@ export default {
       type: String,
       required: true
     },
+    filter: {
+      type: String,
+      required: true
+    },
     page: {
       type: String,
       required: true

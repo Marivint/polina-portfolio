@@ -27,33 +27,33 @@ export default {
   props: {
     showFormat: {
       type: Number,
-      required: true,
+      required: true
     },
     page: {
       type: String,
-      required: true,
+      required: true
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
     subtitles: {
       type: Array,
-      required: true,
+      required: true
     },
     ctaRouteName: {
       type: String,
-      required: true,
+      required: true
     },
     someClass: {
       type: String,
-      required: false,
-    },
+      required: false
+    }
   },
   computed: {
     subtitlesDisplay: function() {
       let subtitlesDisplay = "";
-      this.subtitles.forEach((subtitle) => {
+      this.subtitles.forEach(subtitle => {
         subtitlesDisplay += subtitle + " - ";
       });
       //   Delete last -
@@ -61,8 +61,8 @@ export default {
         subtitlesDisplay = subtitlesDisplay.slice(0, -2);
       }
       return subtitlesDisplay;
-    },
+    }
   },
-  mounted() {},
+  mounted() {}
 };
 </script>

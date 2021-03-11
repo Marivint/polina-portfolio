@@ -29,6 +29,7 @@ $color_light_grey: #d8d8d833;
 $color_blue: #2b90d9;
 $color_purple: #4c40f7;
 $color_red: #df405a;
+$color_green: #60ca91;
 
 // To generate colors
 $list_color: (
@@ -42,9 +43,7 @@ $list_color: (
   blue: $color_blue,
   purple: $color_purple,
   red: $color_red,
+  green: $color_green,
 );
 
 $primary_text_color: $color_black;
-
-// $color_cursor_little : $color_blue;
-// $color_cursor_big : $color_blue;

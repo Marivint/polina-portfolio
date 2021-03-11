@@ -26,14 +26,14 @@ export default {
       required: false
     },
     width: {
-      type: Number,
+      type: String,
       required: false,
-      default: 24
+      default: '24'
     },
     height: {
-      type: Number,
+      type: String,
       required: false,
-      default: 24
+      default: '24'
     }
   },
   data: function() {

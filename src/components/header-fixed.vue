@@ -40,7 +40,7 @@
             <div id="header-fixed-nav" class="offset-1 col-md-10 col-lg-5">
               <!-- <router-link
                 :to="{ name: 'home', hash: '#experiences' }"
-                v-on:click="triggerClick"
+                v-on:click="anchorHashCheck"
                 class="color-black header-fixed-link"
               >
                 <h1>About me</h1>
@@ -48,7 +48,7 @@
 
               <router-link
                 :to="{ name: 'home', hash: '#experiences' }"
-                v-on:click="triggerClick"
+                v-on:click="anchorHashCheck"
                 class="color-purple header-fixed-link"
               >
                 <h1>Experiences</h1>
@@ -56,7 +56,7 @@
 
               <router-link
                 :to="{ name: 'home', hash: '#contact' }"
-                v-on:click="triggerClick"
+                v-on:click="anchorHashCheck"
                 class="color-black header-fixed-link"
               >
                 <h1>Contact</h1>
@@ -66,7 +66,7 @@
               id="header-fixed-map"
               class="offset-1 col-9 col-md-10 col-lg-10"
             >
-              <div id="map" class="h-100"></div>
+              <!-- <div id="map" class="h-100"></div> -->
             </div>
           </div>
           <br />

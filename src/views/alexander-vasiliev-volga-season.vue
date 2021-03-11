@@ -1,7 +1,7 @@
 <template>
   <experience-view
     title="Alexander Vasiliev’s Volga Seasons"
-    :images="[
+    :phototeque="[
       require('@/assets/experiences/alexander-vassiliev/alexander-vassiliev-01.jpg'),
       require('@/assets/experiences/alexander-vassiliev/alexander-vassiliev-02.jpg'),
       require('@/assets/experiences/alexander-vassiliev/alexander-vassiliev-03.jpg'),

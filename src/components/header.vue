@@ -29,10 +29,7 @@
           </div> -->
 
           <div class="d-inline header-item header-item-grey">
-            <router-link
-              :to="{ name: 'home', hash: '#experiences' }"
-              v-on:click="triggerClick"
-            >
+            <router-link :to="{ name: 'experiences' }">
               <icon-category
                 colorClass="custom-icon-black"
                 otherClass="header-item-icon"
@@ -46,7 +43,7 @@
           <div class="d-inline header-item header-item-grey">
             <router-link
               :to="{ name: 'home', hash: '#contact' }"
-              v-on:click="triggerClick"
+              v-on:click="anchorHashCheck()"
             >
               <icon-message
                 colorClass="custom-icon-black"

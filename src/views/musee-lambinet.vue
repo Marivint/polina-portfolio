@@ -1,7 +1,7 @@
 <template>
   <experience-view
     title="Lambinet Museum in complete privacy"
-    :images="[
+    :phototeque="[
       require('@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg'),
       require('@/assets/experiences/musee-lambinet/musee-lambinet-02.jpg'),
       require('@/assets/experiences/musee-lambinet/musee-lambinet-03.jpg'),

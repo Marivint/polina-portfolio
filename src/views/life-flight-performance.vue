@@ -1,7 +1,7 @@
 <template>
   <experience-view
     title="“Life Flight” Performance"
-    :images="[
+    :phototeque="[
       require('@/assets/experiences/life-flight-performance/cover-life-flight-performance.jpg'),
       require('@/assets/experiences/life-flight-performance/life-flight-performance-02.jpg'),
       require('@/assets/experiences/life-flight-performance/life-flight-performance-03.jpg')

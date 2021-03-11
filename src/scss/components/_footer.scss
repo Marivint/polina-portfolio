@@ -6,10 +6,9 @@
   height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position-x: 50%;
   background-position-y: 50%;
-  // background-position: 50% 50%;
   /* Contact card
   ============================================= */
   #contact {
@@ -30,10 +29,12 @@
         input {
           padding: 0px 20px 0px 20px;
           height: 70px;
+          margin-bottom: 30px;
           @extend %contact-form-input;
         }
         textarea {
           padding: 15px 0px 0px 20px;
+          margin-bottom: 30px;
           @extend %contact-form-input;
         }
         .svg-text {

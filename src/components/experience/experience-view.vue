@@ -5,7 +5,7 @@
         <div id="experience-view-title" class="col-12 text-left">
           <router-link
             :to="{ name: 'home', hash: '#experiences' }"
-            v-on:click="triggerClick"
+            v-on:click="anchorHashCheck"
           >
             <span class="experience-cta subtitle subtitle-left subtitle-purple">
               Experience {{ date }}
@@ -23,12 +23,20 @@
           >
             <div class="carousel-inner">
               <div
-                v-for="(imagePath, index) in images"
+                v-for="(imagePath, index) in phototeque"
                 v-bind:key="imagePath"
                 class="carousel-item"
                 :class="[index == 0 ? 'active' : '']"
               >
                 <img :src="imagePath" class="d-block w-100" alt="..." />
+                <video controls width="250">
+                  <source
+                    :src="
+                      require('@/assets/experiences/yana-kishko/cover-yana-kishko-video-1.mp4')
+                    "
+                    type="video/mp4"
+                  />
+                </video>
               </div>
             </div>
             <a
@@ -93,9 +101,9 @@ export default {
       type: String,
       required: true
     },
-    images: {
+    phototeque: {
       type: Array,
-      required: true
+      required: false
     }
   },
   components: { iconArrowRightSmall, iconArrowLeftSmall },

@@ -18,20 +18,20 @@ export default {
   props: {
     showFormat: {
       type: Number,
-      required: true,
+      required: true
     },
     src: {
       type: String,
-      required: true,
+      required: true
     },
     someClass: {
       type: String,
-      required: false,
+      required: false
     },
     ctaRouteName: {
       type: String,
-      required: true,
-    },
-  },
+      required: true
+    }
+  }
 };
 </script>

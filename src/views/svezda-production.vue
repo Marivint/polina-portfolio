@@ -1,7 +1,7 @@
 <template>
   <experience-view
     title="Svez'da Production"
-    :images="[
+    :phototeque="[
       require('@/assets/experiences/svezda-production/svezda-production-01.jpg'),
       require('@/assets/experiences/svezda-production/svezda-production-02.jpg'),
       require('@/assets/experiences/svezda-production/svezda-production-03.jpg'),

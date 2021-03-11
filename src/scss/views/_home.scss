@@ -3,26 +3,13 @@
 #about {
   position: relative;
   text-align: left;
-  height: 500px;
+  height: 100vh;
   @extend %base-transition;
   #about-text {
-    // text-transform: uppercase;
-    // font-family: "Open Sans", sans-serif;
-    // font-weight: 100;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
-  // .anim-btn {
-  //   width: 19rem;
-  //   .button-text {
-  //     font-size: 0.9em;
-  //   }
-  //   .circle {
-  //     width: 2rem;
-  //     height: 2rem;
-  //   }
-  // }
 }
 
 #skills {
@@ -32,7 +19,6 @@
   .wrapper-col {
     padding-top: 300px;
     .wrapper-vertical {
-      // text-transform: uppercase;
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -110,8 +96,7 @@
 }
 
 #experiences {
-  padding: 100px 0px 100px 0px;
-  // background: url(~@/assets/bg.png);
+  padding: 150px 0px 200px 0px;
   height: 100%;
   background-position-x: right;
   background-position-y: top;
@@ -119,8 +104,37 @@
   #subtitle-portfolio {
     opacity: 0;
     padding: 0px 0px 100px 0px;
-    .subtitle {
-      // font-size: 1.4em;
+    #border-experiences {
+      padding-top: 50px;
+      border-bottom: 2px solid $color_purple;
+      // border-bottom-style: dashed;
+    }
+    // #border-experiences:after {
+    //   content: "";
+    //   display: inline-block;
+    //   width: 50%;
+    //   margin-top: 50px;
+    //   border-bottom: 2px solid $black;
+    //   border-bottom-style: dashed;
+    //   // &::after {
+    //   //   padding-top: 50px;
+    //   //   border-bottom: 2px solid #000;
+    //   //   border-bottom-style: dashed;
+    //   //   width: 108px;
+    //   // }
+    // }
+  }
+  #experiences-filter {
+    .active {
+      color: $color_purple;
+      // border: 3px solid $purple;
+      // border-radius: 30px;
+      font-weight: 700;
+      padding-top: 5px;
+      padding-right: 10px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      @extend %base-transition;
     }
   }
   article:not(:last-child) {

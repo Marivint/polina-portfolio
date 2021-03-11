@@ -23,8 +23,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $color_black;
   background-color: transparent;
-  // background-color: $color_light_white;
-  // cursor: none;
 }
 
 /* Root
@@ -49,35 +47,6 @@ a {
   text-decoration: none;
   color: $color_black;
 }
-
-// .main-bg{
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   z-index: 0;
-//   overflow: hidden;
-//   img{
-//     width: 100%;
-//     max-width: 1200px;
-//   }
-// }
-
-/* Card
-============================================= */
-// .card-work {
-//   border-radius: 30px;
-//   overflow: hidden;
-//   img {
-//     border-radius: 30px;
-//     // filter: blur(5px);
-//   }
-//   .card-body {
-//     padding-top: 40px;
-//   }
-//   .card-text {
-//     padding-top: 30px;
-//   }
-// }
 
 /* Btn
 ============================================= */
@@ -189,14 +158,6 @@ a {
     height: 2px;
   }
 }
-
-/* Search 
-============================================= */
-// .bootstrap-select {
-//   .dropdown-menu {
-//     cursor: initial;
-//   }
-// }
 
 /* Others 
 ============================================= */

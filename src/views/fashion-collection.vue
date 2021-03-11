@@ -1,7 +1,7 @@
 <template>
   <experience-view
     title="Fashion collection"
-    :images="[
+    :phototeque="[
       require('@/assets/experiences/fashion-collection/cover-fashion-collection.jpg'),
       require('@/assets/experiences/fashion-collection/fashion-collection-02.jpg'),
       require('@/assets/experiences/fashion-collection/fashion-collection-03.jpg')

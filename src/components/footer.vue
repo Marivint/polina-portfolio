@@ -22,14 +22,14 @@
                 <div class="mb-5 alert alert-light" role="alert">
                   <div class="row justify-content-center align-items-center">
                     <div class="col-auto">
-                      <icon-info-circle
-                        colorClass="custom-icon-blue"
+                      <icon-tick
+                        colorClass="custom-icon-green"
                         otherClass="custom-icon-big"
                         height="30"
                         width="30"
                       />
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm">
                       Thank you for contacting me. <br />
                       Your message has been successfully sent. I will contact
                       you very soon!
@@ -41,14 +41,14 @@
                 <div class="mb-5 alert alert-danger" role="alert">
                   <div class="row justify-content-center align-items-center">
                     <div class="col-auto">
-                      <icon-info-circle
+                      <icon-close
                         colorClass="custom-icon-red"
                         otherClass="custom-icon-big"
                         height="30"
                         width="30"
                       />
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm">
                       Sorry, your message has not been send. <br />
                       Please contact me on
                       <a href="mailto:{{emailTo}}">{{ emailTo }}</a>
@@ -60,89 +60,93 @@
                 <div class="mb-5 alert alert-danger" role="alert">
                   <div class="row justify-content-center align-items-center">
                     <div class="col-auto">
-                      <icon-info-circle
+                      <icon-danger
                         colorClass="custom-icon-red"
                         otherClass="custom-icon-big"
                         height="30"
                         width="30"
                       />
                     </div>
-                    <div class="col">
+                    <div class="col-12 col-sm">
                       Invalid email address field.
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
-                <span class="svg-text">
-                  <icon-message
-                    colorClass="custom-icon-white"
-                    otherClass=""
-                    height="30"
-                    width="30"
-                  />
-                  <div class="text-wrapper">
-                    <a href="mailto:{{emailTo}}">{{ emailTo }}</a>
+              <template
+                v-if="contactForm.sent == null || contactForm.sent == false"
+              >
+                <div class="col-12 col-lg-6">
+                  <span class="svg-text">
+                    <icon-message
+                      colorClass="custom-icon-white"
+                      otherClass=""
+                      height="30"
+                      width="30"
+                    />
+                    <div class="text-wrapper">
+                      <a href="mailto:{{emailTo}}">{{ emailTo }}</a>
+                    </div>
+                  </span>
+
+                  <span class="svg-text">
+                    <icon-location
+                      colorClass="custom-icon-white"
+                      otherClass=""
+                      height="30"
+                      width="30"
+                    />
+                    <div class="text-wrapper">Charenton-le-pont</div>
+                  </span>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="form-label-group">
+                    <input
+                      type="text"
+                      id="inputName"
+                      class="form-control"
+                      v-model="contactForm.name"
+                      placeholder="Name"
+                      required
+                    />
                   </div>
-                </span>
 
-                <span class="svg-text">
-                  <icon-location
-                    colorClass="custom-icon-white"
-                    otherClass=""
-                    height="30"
-                    width="30"
-                  />
-                  <div class="text-wrapper">Charenton-le-pont</div>
-                </span>
-              </div>
-              <div class="col-12 col-lg-6">
-                <div class="form-label-group">
-                  <input
-                    type="text"
-                    id="inputName"
+                  <!-- <br /> -->
+
+                  <div class="form-label-group">
+                    <input
+                      type="email"
+                      id="inputEmail"
+                      class="form-control"
+                      v-model="contactForm.email"
+                      placeholder="Email address"
+                      required
+                    />
+                  </div>
+
+                  <!-- <br /> -->
+
+                  <textarea
                     class="form-control"
-                    v-model="contactForm.name"
-                    placeholder="Name"
+                    id="inputMessage"
+                    v-model="contactForm.message"
+                    placeholder="Your message"
+                    rows="10"
                     required
-                  />
+                  ></textarea>
+
+                  <!-- <br /> -->
+
+                  <button class="btn col-12 col-lg-7">
+                    Send
+                    <icon-arrow-right
+                      colorClass="custom-icon-white"
+                      height="30"
+                      width="30"
+                    />
+                  </button>
                 </div>
-
-                <br />
-
-                <div class="form-label-group">
-                  <input
-                    type="email"
-                    id="inputEmail"
-                    class="form-control"
-                    v-model="contactForm.email"
-                    placeholder="Email address"
-                    required
-                  />
-                </div>
-
-                <br />
-
-                <textarea
-                  class="form-control"
-                  id="inputMessage"
-                  v-model="contactForm.message"
-                  placeholder="Your message"
-                  rows="10"
-                  required
-                ></textarea>
-
-                <br />
-
-                <button class="btn col-5 col-lg-7">
-                  Send
-                  <icon-arrow-right
-                    colorClass="custom-icon-white"
-                    height="30"
-                    width="30"
-                  />
-                </button>
-              </div>
+              </template>
             </form>
           </div>
         </div>
@@ -168,7 +172,7 @@
             <p>
               <router-link
                 :to="{ name: 'home', hash: '#experiences' }"
-                v-on:click="triggerClick"
+                v-on:click="anchorHashCheck"
               >
                 <span
                   class="experience-cta subtitle subtitle-white subtitle-left"
@@ -183,7 +187,7 @@
             <p>
               <router-link
                 :to="{ name: 'home', hash: '#contact' }"
-                v-on:click="triggerClick"
+                v-on:click="anchorHashCheck"
               >
                 <span
                   class="experience-cta subtitle subtitle-white subtitle-left"
@@ -242,7 +246,11 @@ import iconMessage from "../components/icons/icon-message.vue";
 import iconLocation from "../components/icons/icon-location.vue";
 import iconArrowRight from "../components/icons/icon-arrow-right.vue";
 import iconLinkedin from "../components/icons/icon-linkedin.vue";
-import iconInfoCircle from "../components/icons/icon-info-circle.vue";
+// import iconInfoCircle from "../components/icons/icon-info-circle.vue";
+import iconTick from "../components/icons/icon-tick.vue";
+import iconClose from "../components/icons/icon-close.vue";
+import iconDanger from "../components/icons/icon-danger.vue";
+import $ from "jquery";
 
 export default {
   components: {
@@ -250,7 +258,9 @@ export default {
     iconLocation,
     iconArrowRight,
     iconLinkedin,
-    iconInfoCircle
+    iconTick,
+    iconClose,
+    iconDanger
   },
   props: {
     enableContact: {
@@ -300,6 +310,12 @@ export default {
           : false;
       this.emailValid = res == true ? true : false;
       return res;
+    }
+  },
+  watch: {
+    "contactForm.sent": function() {
+      var form = $("#contact-form");
+      window.scrollTo(form);
     }
   }
 };
