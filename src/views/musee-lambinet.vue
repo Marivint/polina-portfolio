@@ -1,13 +1,7 @@
 <template>
   <experience-view
     title="Lambinet Museum in complete privacy"
-    :phototeque="[
-      require('@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg'),
-      require('@/assets/experiences/musee-lambinet/musee-lambinet-02.jpg'),
-      require('@/assets/experiences/musee-lambinet/musee-lambinet-03.jpg'),
-      require('@/assets/experiences/musee-lambinet/musee-lambinet-04.jpg'),
-      require('@/assets/experiences/musee-lambinet/musee-lambinet-05.jpg')
-    ]"
+    :phototeque="phototeque"
   >
     <p>
       In February 2020, the <b>“Culture Sans Frontières”</b> association
@@ -34,6 +28,32 @@
 <script>
 import experienceView from "../components/experience/experience-view.vue";
 export default {
-  components: { experienceView }
+  components: { experienceView },
+  data: function() {
+    return {
+      phototeque: [
+        {
+          type: "img",
+          path: require("@/assets/experiences/musee-lambinet/cover-musee-lambinet.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/musee-lambinet/musee-lambinet-02.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/musee-lambinet/musee-lambinet-03.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/musee-lambinet/musee-lambinet-04.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/musee-lambinet/musee-lambinet-05.jpg")
+        }
+      ]
+    };
+  }
 };
 </script>

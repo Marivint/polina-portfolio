@@ -20,11 +20,19 @@ export default {
       phototeque: [
         {
           type: "img",
+          path: require("@/assets/experiences/yana-kishko/cover-yana-kishko-image-1.png")
+        },
+        {
+          type: "img",
           path: require("@/assets/experiences/yana-kishko/cover-yana-kishko.jpg")
+        },
+        {
+          type: "video",
+          width: 500,
+          path: require("@/assets/experiences/yana-kishko/cover-yana-kishko-video-1.mp4")
         }
       ]
     };
-  },
-  mounted() {}
+  }
 };
 </script>

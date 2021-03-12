@@ -107,33 +107,12 @@
     #border-experiences {
       padding-top: 50px;
       border-bottom: 2px solid $color_purple;
-      // border-bottom-style: dashed;
     }
-    // #border-experiences:after {
-    //   content: "";
-    //   display: inline-block;
-    //   width: 50%;
-    //   margin-top: 50px;
-    //   border-bottom: 2px solid $black;
-    //   border-bottom-style: dashed;
-    //   // &::after {
-    //   //   padding-top: 50px;
-    //   //   border-bottom: 2px solid #000;
-    //   //   border-bottom-style: dashed;
-    //   //   width: 108px;
-    //   // }
-    // }
   }
   #experiences-filter {
     .active {
       color: $color_purple;
-      // border: 3px solid $purple;
-      // border-radius: 30px;
       font-weight: 700;
-      padding-top: 5px;
-      padding-right: 10px;
-      padding-bottom: 5px;
-      padding-left: 10px;
       @extend %base-transition;
     }
   }

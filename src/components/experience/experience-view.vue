@@ -23,19 +23,25 @@
           >
             <div class="carousel-inner">
               <div
-                v-for="(imagePath, index) in phototeque"
-                v-bind:key="imagePath"
+                v-for="(file, index) in phototeque"
+                v-bind:key="file"
                 class="carousel-item"
                 :class="[index == 0 ? 'active' : '']"
               >
-                <img :src="imagePath" class="d-block w-100" alt="..." />
-                <video controls width="250">
-                  <source
-                    :src="
-                      require('@/assets/experiences/yana-kishko/cover-yana-kishko-video-1.mp4')
-                    "
-                    type="video/mp4"
-                  />
+                <img
+                  v-if="file.type == 'img'"
+                  :src="file.path"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <video
+                  v-if="file.type == 'video'"
+                  controls="true"
+                  loop="true"
+                  autoplay="true"
+                  :width="file.width"
+                >
+                  <source :src="file.path" type="video/mp4" />
                 </video>
               </div>
             </div>
