@@ -52,7 +52,7 @@
       <br />
       <br />
 
-      <template v-for="exp in displayArrayExperiences" v-bind:key="exp">
+      <template v-for="exp in arrayExperiences" v-bind:key="exp">
         <experience
           v-bind="exp"
           :format="exp.format"
@@ -70,43 +70,53 @@
 
 <script>
 import experience from "../components/experience/experience.vue";
+// import Vue from "vue";
+var Vue = require("vue");
 
 export default {
   components: { experience },
   data: function() {
     return {
+      datasExperiences: [],
       arrayExperiences: [],
       filterExperience: "all"
     };
   },
-  computed: {
-    displayArrayExperiences: function() {
-      let scope = this;
-      let displayArrayExperiences = [];
-      let format = "left";
-      this.arrayExperiences.forEach(function(exp) {
-        if (
-          scope.filterExperience == "all" ||
-          scope.filterExperience == exp.filter
-        ) {
-          if (scope.filterExperience != "all") {
-            exp.otherClass = "animate__animated animate__fadeIn";
-          }
-          exp.format = format;
-          displayArrayExperiences.push(exp);
-          format = format == "left" ? "right" : "left";
-        }
-      });
-      return displayArrayExperiences;
-    }
-  },
   methods: {
     activeFilter: function(filter) {
       this.filterExperience = filter;
+    },
+    displayArrayExperiences: function() {
+      let scope = this;
+      let format = "left";
+      this.arrayExperiences = [];
+      Vue.nextTick(function() {
+        scope.datasExperiences.forEach(function(exp) {
+          if (
+            scope.filterExperience == "all" ||
+            scope.filterExperience == exp.filter
+          ) {
+            if (scope.filterExperience != "all") {
+              exp.otherClass = "animate__animated animate__fadeIn";
+            }
+            exp.format = format;
+            scope.arrayExperiences.push(exp);
+            format = format == "left" ? "right" : "left";
+          }
+        });
+      });
+    }
+  },
+  watch: {
+    filterExperience: function() {
+      this.displayArrayExperiences();
+    },
+    datasExperiences: function() {
+      this.displayArrayExperiences();
     }
   },
   mounted() {
-    this.arrayExperiences = [
+    this.datasExperiences = [
       {
         format: "right",
         filter: "fashion",

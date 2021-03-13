@@ -6,7 +6,14 @@
       shoots, perform backstages, ensure customer and partner relations, produce
       communication supports and mailings.
       <br />
-      <a href="https://www.instagram.com/yanakishko_video/">See projects</a>
+      <br />
+      <b
+        >Learn more (
+        <a href="https://www.instagram.com/yanakishko_video/" target="_blank"
+          >instagram</a
+        >
+        )</b
+      >
     </p>
   </experience-view>
 </template>
@@ -25,12 +32,12 @@ export default {
         {
           type: "img",
           path: require("@/assets/experiences/yana-kishko/cover-yana-kishko.jpg")
-        },
-        {
-          type: "video",
-          width: 500,
-          path: require("@/assets/experiences/yana-kishko/cover-yana-kishko-video-1.mp4")
         }
+        // {
+        //   type: "video",
+        //   width: 500,
+        //   path: require("@/assets/experiences/yana-kishko/cover-yana-kishko-video-1.mp4")
+        // }
       ]
     };
   }
