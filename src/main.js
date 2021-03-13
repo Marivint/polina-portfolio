@@ -13,13 +13,16 @@ import "bootstrap";
 ============================================= */
 // import axios from "axios";
 import gsap from "gsap";
+
 // Event handler mitt
 import mitt from "mitt";
+
+import i18n from "./i18n";
 window.emitter = mitt();
 
 /* App
 ============================================= */
-const app = createApp(App);
+const app = createApp(App).use(i18n);
 
 app.use(router);
 

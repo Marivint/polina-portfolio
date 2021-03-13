@@ -16,6 +16,7 @@ import vYanaKishko from "@/views/yana-kishko.vue";
 import vExperiences from "@/views/experiences.vue";
 import vAbout from "@/views/about.vue";
 import vNotFound from "@/views/404.vue";
+import HelloI18n from "@/views/HelloI18n.vue";
 import $ from "jquery";
 
 /* Routes 
@@ -41,6 +42,11 @@ const routes = [{
     path: "/experiences.html",
     name: "experiences",
     component: vExperiences
+  },
+  {
+    path: "/HelloI18n.html",
+    name: "HelloI18n",
+    component: HelloI18n
   },
   {
     path: "/musee-lambinet.html",

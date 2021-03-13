@@ -28,12 +28,12 @@ export default {
     width: {
       type: String,
       required: false,
-      default: '24'
+      default: "24"
     },
     height: {
       type: String,
       required: false,
-      default: '24'
+      default: "24"
     }
   },
   data: function() {
