@@ -7,10 +7,8 @@
           <div id="about-text" class="offset-1 col-10">
             <h1
               class="user-select-none color-purple animate__animated animate__flipInX"
-            >
-              Hello! I am a cultural<br />
-              production manager.
-            </h1>
+              v-html="$t('home.title')"
+            ></h1>
             <br />
             <p class="animate__animated animate__flipInX animate__delay-1s">
               Passionate by production of art and cultural projects, as well as
