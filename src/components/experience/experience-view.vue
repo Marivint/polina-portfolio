@@ -1,8 +1,8 @@
 <template>
   <main>
     <div id="experience-view" class="container-fluid">
-      <div class="row">
-        <div id="experience-view-title" class="col-12 text-left">
+      <div class="row justify-content-center">
+        <div id="experience-view-title" class="col-11">
           <router-link
             :to="{ name: 'experiences' }"
             v-on:click="anchorHashCheck"

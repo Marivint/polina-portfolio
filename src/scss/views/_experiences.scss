@@ -1,27 +1,26 @@
 #experiences {
-    padding: 150px 0px 0px 0px;
-    height: 100%;
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    #subtitle-portfolio {
-      opacity: 0;
-      padding: 0px 0px 100px 0px;
-      #border-experiences {
-        padding-top: 50px;
-        border-bottom: 2px solid $color_purple;
-      }
-    }
-    #experiences-filter {
-      .active {
-        color: $color_purple;
-        font-weight: 700;
-        @extend %base-transition;
-      }
-      margin-bottom: 120px;
-    }
-    article:not(:last-child) {
-      margin-bottom: 100px;
+  padding: 100px 0px 0px 0px;
+  height: 100%;
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  #subtitle-portfolio {
+    opacity: 0;
+    padding: 0px 0px 100px 0px;
+    #border-experiences {
+      padding-top: 50px;
+      border-bottom: 2px solid $color_purple;
     }
   }
-  
+  #experiences-filter {
+    .active {
+      color: $color_purple;
+      font-weight: 700;
+      @extend %base-transition;
+    }
+    margin-bottom: 120px;
+  }
+  article:not(:last-child) {
+    margin-bottom: 100px;
+  }
+}
