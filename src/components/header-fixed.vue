@@ -11,7 +11,7 @@
               id="header-fixed-informations"
               class="offset-1 col-md-10 col-lg-5 "
             >
-              <span class="svg-text">
+              <span class="svg-text svg-text-contact">
                 <icon-message
                   colorClass="custom-icon-black"
                   otherClass=""
@@ -55,7 +55,7 @@
             <div id="header-fixed-nav" class="offset-1 col-md-10 col-lg-5">
               <router-link
                 :to="{ name: 'experiences' }"
-                class="color-purple header-fixed-link"
+                class="color-black header-fixed-link"
               >
                 <h1 v-html="$t('header.experiences')"></h1>
               </router-link>

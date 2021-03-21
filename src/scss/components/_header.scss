@@ -92,6 +92,13 @@ header:after {
   }
 }
 
+.router-link-exact-active {
+  color: $color_black !important;
+  path {
+    fill: $color_purple !important;
+  }
+}
+
 /* Header burger
 ============================================= */
 #header-burger {
@@ -168,6 +175,7 @@ header:after {
   position: relative;
   user-select: none !important;
   span {
+    cursor: pointer;
     margin-right: 20px;
   }
   .active {

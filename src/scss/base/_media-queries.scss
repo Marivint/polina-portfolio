@@ -126,6 +126,13 @@ See variables.scss breakpoint
     }
   }
 
+  .svg-text-contact {
+    margin-left: -1px; // icon have padding in path... need to align
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
   /* Sections
   ============================================= */
   #scroll-down {
@@ -295,6 +302,13 @@ See variables.scss breakpoint
     width: 30px;
     height: 30px;
   }
+  .svg-text-contact {
+    margin-left: -1px; // icon have padding in path... need to align
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 /* Media Small
@@ -327,13 +341,15 @@ See variables.scss breakpoint
     }
   }
 
-  #header-fixed-informations {
-    padding-top: 0px !important;
-  }
+  #header-fixed {
+    #header-fixed-informations {
+      padding-top: 0px !important;
+    }
 
-  #header-fixed-map {
-    padding-top: 0px !important;
-    height: 220px !important;
+    #header-fixed-map {
+      padding-top: 0px !important;
+      height: 220px !important;
+    }
   }
 
   main {
@@ -449,7 +465,7 @@ See variables.scss breakpoint
     }
     #contact-card {
       background: transparent;
-      padding: 60px 35px 60px 35px;
+      padding: 50px 35px 60px 35px;
       border-radius: 0%;
       .svg-text {
         .text-wrapper {

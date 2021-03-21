@@ -69,15 +69,26 @@ if (window.isMobile) {
   });
 }
 
-$(document).on("mouseenter", "a", function () {
-  elementCursorLittle.addClass("hidden");
-  elementCursorBig.addClass("very-big");
-});
+// Hover effects
+// Enter hover
+$(document).on(
+  "mouseenter",
+  "a, #locale-switcher > span, #header-burger",
+  function () {
+    elementCursorLittle.addClass("hidden");
+    elementCursorBig.addClass("very-big");
+  }
+);
 
-$(document).on("mouseleave", "a", function () {
-  elementCursorLittle.removeClass("hidden");
-  elementCursorBig.removeClass("very-big");
-});
+// Leave hover
+$(document).on(
+  "mouseleave",
+  "a, #locale-switcher > span, #header-burger",
+  function () {
+    elementCursorLittle.removeClass("hidden");
+    elementCursorBig.removeClass("very-big");
+  }
+);
 
 /* AnimateCss
     ============================================= */
