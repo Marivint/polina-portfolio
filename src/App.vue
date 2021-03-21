@@ -148,9 +148,7 @@ export default {
   created: function() {
     this.isMobile();
   },
-  mounted: function() {
-    console.log(process.env.VUE_APP_I18N_LOCALE);
-  }
+  mounted: function() {}
 };
 </script>
 

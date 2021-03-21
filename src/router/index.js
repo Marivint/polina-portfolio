@@ -84,24 +84,6 @@ const routes = [{
   }
 ];
 
-function getRoutesList(routes, pre) {
-  return routes.reduce((array, route) => {
-    const path = `${pre}${route.path}`;
-
-    if (route.path !== "*") {
-      array.push(path);
-    }
-
-    if (route.children) {
-      array.push(...getRoutesList(route.children, `${path}/`));
-    }
-
-    return array;
-  }, []);
-}
-
-console.log(getRoutesList(routes, "https://www.polina-gusarova.com/"));
-
 /* Router
 ============================================= */
 const router = createRouter({
