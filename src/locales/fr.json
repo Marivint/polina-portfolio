@@ -60,7 +60,7 @@
           "ctaRouteName": "yanaKishko",
           "otherClass":
             "animate__animated animate__fadeIn animate__delay-1s first__experience",
-          "text": "En février 2021, j'ai commencé à travailler en tant que chargée de production avec Yana Kisho - vidéaste basée à Paris. Parmi mes missions étaient : organiser et assister les tournages, réaliser les backstages, assurer les relations clients et partenaires, produire des supports de communication et des mailings.<br /><br /><strong><a href='https://www.instagram.com/yanakishko_video/' target='_blank'>Voir la page instagram</a></strong>"
+          "text": "En février 2021, j'ai commencé à travailler en tant que chargée de production avec Yana Kisho - vidéaste basée à Paris. Parmi mes missions étaient : organiser et assister les tournages, réaliser les backstages, assurer les relations clients et partenaires, produire des supports de communication et des mailings.<br /><br /><a href='https://www.instagram.com/yanakishko_video/' target='_blank'><span class='btn-anim from-left'>Voir la page instagram</span></a>"
         },
         {
           "format": "left",
@@ -82,7 +82,7 @@
           "src": "meet-my-project/cover-meet-my-project.jpg",
           "ctaRouteName": "meetMyProject",
           "otherClass": "scroll-animate animate__animated",
-          "text": "Créé en 2009 dans le cadre de la Paris Design Week, Meet My Project a pour vocation de promouvoir le design contemporain auprès du grand public, mais aussi de faire se rencontrer les talents. Architectes, décorateurs, éditeurs de mobiliers, fabricants, distributeurs... L'événement a également pour objectif de favoriser les échanges entre professionnels du secteur, et susciter de nouvelles collaborations.<br /><br />Pour les éditions 2018 et 2019 du Meet my project et 1000 vases à Dubaï j'étais responsable de la communication et la recherche de designers et d’invités spéciaux, ainsi que la relation partenaires et le montage et l’assistance d'exposition. <br/><br/><strong><a href='https://www.meetmyproject.com/' target='_blank'>Voir le site</a></strong>"
+          "text": "Créé en 2009 dans le cadre de la Paris Design Week, Meet My Project a pour vocation de promouvoir le design contemporain auprès du grand public, mais aussi de faire se rencontrer les talents. Architectes, décorateurs, éditeurs de mobiliers, fabricants, distributeurs... L'événement a également pour objectif de favoriser les échanges entre professionnels du secteur, et susciter de nouvelles collaborations.<br /><br />Pour les éditions 2018 et 2019 du Meet my project et 1000 vases à Dubaï j'étais responsable de la communication et la recherche de designers et d’invités spéciaux, ainsi que la relation partenaires et le montage et l’assistance d'exposition. <br/><br/><a href='https://www.meetmyproject.com/' target='_blank'><span class='btn-anim from-left'>Voir le site</span></a>"
         },
         {
           "format": "left",

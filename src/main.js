@@ -191,3 +191,7 @@ headerFixedLink.on("click", function () {
 headerLogo.on("click", function () {
   leaveHeaderFixed();
 });
+
+$(document).on("click", "#locale-switcher > span", function () {
+  leaveHeaderFixed();
+});
