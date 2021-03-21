@@ -10,7 +10,7 @@
         :showFormat="showFormat"
         :page="page"
         :title="title"
-        :subtitles="subtitles"
+        :subCategory="subCategory"
         :ctaRouteName="ctaRouteName"
       ></experience-text>
     </template>
@@ -19,7 +19,7 @@
         :showFormat="showFormat"
         :page="page"
         :title="title"
-        :subtitles="subtitles"
+        :subCategory="subCategory"
         :ctaRouteName="ctaRouteName"
       ></experience-text>
       <experience-image
@@ -40,6 +40,10 @@ export default {
       type: String,
       required: true
     },
+    category: {
+      type: String,
+      required: true
+    },
     page: {
       type: String,
       required: true
@@ -52,7 +56,7 @@ export default {
       type: String,
       required: true
     },
-    subtitles: {
+    subCategory: {
       type: Array,
       required: true
     },

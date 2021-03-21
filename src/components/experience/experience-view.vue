@@ -1,11 +1,11 @@
 <template>
-  <main id="experience-view">
-    <div class="container-fluid">
+  <main>
+    <div id="experience-view" class="container-fluid">
       <div class="row">
         <div id="experience-view-title" class="col-12 text-left">
           <router-link
-            :to="{ name: 'home', hash: '#experiences' }"
-            v-on:click="triggerClick"
+            :to="{ name: 'experiences' }"
+            v-on:click="anchorHashCheck"
           >
             <span class="experience-cta subtitle subtitle-left subtitle-purple">
               Experience {{ date }}
@@ -23,12 +23,26 @@
           >
             <div class="carousel-inner">
               <div
-                v-for="(imagePath, index) in images"
-                v-bind:key="imagePath"
+                v-for="(file, index) in phototeque"
+                v-bind:key="file"
                 class="carousel-item"
                 :class="[index == 0 ? 'active' : '']"
               >
-                <img :src="imagePath" class="d-block w-100" alt="..." />
+                <img
+                  v-if="file.type == 'img'"
+                  :src="file.path"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <video
+                  v-if="file.type == 'video'"
+                  controls="true"
+                  loop="true"
+                  autoplay="true"
+                  :width="file.width"
+                >
+                  <source :src="file.path" type="video/mp4" />
+                </video>
               </div>
             </div>
             <a
@@ -93,9 +107,9 @@ export default {
       type: String,
       required: true
     },
-    images: {
+    phototeque: {
       type: Array,
-      required: true
+      required: false
     }
   },
   components: { iconArrowRightSmall, iconArrowLeftSmall },

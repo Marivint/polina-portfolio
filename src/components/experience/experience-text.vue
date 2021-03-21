@@ -11,13 +11,15 @@
 
     <h3>{{ title }}</h3>
 
-    <p>{{ subtitlesDisplay }}</p>
+    <p>{{ subCategoryDisplay }}</p>
 
     <span
       class="experience-cta subtitle subtitle-purple"
       :class="showFormat === 1 ? 'subtitle-left' : 'subtitle-right'"
     >
-      <router-link :to="{ name: ctaRouteName }">Learn more</router-link>
+      <router-link :to="{ name: ctaRouteName }">{{
+        $t("learnMore")
+      }}</router-link>
     </span>
   </div>
 </template>
@@ -27,42 +29,44 @@ export default {
   props: {
     showFormat: {
       type: Number,
-      required: true,
+      required: true
     },
     page: {
       type: String,
-      required: true,
+      required: true
     },
     title: {
       type: String,
-      required: true,
+      required: true
     },
-    subtitles: {
+    subCategory: {
       type: Array,
-      required: true,
+      required: true
     },
     ctaRouteName: {
       type: String,
-      required: true,
+      required: true
     },
     someClass: {
       type: String,
-      required: false,
-    },
+      required: false
+    }
   },
   computed: {
-    subtitlesDisplay: function() {
-      let subtitlesDisplay = "";
-      this.subtitles.forEach((subtitle) => {
-        subtitlesDisplay += subtitle + " - ";
+    subCategoryDisplay: function() {
+      let scope = this;
+      let subCategory = "";
+      this.subCategory.forEach(subtitle => {
+        subCategory +=
+          scope.$t("page.experiences.subCategory." + subtitle) + " - ";
       });
       //   Delete last -
-      if (subtitlesDisplay.length > 0) {
-        subtitlesDisplay = subtitlesDisplay.slice(0, -2);
+      if (subCategory.length > 0) {
+        subCategory = subCategory.slice(0, -2);
       }
-      return subtitlesDisplay;
-    },
+      return subCategory;
+    }
   },
-  mounted() {},
+  mounted() {}
 };
 </script>

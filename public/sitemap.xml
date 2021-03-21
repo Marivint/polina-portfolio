@@ -4,13 +4,46 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
 
 <url>
   <loc>https://www.polina-gusarova.com/</loc>
   <lastmod>2020-12-19T15:31:52+00:00</lastmod>
 </url>
-
+<url>
+  <loc>https://www.polina-gusarova.com/experiences.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/musee-lambinet.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/meet-my-project.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/svezda-production.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/fashion-collection.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/alexander-vasiliev-volga-season.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/life-flight-performance.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/yana-kishko.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
+<url>
+  <loc>https://www.polina-gusarova.com/contact.html/</loc>
+  <lastmod>2020-12-19T15:31:52+00:00</lastmod>
+</url>
 
 </urlset>

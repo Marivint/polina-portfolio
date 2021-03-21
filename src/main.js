@@ -5,19 +5,23 @@ import {
   createApp
 } from "vue";
 import App from "./App.vue";
+import router from "./router";
+import $ from "jquery"; //import jQuery
+import "bootstrap";
 
 /* Plugin
 ============================================= */
-import router from "./router";
 // import axios from "axios";
-import "bootstrap";
-import $ from "jquery"; //import jQuery
 import gsap from "gsap";
+import mitt from "mitt";
+import i18n from "./i18n";
+window.emitter = mitt();
 
+/* App
+============================================= */
 const app = createApp(App);
-
+app.use(i18n);
 app.use(router);
-
 app.mount("#app");
 
 /* Is mobile
@@ -65,8 +69,18 @@ if (window.isMobile) {
   });
 }
 
+$(document).on("mouseenter", "a", function () {
+  elementCursorLittle.addClass("hidden");
+  elementCursorBig.addClass("very-big");
+});
+
+$(document).on("mouseleave", "a", function () {
+  elementCursorLittle.removeClass("hidden");
+  elementCursorBig.removeClass("very-big");
+});
+
 /* AnimateCss
-============================================= */
+    ============================================= */
 // eslint-disable-next-line no-unused-vars
 const animateCSS = (
   element,
@@ -96,7 +110,7 @@ const animateCSS = (
 };
 
 /* Header fixed
-============================================= */
+    ============================================= */
 const html = $("html");
 const body = $("body");
 const headerBurger = $("#header-burger");
@@ -165,81 +179,4 @@ headerFixedLink.on("click", function () {
 
 headerLogo.on("click", function () {
   leaveHeaderFixed();
-});
-
-/* Google maps
-============================================= */
-window.addEventListener("load", () => {
-  /*
-  // Create the script tag, set the appropriate attributes
-  var script = document.createElement("script");
-  // eslint-disable-next-line prettier/prettier
-  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBFIEMUarDpNfvAulDpUpg_gbfE7Ztnemw&callback=initMap";
-  script.defer = true;
-
-  // Attach your callback function to the `window` object
-  window.initMap = function () {
-    // eslint-disable-next-line no-unused-vars
-    let map;
-    // eslint-disable-next-line no-undef
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: {
-        lat: 48.8215897,
-        lng: 2.4118662
-      },
-      zoom: 14
-    });
-  };
-  // Append the 'script' element to 'head'
-  document.head.appendChild(script);
-  */
-  // eslint-disable-next-line no-unused-vars
-  let map;
-  // eslint-disable-next-line no-undef
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: {
-      lat: 48.8215897,
-      lng: 2.4118662
-    },
-    zoom: 14
-  });
-});
-
-// // eslint-disable-next-line no-unused-vars
-// const initMap = () => {
-//   // eslint-disable-next-line no-undef
-//   new google.maps.Map(document.getElementById("map"), {
-//     center: {
-//       lat: 48.8215897,
-//       lng: 2.4118662
-//     },
-//     zoom: 14
-//   });
-// };
-
-// window.addEventListener("load", () => {
-//   if (window.isMobile) {
-//     // Temporarily disable for mobile
-//     $(".scroll-animate.animate__animated").each(function () {
-//       $(this).addClass("animate__fadeIn");
-//     });
-//   }
-// });
-
-/* Skills animations
-============================================= */
-window.addEventListener("load", () => {
-  // const skillAnimated1 = $("#skill-animated-1");
-  // const skillContentAnimated1 = $("#skill-content-animated-1");
-  // skillAnimated1.on("click", function () {
-  //   skillAnimated1.removeClass("animate__delay-3s");
-  //   skillAnimated1.removeClass("animate__fadeIn");
-  //   // skillAnimated1.addClass("animate__flipOutX");
-  //   // eslint-disable-next-line no-unused-vars
-  //   animateCSS("#skill-animated-1", "flip", false).then(message => {
-  //     skillAnimated1.hide();
-  //     skillContentAnimated1.addClass("visible");
-  //     animateCSS("#skill-content-animated-1", "flip");
-  //   });
-  // });
 });

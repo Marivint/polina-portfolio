@@ -1,0 +1,139 @@
+{
+  "learnMore": "En savoir plus",
+  "seeProjects": "Voir les projets",
+  "header":{
+    "experiences": "Expériences",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Bonjour ! Je suis Polina,<br/> une chargée de production.",
+    "description": "Passionné par la production de projets artistiques et culturels, ainsi que par divers domaines du design,<br/> je me concentre sur le management et la communication digitale.",
+    "cta":{
+      "experiences": "Experiences",
+      "resume": "Télécharger mon cv",
+      "contact": "Contacter moi"
+    }
+  },
+  "page":{
+    "contact":{
+      "subtitle": "Contacter moi",
+      "title": "Envie de collaborer ?",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "message": "Votre message",
+        "send": "Envoyer",
+        "success": "Votre message a été envoyé avec succès. Je vous contacterai très bientôt !",
+        "error": {
+          "send": "Désolé, votre message n'a pas été envoyé. <br /> Contacter moi directement pas mail ",
+          "email": "Adresse email non valide"
+        }
+      }
+    },
+    "experiences":{
+      "title":"Mes expériences",
+      "category":{
+        "all" : "Tout",
+        "fashion" : "Mode",
+        "cultural" : "Management culturel",
+        "creation" : "Création"
+      },
+      "subCategory":{
+        "productionManagement": "Production management",
+        "partnership": "Relation partenaires",
+        "conception": "Conception",
+        "management": "Management",
+        "production": "Production",
+        "communication": "Communication",
+        "preprod": "Pré-production",
+        "realisation": "Réalisation",
+        "creation": "Création"
+      },
+      "datas":[
+        {
+          "format": "right",
+          "page": "1-7",
+          "title": "Yana Kishko vidéo",
+          "category": "fashion",
+          "subCategory": ["productionManagement", "partnership"],
+          "src": "yana-kishko/cover-yana-kishko.jpg",
+          "ctaRouteName": "yanaKishko",
+          "otherClass":
+            "animate__animated animate__fadeIn animate__delay-1s first__experience",
+          "text": "En février 2021, j'ai commencé à travailler en tant que chargée de production avec Yana Kisho - vidéaste basée à Paris. Parmi mes missions étaient : organiser et assister les tournages, réaliser les backstages, assurer les relations clients et partenaires, produire des supports de communication et des mailings.<br /><br /><strong><a href='https://www.instagram.com/yanakishko_video/' target='_blank'>Voir la page instagram</a></strong>"
+        },
+        {
+          "format": "left",
+          "page": "2-7",
+          "title": "Musée Lambinet en toute intimité",
+          "category": "management",
+          "subCategory": ["conception", "management", "production"],
+          "src": "musee-lambinet/cover-musee-lambinet.jpg",
+          "ctaRouteName": "museeLambinet",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "Le 1er Février 2020 l'association <strong>Culture Sans Frontières</strong> a proposé un projet de médiation culturelle innovant au sein du musée Lambinet dans la ville de Versailles. Plus qu'une visite, il s'agit d'une expérience immersive et sensitive durant laquelle les visiteurs s'immiscent dans la vie quotidienne de bourgeois au temps de Louis XV.<br /><br /><strong>La visite était constituée de 4 ateliers,</strong> chacune basée sur les différents rythmes de la journée : le lever, le déjeuner, les jeux de l'après-midi et la réception le soir. Les visiteurs étaient invités à découvrir les codes de l'apparat et des mondanités de la cour : comment mettre une perruque ? Quels types de parfums et de maquillage étaient utilisés et comment étaient-ils appliqués ? À quels jeux jouait-on à cette époque en prenant le thé ? Et bien d'autres thèmes encore. Un salon de thé d'époque en partenariat avec un pâtissier de Versailles où petits et grands pouvaient venir se restaurer tout au long de l'événement était également mis en place.<br /><br />Avec l’équipe de l'association je participais dans toutes les étapes de l’évènement : conception, promotion, management, production des outils de médiation et mise en œuvre du projet."
+        },
+        {
+          "format": "right",
+          "page": "3-7",
+          "title": "Meet my project",
+          "category": "management",
+          "subCategory": ["partnership", "production"],
+          "src": "meet-my-project/cover-meet-my-project.jpg",
+          "ctaRouteName": "meetMyProject",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "Créé en 2009 dans le cadre de la Paris Design Week, Meet My Project a pour vocation de promouvoir le design contemporain auprès du grand public, mais aussi de faire se rencontrer les talents. Architectes, décorateurs, éditeurs de mobiliers, fabricants, distributeurs... L'événement a également pour objectif de favoriser les échanges entre professionnels du secteur, et susciter de nouvelles collaborations.<br /><br />Pour les éditions 2018 et 2019 du Meet my project et 1000 vases à Dubaï j'étais responsable de la communication et la recherche de designers et d’invités spéciaux, ainsi que la relation partenaires et le montage et l’assistance d'exposition. <br/><br/><strong><a href='https://www.meetmyproject.com/' target='_blank'>Voir le site</a></strong>"
+        },
+        {
+          "format": "left",
+          "page": "4-7",
+          "title": "Académie FAST",
+          "category": "management",
+          "subCategory": ["management", "production", "communication"],
+          "src": "svezda-production/cover-svezda-production.jpg",
+          "ctaRouteName": "svezdaProduction",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "<strong>Svez’da Production</strong> est une agence événementielle internationale avec une solide expérience dans l’organisation d’événements et de festivals internationaux, ainsi que dans la gestion et le conseil d’artistes.<br/><br/>J'ai travaillé sur deux projets “Revealing the Stars“ et “The FAST Academy“. Le premier est un concours artistique qui se déroule en France et débouche sur un concours international à Los Angeles. La seconde est une école de commerce en ligne pour artistes et entrepreneurs culturels, qui vise à les  aider à démarrer leur carrière et à apprendre à la gérer.<br/><br/>En tant qu'assistante de production, j'étais en charge de la stratégie de communication digitale et du suivi du site, des relations partenaires, de la gestion (planification et suivi organisationnel, coordination de l'équipe) et du lancement de l'école en ligne."
+        },
+        {
+          "format": "right",
+          "page": "5-7",
+          "title": "Saisons d’Alexander Vassiliev",
+          "category": "fashion",
+          "subCategory": ["preprod", "production"],
+          "src": "alexander-vassiliev/cover-alexander-vassiliev.jpg",
+          "ctaRouteName": "alexanderVasilievVolga",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "Le festival de mode <strong>“Les saisons d'Alexandre Vasiliev“</strong> est un événement annuel traditionnel qui a lieu à Samara depuis 2001. Le but du projet est de créer les conditions du développement des jeunes créateurs de mode. Les lauréats du festival ont présenté à plusieurs reprises leurs collections à l'étranger, notamment en France et en Chine.<br/><br/>Le directeur artistique du festival est l’historien de la mode et critique d'art russe, artiste de théâtre, collectionneur et présentateur de télévision Alexander Vasiliev.<br/><br/>Dans le cadre d'un stage chez une agence de la publicité et du design <strong>“OV27“</strong>, j'ai assisté les créateurs de l'événement. J'étais engagé dans la promotion et la production du festival : j'ai organisé des castings, des demi-finales et finales, coordonné les participants (créateurs de mode et mannequins), créé des supports de communication. Dans le cadre du festival, j'ai également assisté à la production du Showroom  de vêtements et accessoires “V`SEASONS”."
+        },
+        {
+          "format": "left",
+          "page": "6-7",
+          "title": "Collection de vêtements",
+          "category": "creation",
+          "subCategory": ["conception", "realisation", "creation"],
+          "src": "fashion-collection/cover-fashion-collection.jpg",
+          "ctaRouteName": "fashionCollection",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "En m'inspirant de l'art et de la mode du XXe siècle, notamment du travail des constructivistes soviétiques, j'ai créé une collection de vêtements, nommée <strong>“Diagonales”</strong>. Il se compose de motifs géométriques - des rayures, qui, selon l'interprétation, donnent un effet artistique différent.<br/><br/>La collection a été créée dans le cadre d'un programme de licence à l'Université technique d'État de Samara et a été présentée lors de défilés de mode en Russie."
+        },
+        {
+          "format": "right",
+          "page": "7-7",
+          "title": "Performance Vol de Vie",
+          "category": "creation",
+          "subCategory": ["conception", "creation"],
+          "src": "life-flight-performance/cover-life-flight-performance.jpg",
+          "ctaRouteName": "lifeFlightPerformance",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "En 2017, en coopération avec le théâtre <strong>“Lieu d’action”</strong>, j'ai créé une performance, présentée au festival annuel d’art «VolgаFest» à Samara, Russie. Ma tâche principale était de concevoir les costumes de cette performance théâtrale, censée présenter au public les différents lieux du programme du festival.<br/><br/>Le concept s’est basé sur la méthode scandinave de navigation médiévale.<br/><br/>Les anciens marins emmenaient des oiseaux avec eux. Si le navire était perdu en mer, les marins relâchaient l'oiseau. S’il revenait, cela signifiait qu'il n'y avait pas de terre à proximité, mais s'il s'envolait dans une certaine direction, cela signifiait que l'oiseau avait trouvé une terre.<br/><br/>Les citadins modernes, comme les marins médiévaux, recherchent des points de repère dans la vie. Et chacun trouve quelque chose qui lui est propre : des lieux uniques, de la reconnaissance, de l'art, de l'amour ..."
+        }
+      ]
+    }
+  },
+  "footer":{
+    "experiences": "Mes expériences",
+    "contact": "Contacter moi",
+    "madeBy": "Made by"
+  }
+}

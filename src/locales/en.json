@@ -1,0 +1,139 @@
+{
+  "learnMore": "Learn more",
+  "seeProjects": "See projects",
+  "header":{
+    "experiences": "Experiences",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Hello! I am a cultural<br/> production manager.",
+    "description": "Passionate by production of art and cultural projects, as well as of various design fields,<br /> I’m focusing on management and digital communication.",
+    "cta":{
+      "experiences": "Experiences",
+      "resume": "Download my resume",
+      "contact": "Contact me"
+    }
+  },
+  "page":{
+    "contact":{
+      "subtitle": "Contact me",
+      "title": "Let's Work <br class='d-none d-lg-inline' />Together.",
+      "form": {
+        "name": "Name",
+        "email": "Email address",
+        "message": "Your messsage",
+        "send": "Send",
+        "success": "Your message has been successfully sent. I will contact you very soon !",
+        "error": {
+          "send": "Sorry, your message has not been send. <br /> Please contact me on ",
+          "email": "Invalid email address field."
+        }
+      }
+    },
+    "experiences":{
+      "title":"My experiences",
+      "category":{
+        "all" : "All",
+        "fashion" : "Fashion",
+        "cultural" : "Cultural management",
+        "creation" : "Creation"
+      },
+      "subCategory":{
+        "productionManagement": "Production management",
+        "partnership": "Partnership",
+        "conception": "Conception",
+        "management": "Management",
+        "production": "Production",
+        "communication": "Communication",
+        "preprod": "Pre-production",
+        "realisation": "Realisation",
+        "creation": "Creation"
+      },
+      "datas":[
+        {
+          "format": "right",
+          "page": "1-7",
+          "title": "Yana Kishko video",
+          "category": "fashion",
+          "subCategory": ["productionManagement", "partnership"],
+          "src": "yana-kishko/cover-yana-kishko.jpg",
+          "ctaRouteName": "yanaKishko",
+          "otherClass":
+            "animate__animated animate__fadeIn animate__delay-1s first__experience",
+          "text": "In february 2021 I started to work as production manager with Yana Kisho - videographer based in Paris. Among my missions were : organize and assist shoots, perform backstages, ensure customer and partner relations, produce communication supports and mailings.<br /><br /><strong><a href='https://www.instagram.com/yanakishko_video/' target='_blank'>See projects</a></strong>"
+        },
+        {
+          "format": "left",
+          "page": "2-7",
+          "title": "Lambinet Museum in complete privacy",
+          "category": "management",
+          "subCategory": ["conception", "management", "production"],
+          "src": "musee-lambinet/cover-musee-lambinet.jpg",
+          "ctaRouteName": "museeLambinet",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "In February 2020, the <b>Culture Sans Frontières</b> associationproposed an innovative cultural mediation experience ‘Musée Lambinet entoute intimité’ within the Lambinet museum in the city of Versailles. Morethan a visit, it's an immersive and sensitive experience during whichvisitors interfere in the daily life of bourgeois in the time of Louis XV.<br /><br /><b>The visit consisted of 4 workshops</b>, each based on the differentrhythms of the day: getting up, having lunch, afternoon games andreception in the evening. Visitors were invited to discover the codes ofthe court's pageantry and social life: how to put on a wig? What types ofperfumes and makeup were used and how were they applied? What games werewe playing at that time while having tea? And many other themes. A periodtea room in partnership with a pastry chef from Versailles where young andold could come and eat throughout the event was also set up. <br /><br />With the association's team, I participated in all stages of the event:conception, promotion, management, production of mediation tools andexperience implementation."
+        },
+        {
+          "format": "right",
+          "page": "3-7",
+          "title": "Meet my project",
+          "category": "management",
+          "subCategory": ["partnership", "production"],
+          "src": "meet-my-project/cover-meet-my-project.jpg",
+          "ctaRouteName": "meetMyProject",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "Created in 2019 as part of Paris Design Week, Meet My experience aims topromote contemporary design to the general public, but also to bringtogether talents. Architects, decorators, furniture editors,manufacturers, distributors… The event also aims to promote exchangesbetween professionals in the sector and generate new collaborations.<br /><br />For the 2018 and 2019 editions of Meet my experience I was responsible forcommunication and the search for designers and special guests, as well aspartner relations and exhibition setup.<br /><br /><strong><a href='https://www.meetmyproject.com/' target='_blank'>See website</a></strong>"
+        },
+        {
+          "format": "left",
+          "page": "4-7",
+          "title": "Svez'da production",
+          "category": "management",
+          "subCategory": ["management", "production", "communication"],
+          "src": "svezda-production/cover-svezda-production.jpg",
+          "ctaRouteName": "svezdaProduction",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "<strong>Svez’da Production</strong> – is an international event agency with soundexperience in organization of international events and festivals, as wellas in artist’s management and consulting. <br /><br />I had to work on two experiences 'Revealing the Stars' and 'The FASTAcademy'. The first is an artistic competition that takes place in Franceand leads to an international competition in Los Angeles. The second is anonline business school for artists and cultural entrepreneurs, which aimsto help artists start their careers and learn to manage it.<br /><br />As a production assistant I was in charge of the digital communicationstrategy and website monitoring, partner relations, management (planningand organizational monitoring, coordinating the team) and of the launch ofthe online business school."
+        },
+        {
+          "format": "right",
+          "page": "5-7",
+          "title": "Alexander Vasiliev’s Volga Seasons",
+          "category": "fashion",
+          "subCategory": ["preprod", "production"],
+          "src": "alexander-vassiliev/cover-alexander-vassiliev.jpg",
+          "ctaRouteName": "alexanderVasilievVolga",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "The fashion festival <strong>“Alexander Vasiliev's Volga Seasons“</strong> has been held in Samara since 2001 and is a traditional annual event. The goal ofthe experience is to create conditions for the development of youngcostume and theater designers. The winners of the festival have repeatedlypresented their collections abroad, including in France and China, forexample, at the international Silk Road Fashion Week in China.<br /><br />The artistic director of the festival is the all-Russian famous fashionhistorian and art critic, theater artist, collector and TV presenterAlexander Vasiliev.<br /><br />As part of an internship at the <strong>“OV27 Advertising and Design Center“</strong>, Iassisted the organizers of the event. I was engaged in promotion andproduction: organized castings, semi-finals and finals of the festival,coordinated the participants (fashion designers and models). As part ofthe festival, I also assisted the production of the V`SEASONS Showroom ofclothes and accessories."
+        },
+        {
+          "format": "left",
+          "page": "6-7",
+          "title": "Fashion Collection",
+          "category": "creation",
+          "subCategory": ["conception", "realisation", "creation"],
+          "src": "fashion-collection/cover-fashion-collection.jpg",
+          "ctaRouteName": "fashionCollection",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "Taking inspiration from the art and fashion of the 20th century, namely the work of Soviet constructivists, I created a collection of clothes,named <b>“Diagonals”</b>. It consists of geometric patterns - stripes,which, depending on the interpretation, give a different artistic effect.<br /><br />The collection was created as part of a bachelor's degree program atSamara State Technical University, and was presented at fashion shows inRussia."
+        },
+        {
+          "format": "right",
+          "page": "7-7",
+          "title": "Life Flight’ Performance",
+          "category": "creation",
+          "subCategory": ["conception", "creation"],
+          "src": "life-flight-performance/cover-life-flight-performance.jpg",
+          "ctaRouteName": "lifeFlightPerformance",
+          "otherClass": "scroll-animate animate__animated",
+          "text": "In 2017, in cooperation with the theater <b>“Place of action”</b>, Icreated a performance, presented at the annual embankment art festival“VolgаFest” in Samara, Russia. My main task was to design the costumes forthis theatrical procession, which was supposed to introduce the audienceto the various venues of the festival program. <br /><br />The concept of this performance is based on the Scandinavian method ofnavigation of medieval navigators.<br /><br />Ancient sailors took birds with them. If the ship was lost at sea, thesailors released the bird. When it returned back, it meant there is noland nearby, but if it flew away in a certain direction, it meant the birdfound land.<br /><br />Modern city dwellers, like medieval sailors, are looking for landmarks inlife. And everyone finds something of their own: unique places,recognition, art, love..."
+        }
+      ]
+    }
+  },
+  "footer":{
+    "experiences": "My experiences",
+    "contact": "Contact me",
+    "madeBy": "Made by"
+  }
+}

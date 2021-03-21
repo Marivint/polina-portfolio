@@ -3,26 +3,17 @@
 #about {
   position: relative;
   text-align: left;
-  height: 500px;
+  // height: 100vh;
   @extend %base-transition;
   #about-text {
-    // text-transform: uppercase;
-    // font-family: "Open Sans", sans-serif;
-    // font-weight: 100;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    padding-top: 130px;
+    .cta{
+      padding-right: 90px;
+    }
   }
-  // .anim-btn {
-  //   width: 19rem;
-  //   .button-text {
-  //     font-size: 0.9em;
-  //   }
-  //   .circle {
-  //     width: 2rem;
-  //     height: 2rem;
-  //   }
-  // }
 }
 
 #skills {
@@ -32,7 +23,6 @@
   .wrapper-col {
     padding-top: 300px;
     .wrapper-vertical {
-      // text-transform: uppercase;
       position: absolute;
       top: 50%;
       transform: translateY(-50%) translateX(-50%);
@@ -107,23 +97,4 @@
 
 #scroll-down {
   margin: 180px 0px 200px 0px;
-}
-
-#experiences {
-  padding: 100px 0px 100px 0px;
-  // background: url(~@/assets/bg.png);
-  height: 100%;
-  background-position-x: right;
-  background-position-y: top;
-  background-repeat: no-repeat;
-  #subtitle-portfolio {
-    opacity: 0;
-    padding: 0px 0px 100px 0px;
-    .subtitle {
-      // font-size: 1.4em;
-    }
-  }
-  article:not(:last-child) {
-    margin-bottom: 100px;
-  }
 }

@@ -9,15 +9,12 @@
 ============================================= */
 @import "~bootstrap/scss/bootstrap"; // Bootstrap
 @import "~animate.css/animate.min.css"; // Animate.css
-// @import '~bootstrap-select/sass/bootstrap-select.scss';         // Bootstrap-select
-// @import '~magic.css/assets/scss/magic.scss'; // Magic.css
+@import "~photoswipe/dist/photoswipe.css"; // Photoswipe.css
+@import "~photoswipe/dist/default-skin/default-skin.css"; // Photoswipe default-skin.css
 
 /* Structure and layout files 
 ============================================= */
 @import "main.scss"; // Main
-// @import "modules/transition.scss"; // Transition
-// @import "modules/parallax.scss"; // Parallax
-// @import "modules/floating-labels"; // Floating labels
 @import "modules/cursor.scss"; // Cursor
 
 /* Components
@@ -32,6 +29,8 @@
 /* Views
 ============================================= */
 @import "views/home.scss"; // Home.vue
+@import "views/contact.scss"; // Contact.vue
+@import "views/experiences.scss"; // Experiences.vue
 
 /* Media queries
 ============================================= */

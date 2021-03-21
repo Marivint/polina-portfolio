@@ -2,61 +2,39 @@
   <header>
     <div class="container-fluid">
       <nav class="row header-center">
-        <div class="col-auto col-md-10">
+        <div class="col-auto col-sm-8 col-md-9">
           <div class="d-inline header-item-logo">
             <router-link id="header-logo" :to="{ name: 'home' }">
-              <!-- <img id="logo-black" src="@/assets/logos/logo-b.png" alt="" />
-              <img
-                id="logo-white"
-                class="hidden"
-                src="@/assets/logos/logo-w.png"
-                alt=""
-              /> -->
               Polina Gusarova
             </router-link>
           </div>
 
-          <!-- <div class="d-inline header-item header-item-grey">
-            <a href="#">
-              <icon-profile
-                colorClass="custom-icon-black"
-                otherClass="header-item-icon"
-                height="24"
-                width="24"
-              ></icon-profile>
-              About
-            </a>
-          </div> -->
-
           <div class="d-inline header-item header-item-grey">
-            <router-link
-              :to="{ name: 'home', hash: '#experiences' }"
-              v-on:click="triggerClick"
-            >
+            <router-link :to="{ name: 'experiences' }">
               <icon-category
                 colorClass="custom-icon-black"
                 otherClass="header-item-icon"
                 height="24"
                 width="24"
               ></icon-category>
-              Experiences
+              <span v-html="$t('header.experiences')"></span>
             </router-link>
           </div>
 
           <div class="d-inline header-item header-item-grey">
-            <router-link
-              :to="{ name: 'home', hash: '#contact' }"
-              v-on:click="triggerClick"
-            >
+            <router-link :to="{ name: 'contact' }">
               <icon-message
                 colorClass="custom-icon-black"
                 otherClass="header-item-icon"
                 height="24"
                 width="24"
               ></icon-message>
-              Contact
+              <span v-html="$t('header.contact')"></span>
             </router-link>
           </div>
+        </div>
+        <div class="col-auto text-right d-none d-sm-block">
+          <lang-switcher />
         </div>
         <div class="col text-right">
           <button id="header-burger"></button>
@@ -66,13 +44,13 @@
   </header>
 </template>
 <script>
-// import iconProfile from "../components/icons/icon-profile.vue";
+import langSwitcher from "../components/lang-switcher.vue";
 import iconCategory from "../components/icons/icon-category.vue";
 import iconMessage from "../components/icons/icon-message.vue";
 
 export default {
   components: {
-    // iconProfile,
+    langSwitcher,
     iconCategory,
     iconMessage
   },

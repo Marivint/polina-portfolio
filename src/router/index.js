@@ -12,9 +12,11 @@ import vSvezdaProduction from "@/views/svezda-production.vue";
 import vFashionCollection from "@/views/fashion-collection.vue";
 import vAlexanderVasilievVolga from "@/views/alexander-vasiliev-volga-season.vue";
 import vLifeFlightPerformance from "@/views/life-flight-performance.vue";
-import vAbout from "@/views/about.vue";
+import vYanaKishko from "@/views/yana-kishko.vue";
+import vExperiences from "@/views/experiences.vue";
+import vContact from "@/views/contact.vue";
 import vNotFound from "@/views/404.vue";
-// import app from "../App.vue";
+import $ from "jquery";
 
 /* Routes 
 ============================================= */
@@ -31,9 +33,9 @@ const routes = [{
     }
   },
   {
-    path: "/about",
-    name: "about",
-    vHome: vAbout
+    path: "/experiences.html",
+    name: "experiences",
+    component: vExperiences
   },
   {
     path: "/musee-lambinet.html",
@@ -66,11 +68,39 @@ const routes = [{
     component: vLifeFlightPerformance
   },
   {
+    path: "/yana-kishko.html",
+    name: "yanaKishko",
+    component: vYanaKishko
+  },
+  {
+    path: "/contact.html",
+    name: "contact",
+    component: vContact
+  },
+  {
     path: "/:catchAll(.*)",
     name: "404",
     component: vNotFound
   }
 ];
+
+function getRoutesList(routes, pre) {
+  return routes.reduce((array, route) => {
+    const path = `${pre}${route.path}`;
+
+    if (route.path !== "*") {
+      array.push(path);
+    }
+
+    if (route.children) {
+      array.push(...getRoutesList(route.children, `${path}/`));
+    }
+
+    return array;
+  }, []);
+}
+
+console.log(getRoutesList(routes, "https://www.polina-gusarova.com/"));
 
 /* Router
 ============================================= */
@@ -78,29 +108,30 @@ const router = createRouter({
   history: createWebHistory(),
   mode: "history",
   routes,
-  // scrollBehavior(to, from, savedPosition) {
-  scrollBehavior() {
-    // if (to.hash) {
-    //   return {
-    //     selector: to.hash
-    //   };
-    // }
-    // if (savedPosition) {
-    //   return savedPosition;
-    // } else {
-    //   return {
-    //     x: 0,
-    //     y: 0
-    //   };
-    // }
+  scrollBehavior(to, from, savedPosition) {
     return new Promise(resolve => {
-      setTimeout(() => {
-        alert();
-        resolve({
+      window.emitter.on("enter", () => {
+        $("html,body").scrollTop(0);
+      });
+      window.emitter.on("afterEnter", () => {
+        window.emitter.all.clear();
+        if (to.hash !== "") {
+          const element = document.getElementById(to.hash.replace(/#/, ""));
+          if (element && element.scrollIntoView) {
+            element.scrollIntoView();
+          }
+          // location.href = to.hash;
+          return resolve();
+        }
+        if (savedPosition) {
+          savedPosition.behavior = "smooth";
+          return resolve(savedPosition);
+        }
+        return resolve({
           x: 0,
           y: 0
         });
-      }, 2500);
+      });
     });
   }
 });

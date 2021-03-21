@@ -12,6 +12,7 @@ body {
   &.no-scroll {
     overflow: hidden;
   }
+  user-select: none;
 }
 
 /* Body 
@@ -23,8 +24,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $color_black;
   background-color: transparent;
-  // background-color: $color_light_white;
-  // cursor: none;
+}
+
+main {
+  position: relative;
+  min-height: 90vh;
+  padding-bottom: 350px;
 }
 
 /* Root
@@ -36,7 +41,7 @@ body {
 /* Main Page 
 ============================================= */
 #app {
-  padding-top: 130px;
+  padding-top: 10vh;
 }
 
 .wrapper-center {
@@ -49,35 +54,6 @@ a {
   text-decoration: none;
   color: $color_black;
 }
-
-// .main-bg{
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   z-index: 0;
-//   overflow: hidden;
-//   img{
-//     width: 100%;
-//     max-width: 1200px;
-//   }
-// }
-
-/* Card
-============================================= */
-// .card-work {
-//   border-radius: 30px;
-//   overflow: hidden;
-//   img {
-//     border-radius: 30px;
-//     // filter: blur(5px);
-//   }
-//   .card-body {
-//     padding-top: 40px;
-//   }
-//   .card-text {
-//     padding-top: 30px;
-//   }
-// }
 
 /* Btn
 ============================================= */
@@ -143,20 +119,24 @@ p,
 h1 {
   font-size: 3.5em;
   font-weight: 600;
+  user-select: none;
 }
 
 h2 {
   font-size: 2.5em;
   font-weight: 600;
+  user-select: none;
 }
 
 h3 {
   font-size: 2em;
   font-weight: 600;
+  user-select: none;
 }
 
 p,
 li {
+  user-select: text;
   line-height: 2;
   letter-spacing: 0.05em;
 }
@@ -174,6 +154,7 @@ a {
   line-height: 1.4px;
   font-weight: 600;
   padding-left: 60px;
+  user-select: none;
   // font-size: 1.5em;
   &.subtitle-left {
     float: left;
@@ -189,14 +170,6 @@ a {
     height: 2px;
   }
 }
-
-/* Search 
-============================================= */
-// .bootstrap-select {
-//   .dropdown-menu {
-//     cursor: initial;
-//   }
-// }
 
 /* Others 
 ============================================= */

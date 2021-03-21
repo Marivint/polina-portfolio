@@ -6,6 +6,10 @@
       color: $hex;
     }
 
+    .border-#{$name} {
+      border-color: $hex !important;
+    }
+
     .text-#{$name} {
       color: $hex;
     }

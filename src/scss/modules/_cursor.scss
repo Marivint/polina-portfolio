@@ -27,5 +27,15 @@
   border-radius: 50%;
   pointer-events: none;
   @include opacity(0.5);
-  @include transition(all .1s);
+  // transition: 0.3s cubic-bezier(0, 0, 0.3, 2.33) transform;
+  // transition: 0.6s cubic-bezier(0, 0, 0.1, 1.7) transform;
+  // @include transition(all 0.1s);
+  transition: all 0.1s, width 0.3s ease-in-out, height 0.3s ease-in-out,
+    left 0.3s, top 0.3s;
+  &.very-big {
+    width: 50px;
+    height: 50px;
+    left: -25px;
+    top: -25px;
+  }
 }
