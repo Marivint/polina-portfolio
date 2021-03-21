@@ -3,12 +3,16 @@
 #about {
   position: relative;
   text-align: left;
-  height: 100vh;
+  // height: 100vh;
   @extend %base-transition;
   #about-text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    padding-top: 130px;
+    .cta{
+      padding-right: 90px;
+    }
   }
 }
 
@@ -93,30 +97,4 @@
 
 #scroll-down {
   margin: 180px 0px 200px 0px;
-}
-
-#experiences {
-  padding: 150px 0px 200px 0px;
-  height: 100%;
-  background-position-x: right;
-  background-position-y: top;
-  background-repeat: no-repeat;
-  #subtitle-portfolio {
-    opacity: 0;
-    padding: 0px 0px 100px 0px;
-    #border-experiences {
-      padding-top: 50px;
-      border-bottom: 2px solid $color_purple;
-    }
-  }
-  #experiences-filter {
-    .active {
-      color: $color_purple;
-      font-weight: 700;
-      @extend %base-transition;
-    }
-  }
-  article:not(:last-child) {
-    margin-bottom: 100px;
-  }
 }

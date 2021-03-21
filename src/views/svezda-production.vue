@@ -1,34 +1,37 @@
 <template>
   <experience-view
-    title="Svez'da Production"
-    :phototeque="[
-      require('@/assets/experiences/svezda-production/svezda-production-01.jpg'),
-      require('@/assets/experiences/svezda-production/svezda-production-02.jpg'),
-      require('@/assets/experiences/svezda-production/svezda-production-03.jpg'),
-      require('@/assets/experiences/svezda-production/svezda-production-04.jpg')
-    ]"
+    :title="$t('page.experiences.datas.3.title')"
+    :phototeque="phototeque"
   >
-    <p>
-      <b>Svez’da Production</b> – is an international event agency with sound
-      experience in organization of international events and festivals, as well
-      as in artist’s management and consulting. <br /><br />
-      I had to work on two experiences "Revealing the Stars" and "The FAST
-      Academy". The first is an artistic competition that takes place in France
-      and leads to an international competition in Los Angeles. The second is an
-      online business school for artists and cultural entrepreneurs, which aims
-      to help artists start their careers and learn to manage it.
-      <br /><br />
-      As a production assistant I was in charge of the digital communication
-      strategy and website monitoring, partner relations, management (planning
-      and organizational monitoring, coordinating the team) and of the launch of
-      the online business school.
-    </p>
+    <p v-html="$t('page.experiences.datas.3.text')"></p>
   </experience-view>
 </template>
 
 <script>
 import experienceView from "../components/experience/experience-view.vue";
 export default {
-  components: { experienceView }
+  components: { experienceView },
+  data: function() {
+    return {
+      phototeque: [
+        {
+          type: "img",
+          path: require("@/assets/experiences/svezda-production/svezda-production-01.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/svezda-production/svezda-production-02.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/svezda-production/svezda-production-03.jpg")
+        },
+        {
+          type: "img",
+          path: require("@/assets/experiences/svezda-production/svezda-production-04.jpg")
+        }
+      ]
+    };
+  }
 };
 </script>

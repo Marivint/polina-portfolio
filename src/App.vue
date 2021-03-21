@@ -23,7 +23,7 @@
     </transition>
   </router-view>
 
-  <c-footer :enableContact="enableContact"></c-footer>
+  <c-footer></c-footer>
   <!-- End router view -->
 </template>
 
@@ -32,6 +32,7 @@ import cHeader from "./components/header.vue";
 import cHeaderFixed from "./components/header-fixed.vue";
 import cAboutMe from "./components/about-me.vue";
 import cFooter from "./components/footer.vue";
+import i18n from "./i18n";
 import $ from "jquery";
 
 export default {
@@ -56,13 +57,7 @@ export default {
     }
   },
   methods: {
-    beforeEnter: function() {
-      if (this.$route.name === "home") {
-        this.enableContact = 1;
-      } else {
-        this.enableContact = 0;
-      }
-    },
+    beforeEnter: function() {},
     enter: function() {
       window.emitter.emit("enter");
     },
@@ -145,15 +140,17 @@ export default {
     return {
       enterActiveClass: "",
       leaveActiveClass: "",
-      enableContact: 0,
       mobile: false,
-      publicPath: process.env.BASE_URL
+      publicPath: process.env.BASE_URL,
+      translate: i18n.global.getLocaleMessage(this.$i18n.locale)
     };
   },
   created: function() {
     this.isMobile();
   },
-  mounted: function() {}
+  mounted: function() {
+    console.log(process.env.VUE_APP_I18N_LOCALE);
+  }
 };
 </script>
 

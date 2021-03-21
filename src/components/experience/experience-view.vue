@@ -1,10 +1,10 @@
 <template>
-  <main id="experience-view">
-    <div class="container-fluid">
+  <main>
+    <div id="experience-view" class="container-fluid">
       <div class="row">
         <div id="experience-view-title" class="col-12 text-left">
           <router-link
-            :to="{ name: 'home', hash: '#experiences' }"
+            :to="{ name: 'experiences' }"
             v-on:click="anchorHashCheck"
           >
             <span class="experience-cta subtitle subtitle-left subtitle-purple">

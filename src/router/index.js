@@ -14,9 +14,8 @@ import vAlexanderVasilievVolga from "@/views/alexander-vasiliev-volga-season.vue
 import vLifeFlightPerformance from "@/views/life-flight-performance.vue";
 import vYanaKishko from "@/views/yana-kishko.vue";
 import vExperiences from "@/views/experiences.vue";
-import vAbout from "@/views/about.vue";
+import vContact from "@/views/contact.vue";
 import vNotFound from "@/views/404.vue";
-import HelloI18n from "@/views/HelloI18n.vue";
 import $ from "jquery";
 
 /* Routes 
@@ -34,19 +33,9 @@ const routes = [{
     }
   },
   {
-    path: "/about",
-    name: "about",
-    vHome: vAbout
-  },
-  {
     path: "/experiences.html",
     name: "experiences",
     component: vExperiences
-  },
-  {
-    path: "/HelloI18n.html",
-    name: "HelloI18n",
-    component: HelloI18n
   },
   {
     path: "/musee-lambinet.html",
@@ -84,11 +73,34 @@ const routes = [{
     component: vYanaKishko
   },
   {
+    path: "/contact.html",
+    name: "contact",
+    component: vContact
+  },
+  {
     path: "/:catchAll(.*)",
     name: "404",
     component: vNotFound
   }
 ];
+
+function getRoutesList(routes, pre) {
+  return routes.reduce((array, route) => {
+    const path = `${pre}${route.path}`;
+
+    if (route.path !== "*") {
+      array.push(path);
+    }
+
+    if (route.children) {
+      array.push(...getRoutesList(route.children, `${path}/`));
+    }
+
+    return array;
+  }, []);
+}
+
+console.log(getRoutesList(routes, "https://www.polina-gusarova.com/"));
 
 /* Router
 ============================================= */

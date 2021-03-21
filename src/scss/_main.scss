@@ -12,6 +12,7 @@ body {
   &.no-scroll {
     overflow: hidden;
   }
+  user-select: none;
 }
 
 /* Body 
@@ -25,6 +26,12 @@ body {
   background-color: transparent;
 }
 
+main {
+  position: relative;
+  min-height: 90vh;
+  padding-bottom: 350px;
+}
+
 /* Root
 ============================================= */
 :root {
@@ -34,7 +41,7 @@ body {
 /* Main Page 
 ============================================= */
 #app {
-  padding-top: 130px;
+  padding-top: 10vh;
 }
 
 .wrapper-center {
@@ -112,20 +119,24 @@ p,
 h1 {
   font-size: 3.5em;
   font-weight: 600;
+  user-select: none;
 }
 
 h2 {
   font-size: 2.5em;
   font-weight: 600;
+  user-select: none;
 }
 
 h3 {
   font-size: 2em;
   font-weight: 600;
+  user-select: none;
 }
 
 p,
 li {
+  user-select: text;
   line-height: 2;
   letter-spacing: 0.05em;
 }
@@ -143,6 +154,7 @@ a {
   line-height: 1.4px;
   font-weight: 600;
   padding-left: 60px;
+  user-select: none;
   // font-size: 1.5em;
   &.subtitle-left {
     float: left;

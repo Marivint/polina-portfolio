@@ -41,7 +41,7 @@ See variables.scss breakpoint
   .experience {
     .experience-img {
       img {
-        max-width: 500px;
+        max-width: 450px;
         max-height: 700px;
       }
     }
@@ -76,6 +76,18 @@ See variables.scss breakpoint
     }
     .header-item {
       font-size: 0.9em;
+    }
+
+    #locale-switcher {
+      font-size: 0.9em;
+      #separate {
+        margin-right: 18px;
+        &::after {
+          left: 26px;
+          top: 6px;
+          height: 12px;
+        }
+      }
     }
 
     .custom-icon {
@@ -124,28 +136,26 @@ See variables.scss breakpoint
     }
   }
 
-  #lotte-hotel {
-    #contact {
-      #contact-card {
-        padding: 60px 60px 60px 60px;
-        .svg-text {
-          .text-wrapper {
-            font-size: 0.9em;
-          }
+  #contact {
+    #contact-card {
+      padding: 60px 60px 60px 60px;
+      .svg-text {
+        .text-wrapper {
+          font-size: 0.9em;
         }
-        #contact-form {
-          .btn,
-          textarea,
-          input {
-            font-size: 0.9em;
-          }
-          .btn,
-          input {
-            height: 50px;
-          }
-          textarea {
-            height: 180px;
-          }
+      }
+      #contact-form {
+        .btn,
+        textarea,
+        input {
+          font-size: 0.9em;
+        }
+        .btn,
+        input {
+          height: 50px;
+        }
+        textarea {
+          height: 180px;
         }
       }
     }
@@ -163,10 +173,7 @@ See variables.scss breakpoint
   /* Header
   ============================================= */
   header {
-    padding-top: 0px;
-    padding-right: 40px;
-    padding-bottom: 0px;
-    padding-left: 35px;
+    padding-top: 30px;
     .header-item-logo {
       margin-right: 45px;
     }
@@ -176,6 +183,14 @@ See variables.scss breakpoint
     .custom-icon {
       margin-right: 5px !important;
     }
+    &::after {
+      bottom: -20px;
+      height: 4px;
+    }
+  }
+
+  main {
+    padding-bottom: 250px;
   }
 
   #header-fixed-nav {
@@ -221,7 +236,7 @@ See variables.scss breakpoint
   /* Sections
   ============================================= */
   #about {
-    height: 650px;
+    // height: 650px;
   }
 
   #skills {
@@ -257,16 +272,15 @@ See variables.scss breakpoint
     }
   }
 
-  #lotte-hotel {
-    #contact {
-      #contact-card {
-        #contact-form {
-          padding-top: 20px;
-          .btn,
-          textarea,
-          input {
-            font-size: 0.8em;
-          }
+  #contact {
+    padding: 100px 0px 0px 0px;
+    #contact-card {
+      #contact-form {
+        padding-top: 20px;
+        .btn,
+        textarea,
+        input {
+          font-size: 0.8em;
         }
       }
     }
@@ -289,6 +303,7 @@ See variables.scss breakpoint
   /* Header
   ============================================= */
   header {
+    padding-top: 40px;
     .header-item {
       display: none !important;
     }
@@ -321,6 +336,10 @@ See variables.scss breakpoint
     height: 220px !important;
   }
 
+  main {
+    padding-bottom: 180px;
+  }
+
   /* Typographie
   ============================================= */
   .subtitle,
@@ -331,6 +350,16 @@ See variables.scss breakpoint
   li {
     font-size: 0.9em;
   }
+  #locale-switcher {
+    font-size: 1.1em;
+    #separate {
+      &::after {
+        left: 32px;
+        top: 8px;
+        height: 13px;
+      }
+    }
+  }
 
   /* Sections
   ============================================= */
@@ -339,7 +368,11 @@ See variables.scss breakpoint
   }
 
   #about {
-    height: 550px;
+    // height: 550px;
+    padding: 0px 0px 60px 0px !important;
+    #about-text {
+      padding-top: 110px;
+    }
   }
 
   #skills {
@@ -387,10 +420,12 @@ See variables.scss breakpoint
       text-align: left !important;
       padding-top: 50px;
       &.pr {
-        padding-right: 5px !important;
+        padding-right: 40px !important;
+        padding-left: 5px;
       }
       &.pl {
         padding-left: 5px !important;
+        padding-right: 40px;
       }
       .experience-page {
         display: none;
@@ -404,19 +439,48 @@ See variables.scss breakpoint
     }
   }
 
-  #lotte-hotel {
-    #contact {
-      padding: 150px 0px 0px 0px;
-      #contact-card {
-        padding: 60px 35px 60px 35px;
-        border-radius: 0%;
-        #contact-form {
-          input {
-            margin-bottom: 20px;
+  #contact {
+    color: $color_black;
+    padding: 50px 0px 0px 0px;
+    .alert {
+      background: $color_light_white;
+      color: $color_black;
+      border-radius: 12px;
+    }
+    #contact-card {
+      background: transparent;
+      padding: 60px 35px 60px 35px;
+      border-radius: 0%;
+      .svg-text {
+        .text-wrapper {
+          a {
+            color: $color_black !important;
           }
-          textarea {
-            margin-bottom: 20px;
+        }
+        svg {
+          path {
+            fill: $color_black;
           }
+        }
+      }
+      .subtitle {
+        color: $color_purple;
+        &::before {
+          background: $color_purple;
+        }
+      }
+      #contact-form {
+        input {
+          margin-bottom: 20px;
+        }
+        textarea {
+          margin-bottom: 20px;
+        }
+      }
+      .btn {
+        .custom-icon {
+          width: 25px !important;
+          height: 25px !important;
         }
       }
     }
@@ -430,7 +494,7 @@ See variables.scss breakpoint
   }
 
   #experience-view {
-    padding: 40px 0px 50px 0px;
+    padding: 100px 35px 50px 35px;
     #experience-view-title {
       padding-bottom: 30px;
     }
@@ -451,8 +515,8 @@ See variables.scss breakpoint
   }
 
   footer {
-    padding: 20px 0px 0px 0px !important;
-    box-shadow: inset 0 -250px 20px 0px rgb($color_full_black, 0.4) !important;
+    padding: 0px 0px 0px 0px !important;
+    // box-shadow: inset 0 -250px 20px 0px rgb($color_full_black, 0.4) !important;
     #footer-copyright {
       padding-top: 0px !important;
     }
@@ -467,11 +531,15 @@ See variables.scss breakpoint
   }
 
   #experiences {
-    padding: 60px 0px 20px 0px;
+    padding: 100px 0px 20px 0px;
     #subtitle-portfolio {
-      padding: 0px 0px 50px 0px;
+      padding: 0px 0px 40px 0px;
+      #border-experiences {
+        padding-top: 30px;
+      }
     }
     #experiences-filter {
+      margin-bottom: 50px;
       span {
         margin-bottom: 15px;
         display: inline-block;
@@ -479,12 +547,7 @@ See variables.scss breakpoint
     }
   }
 
-  #lotte-hotel {
-    background-position-x: 35%;
-    background-position-y: 0%;
-  }
-
   #header-fixed-nav {
-    padding-top: 50px !important;
+    padding-top: 100px !important;
   }
 }

@@ -9,6 +9,8 @@
 ============================================= */
 @import "~bootstrap/scss/bootstrap"; // Bootstrap
 @import "~animate.css/animate.min.css"; // Animate.css
+@import "~photoswipe/dist/photoswipe.css"; // Photoswipe.css
+@import "~photoswipe/dist/default-skin/default-skin.css"; // Photoswipe default-skin.css
 
 /* Structure and layout files 
 ============================================= */
@@ -27,6 +29,8 @@
 /* Views
 ============================================= */
 @import "views/home.scss"; // Home.vue
+@import "views/contact.scss"; // Contact.vue
+@import "views/experiences.scss"; // Experiences.vue
 
 /* Media queries
 ============================================= */

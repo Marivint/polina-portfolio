@@ -13,19 +13,15 @@ import "bootstrap";
 ============================================= */
 // import axios from "axios";
 import gsap from "gsap";
-
-// Event handler mitt
 import mitt from "mitt";
-
 import i18n from "./i18n";
 window.emitter = mitt();
 
 /* App
 ============================================= */
-const app = createApp(App).use(i18n);
-
+const app = createApp(App);
+app.use(i18n);
 app.use(router);
-
 app.mount("#app");
 
 /* Is mobile
@@ -73,8 +69,18 @@ if (window.isMobile) {
   });
 }
 
+$(document).on("mouseenter", "a", function () {
+  elementCursorLittle.addClass("hidden");
+  elementCursorBig.addClass("very-big");
+});
+
+$(document).on("mouseleave", "a", function () {
+  elementCursorLittle.removeClass("hidden");
+  elementCursorBig.removeClass("very-big");
+});
+
 /* AnimateCss
-============================================= */
+    ============================================= */
 // eslint-disable-next-line no-unused-vars
 const animateCSS = (
   element,
@@ -104,7 +110,7 @@ const animateCSS = (
 };
 
 /* Header fixed
-============================================= */
+    ============================================= */
 const html = $("html");
 const body = $("body");
 const headerBurger = $("#header-burger");
@@ -174,18 +180,3 @@ headerFixedLink.on("click", function () {
 headerLogo.on("click", function () {
   leaveHeaderFixed();
 });
-
-/* Google maps
-============================================= */
-// window.addEventListener("load", () => {
-//   // eslint-disable-next-line no-unused-vars
-//   let map;
-//   // eslint-disable-next-line no-undef
-//   map = new google.maps.Map(document.getElementById("map"), {
-//     center: {
-//       lat: 48.8215897,
-//       lng: 2.4118662
-//     },
-//     zoom: 14
-//   });
-// });

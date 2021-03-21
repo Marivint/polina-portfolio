@@ -4,20 +4,21 @@
     <section id="about">
       <div class="container-fluid">
         <div class="row">
-          <div id="about-text" class="offset-1 col-10">
+          <div id="about-text" class="offset-1 col-10 user-select-none">
             <h1
-              class="user-select-none color-purple animate__animated animate__flipInX"
+              class="color-purple animate__animated animate__flipInX"
               v-html="$t('home.title')"
             ></h1>
+            <br class="d-none d-sm-inline" />
             <br />
-            <p class="animate__animated animate__flipInX animate__delay-1s">
-              Passionate by production of art and cultural projects, as well as
-              of various design fields, <br />
-              I’m focusing on management and digital communication.
-            </p>
+            <p
+              class="animate__animated animate__flipInX animate__delay-1s"
+              v-html="$t('home.description')"
+            ></p>
+            <br class="d-none d-sm-inline" />
             <br />
-            <div class="row">
-              <div class="col-12 col-sm-auto">
+            <div class="row wrapper-cta">
+              <div class="col-12 col-md-auto cta d-none d-sm-inline">
                 <router-link
                   :to="{ name: 'experiences' }"
                   class="animate__animated animate__fadeIn animate__delay-2s"
@@ -28,11 +29,11 @@
                     height="24"
                     width="24"
                   ></icon-category>
-                  <strong>Experiences</strong>
+                  <strong v-html="$t('home.cta.experiences')"></strong>
                 </router-link>
               </div>
 
-              <div class="col-12 col-sm-auto">
+              <div class="col-12 col-md-auto cta">
                 <a
                   :href="
                     `${$root.publicPath}CV-Polina-GUSAROVA-Communication-Production-Evenementielle.pdf`
@@ -40,13 +41,13 @@
                   class="animate__animated animate__fadeIn animate__delay-2s"
                   download
                 >
-                  <strong>Download my resume</strong>
+                  <strong v-html="$t('home.cta.resume')"></strong>
                 </a>
               </div>
 
-              <div class="col-12 col-sm-auto">
+              <div class="col-12 col-md-auto cta d-none d-sm-inline">
                 <router-link
-                  :to="{ name: 'home', hash: '#contact' }"
+                  :to="{ name: 'contact' }"
                   class="animate__animated animate__fadeIn animate__delay-2s"
                   v-on:click="anchorHashCheck()"
                 >
@@ -56,7 +57,7 @@
                     height="24"
                     width="24"
                   ></icon-category>
-                  <strong>Contact me</strong>
+                  <strong v-html="$t('home.cta.contact')"></strong>
                 </router-link>
               </div>
             </div>
@@ -74,6 +75,7 @@ export default {
     return {
       show: true
     };
-  }
+  },
+  mounted: function() {}
 };
 </script>

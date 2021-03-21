@@ -1,4 +1,6 @@
-import { gsap } from "gsap";
+import {
+  gsap
+} from "gsap";
 
 let elementCursorLittle = document.getElementsByClassName("cursor-little");
 let elementCursorBig = document.getElementsByClassName("cursor-big");
