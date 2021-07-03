@@ -23,12 +23,6 @@
                   :to="{ name: 'experiences' }"
                   class="animate__animated animate__fadeIn animate__delay-2s"
                 >
-                  <icon-category
-                    colorClass="custom-icon-black"
-                    otherClass="header-item-icon"
-                    height="24"
-                    width="24"
-                  ></icon-category>
                   <strong v-html="$t('home.cta.experiences')"></strong>
                 </router-link>
               </div>
@@ -51,12 +45,6 @@
                   class="animate__animated animate__fadeIn animate__delay-2s"
                   v-on:click="anchorHashCheck()"
                 >
-                  <icon-category
-                    colorClass="custom-icon-black"
-                    otherClass="header-item-icon"
-                    height="24"
-                    width="24"
-                  ></icon-category>
                   <strong v-html="$t('home.cta.contact')"></strong>
                 </router-link>
               </div>
