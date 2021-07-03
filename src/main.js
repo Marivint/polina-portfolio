@@ -67,28 +67,27 @@ if (window.isMobile) {
   document.addEventListener("mousemove", e => {
     moveCursor(e);
   });
+  // Hover effects
+  // Enter hover
+  $(document).on(
+    "mouseenter",
+    "a, #locale-switcher > span, #header-burger",
+    function () {
+      elementCursorLittle.addClass("hidden");
+      elementCursorBig.addClass("very-big");
+    }
+  );
+
+  // Leave hover
+  $(document).on(
+    "mouseleave",
+    "a, #locale-switcher > span, #header-burger",
+    function () {
+      elementCursorLittle.removeClass("hidden");
+      elementCursorBig.removeClass("very-big");
+    }
+  );
 }
-
-// Hover effects
-// Enter hover
-$(document).on(
-  "mouseenter",
-  "a, #locale-switcher > span, #header-burger",
-  function () {
-    elementCursorLittle.addClass("hidden");
-    elementCursorBig.addClass("very-big");
-  }
-);
-
-// Leave hover
-$(document).on(
-  "mouseleave",
-  "a, #locale-switcher > span, #header-burger",
-  function () {
-    elementCursorLittle.removeClass("hidden");
-    elementCursorBig.removeClass("very-big");
-  }
-);
 
 /* AnimateCss
     ============================================= */
@@ -152,14 +151,12 @@ const enterHeaderFixed = () => {
   headerFixed.removeClass("hidden");
   headerFixed.removeClass("animate__fadeOut");
   headerLogo.removeClass("color-black");
-  // logoBlack.hide();
   // Add
   headerBurger.addClass("active");
   headerFixed.addClass("active");
   headerFixed.addClass("visible");
   headerFixed.addClass("animate__fadeIn");
   headerLogo.addClass("color-white");
-  // logoWhite.show();
   html.addClass("no-scroll");
   body.addClass("no-scroll");
 };
@@ -171,11 +168,9 @@ const leaveHeaderFixed = () => {
   headerFixed.removeClass("visible");
   headerFixed.removeClass("animate__fadeIn");
   headerLogo.removeClass("color-white");
-  // logoWhite.hide();
   // Add
   headerFixed.addClass("animate__fadeOut");
   headerLogo.addClass("color-black");
-  // logoBlack.show();
   html.removeClass("no-scroll");
   body.removeClass("no-scroll");
 };

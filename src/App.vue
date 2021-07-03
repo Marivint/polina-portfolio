@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     beforeEnter: function() {
-      if (this.mobile == false) {
+      if (!window.isMobile) {
         let elementCursorLittle = $(".cursor-little");
         let elementCursorBig = $(".cursor-big");
         elementCursorLittle.removeClass("hidden");
@@ -70,7 +70,7 @@ export default {
     },
     afterEnter: function() {
       window.emitter.emit("afterEnter");
-      if (this.mobile == false) {
+      if (!window.isMobile) {
         let elementCursorLittle = $(".cursor-little");
         let elementCursorBig = $(".cursor-big");
         elementCursorLittle.removeClass("hidden");
