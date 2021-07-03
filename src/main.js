@@ -26,7 +26,7 @@ app.mount("#app");
 
 /* Is mobile
 ============================================= */
-window.isMobile = (function(a) {
+window.isMobile = (function (a) {
   if (
     /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(
       a
@@ -74,7 +74,7 @@ if (window.isMobile) {
 $(document).on(
   "mouseenter",
   "a, #locale-switcher > span, #header-burger",
-  function() {
+  function () {
     elementCursorLittle.addClass("hidden");
     elementCursorBig.addClass("very-big");
   }
@@ -84,7 +84,7 @@ $(document).on(
 $(document).on(
   "mouseleave",
   "a, #locale-switcher > span, #header-burger",
-  function() {
+  function () {
     elementCursorLittle.removeClass("hidden");
     elementCursorBig.removeClass("very-big");
   }
@@ -141,7 +141,7 @@ const animateHeaderFixed = () => {
 };
 
 // Animation end
-headerFixed.on("animationend", function() {
+headerFixed.on("animationend", function () {
   if (!headerFixed.hasClass("active")) {
     headerFixed.addClass("hidden");
   }
@@ -180,18 +180,18 @@ const leaveHeaderFixed = () => {
   body.removeClass("no-scroll");
 };
 
-headerBurger.on("click", function() {
+headerBurger.on("click", function () {
   animateHeaderFixed();
 });
 
-headerFixedLink.on("click", function() {
+headerFixedLink.on("click", function () {
   animateHeaderFixed();
 });
 
-headerLogo.on("click", function() {
+headerLogo.on("click", function () {
   leaveHeaderFixed();
 });
 
-$(document).on("click", "#locale-switcher > span", function() {
+$(document).on("click", "#locale-switcher > span", function () {
   leaveHeaderFixed();
 });

@@ -58,20 +58,24 @@ export default {
   },
   methods: {
     beforeEnter: function() {
-      let elementCursorLittle = $(".cursor-little");
-      let elementCursorBig = $(".cursor-big");
-      elementCursorLittle.removeClass("hidden");
-      elementCursorBig.removeClass("very-big");
+      if (this.mobile == false) {
+        let elementCursorLittle = $(".cursor-little");
+        let elementCursorBig = $(".cursor-big");
+        elementCursorLittle.removeClass("hidden");
+        elementCursorBig.removeClass("very-big");
+      }
     },
     enter: function() {
       window.emitter.emit("enter");
     },
     afterEnter: function() {
       window.emitter.emit("afterEnter");
-      let elementCursorLittle = $(".cursor-little");
-      let elementCursorBig = $(".cursor-big");
-      elementCursorLittle.removeClass("hidden");
-      elementCursorBig.removeClass("very-big");
+      if (this.mobile == false) {
+        let elementCursorLittle = $(".cursor-little");
+        let elementCursorBig = $(".cursor-big");
+        elementCursorLittle.removeClass("hidden");
+        elementCursorBig.removeClass("very-big");
+      }
       this.animateScroll();
     },
     isScrolledIntoView: function(elem) {
