@@ -6,17 +6,17 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Bonjour ! Je suis Polina,<br/> une chargée de production.",
-    "description": "Passionné par la production de projets artistiques et culturels, ainsi que par divers domaines du design,<br/> je me concentre sur le management et la communication digitale.",
+    "title": "Bonjour ! Je suis Polina,<br/> chargée de production.",
+    "description": "Passionnée par la production de projets artistiques et culturels, ainsi que par divers domaines du design,<br/> je me concentre sur le management et la communication digitale.",
     "cta":{
-      "experiences": "Experiences",
+      "experiences": "Expériences",
       "resume": "Télécharger mon cv",
-      "contact": "Contacter moi"
+      "contact": "Me contacter"
     }
   },
   "page":{
     "contact":{
-      "subtitle": "Contacter moi",
+      "subtitle": "Me contacter",
       "title": "Envie de collaborer ?",
       "form": {
         "name": "Nom",
@@ -60,7 +60,7 @@
           "ctaRouteName": "yanaKishko",
           "otherClass":
             "animate__animated animate__fadeIn animate__delay-1s first__experience",
-          "text": "En février 2021, j'ai commencé à travailler en tant que chargée de production avec Yana Kisho - vidéaste basée à Paris. Parmi mes missions étaient : organiser et assister les tournages, réaliser les backstages, assurer les relations clients et partenaires, produire des supports de communication et des mailings.<br /><br /><a href='https://www.instagram.com/yanakishko_video/' target='_blank'><span class='btn-anim from-left'>Voir la page instagram</span></a>"
+          "text": "En février 2021, j'ai commencé à travailler en tant que chargée de production avec Yana Kisho - vidéaste basée à Paris. Parmi mes missions étaient : organiser et assister les tournages, réaliser les backstages, assurer les relations clients et partenaires, produire les supports de communication et les mailings.<br /><br /><a href='https://www.instagram.com/yanakishko_video/' target='_blank'><span class='btn-anim from-left'>Voir la page instagram</span></a>"
         },
         {
           "format": "left",
@@ -93,7 +93,7 @@
           "src": "svezda-production/cover-svezda-production.jpg",
           "ctaRouteName": "svezdaProduction",
           "otherClass": "scroll-animate animate__animated",
-          "text": "<strong>Svez’da Production</strong> est une agence événementielle internationale avec une solide expérience dans l’organisation d’événements et de festivals internationaux, ainsi que dans la gestion et le conseil d’artistes.<br/><br/>J'ai travaillé sur deux projets “Revealing the Stars“ et “The FAST Academy“. Le premier est un concours artistique qui se déroule en France et débouche sur un concours international à Los Angeles. La seconde est une école de commerce en ligne pour artistes et entrepreneurs culturels, qui vise à les  aider à démarrer leur carrière et à apprendre à la gérer.<br/><br/>En tant qu'assistante de production, j'étais en charge de la stratégie de communication digitale et du suivi du site, des relations partenaires, de la gestion (planification et suivi organisationnel, coordination de l'équipe) et du lancement de l'école en ligne."
+          "text": "<strong>Svez’da Production</strong> est une agence événementielle internationale avec une solide expérience dans l’organisation d’événements et de festivals internationaux, ainsi que dans la gestion et le conseil d’artistes.<br/><br/>J'ai travaillé sur deux projets “Revealing the Stars“ et “Académie FAST“. Le premier est un concours artistique qui se déroule en France et débouche sur un concours international à Los Angeles. La seconde est une école de commerce en ligne pour artistes et entrepreneurs culturels, qui vise à les  aider à démarrer leur carrière et à apprendre à la gérer.<br/><br/>En tant qu'assistante de production, j'étais en charge de la stratégie de communication digitale et du suivi du site, des relations partenaires, de la gestion (planification et suivi organisationnel, coordination de l'équipe) et du lancement de l'école en ligne."
         },
         {
           "format": "right",
@@ -131,9 +131,12 @@
       ]
     }
   },
+  "experience":{
+    "title": "Expérience"
+  },
   "footer":{
     "experiences": "Mes expériences",
-    "contact": "Contacter moi",
+    "contact": "Contactez-moi",
     "madeBy": "Made by"
   }
 }

@@ -7,8 +7,10 @@
             :to="{ name: 'experiences' }"
             v-on:click="anchorHashCheck"
           >
-            <span class="experience-cta subtitle subtitle-left subtitle-purple">
-              Experience {{ date }}
+            <span
+              class="experience-cta subtitle subtitle-left subtitle-purple"
+              v-html="$t('experience.title')"
+            >
             </span>
           </router-link>
           <!-- <span>Experience {{ date }}</span> -->

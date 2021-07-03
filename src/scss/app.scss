@@ -17,20 +17,20 @@
 @import "main.scss"; // Main
 @import "modules/cursor.scss"; // Cursor
 
-/* Components
-============================================= */
-@import "components/header.scss"; // Header
-@import "components/header-fixed.scss"; // Header fixed
-@import "components/footer.scss"; // Footer
-@import "components/experience.scss"; // experience
-@import "components/experience-view.scss"; // experience view
-@import "components/anim-btn.scss"; // experience view
-
 /* Views
 ============================================= */
+@import "views/header.scss"; // Header
+@import "views/header-fixed.scss"; // Header fixed
 @import "views/home.scss"; // Home.vue
 @import "views/contact.scss"; // Contact.vue
 @import "views/experiences.scss"; // Experiences.vue
+@import "views/footer.scss"; // Footer
+
+/* Components
+============================================= */
+@import "components/experience.scss"; // experience
+@import "components/experience-view.scss"; // experience view
+@import "components/anim-btn.scss"; // experience view
 
 /* Media queries
 ============================================= */

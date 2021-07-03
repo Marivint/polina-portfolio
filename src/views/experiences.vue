@@ -83,7 +83,7 @@ export default {
     activeFilter: function(category) {
       this.filterCategory = category;
     },
-    displayArrayExperiences: function() {
+    displayArrayExperiences: function(disableDelay = false) {
       let scope = this;
       let format = "left";
       this.arrayExperiences = [];
@@ -92,6 +92,12 @@ export default {
           datasExp
         ) {
           let exp = Object.assign({}, datasExp);
+          if (window.isMobile) {
+            exp.otherClass = "animate__animated animate__fadeIn";
+          }
+          if (disableDelay == true) {
+            exp.otherClass = "animate__animated animate__fadeIn";
+          }
           if (
             scope.filterCategory == "all" ||
             scope.filterCategory == exp.category
@@ -110,7 +116,7 @@ export default {
   },
   watch: {
     filterCategory: function() {
-      this.displayArrayExperiences();
+      this.displayArrayExperiences(true);
     },
     "$root.translate": function() {
       this.displayArrayExperiences();

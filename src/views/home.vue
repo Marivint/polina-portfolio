@@ -33,7 +33,7 @@
                 </router-link>
               </div>
 
-              <div class="col-12 col-md-auto cta">
+              <!-- <div class="col-12 col-md-auto cta">
                 <a
                   :href="
                     `${$root.publicPath}CV-Polina-GUSAROVA-Communication-Production-Evenementielle.pdf`
@@ -43,7 +43,7 @@
                 >
                   <strong v-html="$t('home.cta.resume')"></strong>
                 </a>
-              </div>
+              </div> -->
 
               <div class="col-12 col-md-auto cta d-none d-sm-inline">
                 <router-link

@@ -18,18 +18,18 @@ See variables.scss breakpoint
   .experience {
     .experience-img {
       &.pr {
-        padding-right: 10% !important;
+        padding-right: 6% !important;
       }
       &.pl {
-        padding-left: 10% !important;
+        padding-left: 6% !important;
       }
     }
     .experience-text {
       &.pr {
-        padding-right: 10% !important;
+        padding-right: 6% !important;
       }
       &.pl {
-        padding-left: 10% !important;
+        padding-left: 6% !important;
       }
     }
   }
@@ -59,7 +59,7 @@ See variables.scss breakpoint
 
   #experience-view {
     #carousel-experience {
-      max-width: 500px;
+      max-width: 400px;
     }
   }
 }

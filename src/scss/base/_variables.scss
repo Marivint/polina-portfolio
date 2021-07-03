@@ -33,17 +33,17 @@ $color_green: #60ca91;
 
 // To generate colors
 $list_color: (
-  full-white: $color_full_white,
-  white: $color_white,
-  light-white: $color_white,
-  full-black: $color_full_black,
-  black: $color_black,
-  grey: $color_grey,
-  light-grey: $color_light_grey,
-  blue: $color_blue,
-  purple: $color_purple,
-  red: $color_red,
-  green: $color_green,
+  "full-white": $color_full_white,
+  "white": $color_white,
+  "light-white": $color_white,
+  "full-black": $color_full_black,
+  "black": $color_black,
+  "grey": $color_grey,
+  "light-grey": $color_light_grey,
+  "blue": $color_blue,
+  "purple": $color_purple,
+  "red": $color_red,
+  "green": $color_green,
 );
 
 $primary_text_color: $color_black;

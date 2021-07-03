@@ -37,7 +37,7 @@
           <lang-switcher />
         </div>
         <div class="col text-right">
-          <button id="header-burger"></button>
+          <button id="header-burger">Burger</button>
         </div>
       </nav>
     </div>

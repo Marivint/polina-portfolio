@@ -26,6 +26,7 @@
                 <a
                   href="https://www.linkedin.com/in/polina-gusarova-2791a4198/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <icon-linkedin
                     colorClass="custom-icon-black"
